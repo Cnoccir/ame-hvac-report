@@ -519,63 +519,17 @@ const Subheading = ({ children }) => (
   <h4 className="font-bold text-base mb-2 text-black">{children}</h4>
 );
 
-// AME Inc. Logo Component - Updated with your brand colors
-const AmeLogo = ({ size = "large" }) => (
-  <div className={`${size === "large" ? "w-64" : "w-32"} h-auto`}>
-    <div className="relative">
-      {/* Cityscape silhouette */}
-      <div className="relative h-16">
-        {/* Building silhouettes */}
-        <div className="absolute left-4 bottom-0 w-4 h-12 bg-black"></div>
-        <div className="absolute left-10 bottom-0 w-4 h-14 bg-black"></div>
-        <div className="absolute left-16 bottom-0 w-6 h-16 bg-black">
-          {/* Red markers */}
-          <div className="absolute top-2 w-full flex justify-center">
-            <div className="w-3 h-1 bg-red"></div>
-          </div>
-          <div className="absolute top-5 w-full flex justify-center">
-            <div className="w-3 h-1 bg-red"></div>
-          </div>
-          <div className="absolute top-8 w-full flex justify-center">
-            <div className="w-3 h-1 bg-red"></div>
-          </div>
-          <div className="absolute top-11 w-full flex justify-center">
-            <div className="w-3 h-1 bg-red"></div>
-          </div>
-          <div className="absolute top-14 w-full flex justify-center">
-            <div className="w-3 h-1 bg-red"></div>
-          </div>
-        </div>
-        <div className="absolute left-24 bottom-0 w-4 h-10 bg-black"></div>
-        <div className="absolute left-30 bottom-0 w-4 h-12 bg-black">
-          {/* Red markers */}
-          <div className="absolute top-4 w-full flex justify-center">
-            <div className="w-3 h-1 bg-red"></div>
-          </div>
-          <div className="absolute top-8 w-full flex justify-center">
-            <div className="w-3 h-1 bg-red"></div>
-          </div>
-        </div>
-        {/* Base */}
-        <div className="absolute bottom-0 w-full h-2 bg-black"></div>
-      </div>
+// Import AME Logo component
+import AmeLogo from '../components/AmeLogo';
 
-      {/* Text */}
-      <div className="mt-2 flex items-baseline">
-        <span className="text-2xl font-bold text-black">AME</span>
-        <span className="text-2xl font-bold text-gray">INC.</span>
-      </div>
-      <div className="mt-1 text-xs text-navy">A Part Of Nordomatic Group</div>
-    </div>
-  </div>
-);
-
-// Footer Component - Updated with your brand colors
+// Footer Component
 const Footer = () => (
   <footer className="bg-navy text-white py-4 mt-8">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-      <AmeLogo size="small" />
-      <p className="text-sm text-gray-300">Copyright 2025 AME-INC All Rights Reserved</p>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+      <div className="mb-4 md:mb-0">
+        <AmeLogo size="small" />
+      </div>
+      <p className="text-sm text-gray-300 my-2 md:my-0">Copyright 2025 AME-INC All Rights Reserved</p>
       <p className="text-sm text-gray-300">Page 1 of 1</p>
     </div>
   </footer>
@@ -1242,10 +1196,10 @@ export default function HVACServiceReport() {
             </div>
             <div className="text-sm">March-April 2025</div>
             <button
-              className="md:hidden bg-navy p-2 rounded"
+              className="md:hidden p-2 rounded border border-white"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              <Menu size={20} />
+              <Menu size={20} color="white" />
             </button>
           </div>
         </header>

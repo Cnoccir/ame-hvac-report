@@ -1,42 +1,76 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Custom CSS for AME HVAC report */
 :root {
   --color-navy: #1D0F5A;
   --color-red: #FF1E1E;
-  --color-black: #000000;
   --color-gray: #666666;
+  --color-light-gray: #F2F2F2;
+  --color-medium-gray: #DDDDDD;
+  --color-dark-gray: #777777;
 }
 
-.text-red {
-  color: var(--color-red);
-}
-
+/* Custom classes for AME brand colors */
 .bg-navy {
-  background-color: var(--color-navy);
+  background-color: var(--color-navy) !important;
 }
 
 .bg-red {
-  background-color: var(--color-red);
+  background-color: var(--color-red) !important;
+}
+
+.text-red {
+  color: var(--color-red) !important;
+}
+
+.text-navy {
+  color: var(--color-navy) !important;
 }
 
 .border-red {
-  border-color: var(--color-red);
-}
-
-.border-l-red {
-  border-left-color: var(--color-red);
+  border-color: var(--color-red) !important;
 }
 
 .border-t-red {
-  border-top-color: var(--color-red);
+  border-top-color: var(--color-red) !important;
 }
 
-* {
-  box-sizing: border-box;
+.border-l-red {
+  border-left-color: var(--color-red) !important;
+}
+
+/* Responsive fixes for charts */
+.recharts-responsive-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Fix for mobile menu */
+@media (max-width: 768px) {
+  .md\:hidden {
+    display: block;
+  }
+  .md\:block {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .md\:hidden {
+    display: none;
+  }
+  .md\:block {
+    display: block;
+  }
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
