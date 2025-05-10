@@ -1,0 +1,116 @@
+/* Custom styles for Google Maps */
+
+/* Info Window Styling */
+.gm-style .gm-style-iw-c {
+  padding: 0 !important;
+  border-radius: 8px !important;
+  overflow: visible !important;
+  max-width: 400px !important;
+}
+
+.gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+.gm-style .gm-ui-hover-effect {
+  display: none !important;
+}
+
+/* Custom info window content */
+.info-window-content {
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.info-window-header {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.info-window-body {
+  padding: 10px 15px;
+}
+
+.info-window-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Custom marker styling - Use this in combination with the icon settings */
+.marker-label {
+  font-weight: bold !important;
+  font-size: 12px !important;
+  color: white !important;
+}
+
+/* Enhance the heatmap visibility */
+.heatmap-overlay {
+  opacity: 0.7 !important;
+}
+
+/* Service hours legend */
+.map-legend {
+  background: white;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1000;
+  font-size: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Ensure the map container has proper sizing */
+.map-container {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .map-container {
+    height: 350px;
+  }
+  
+  .map-legend {
+    font-size: 10px;
+  }
+  
+  .legend-color {
+    width: 12px;
+    height: 12px;
+  }
+}

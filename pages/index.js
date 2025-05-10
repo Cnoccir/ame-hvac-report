@@ -3,15 +3,17 @@ import { LineChart, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 import { Menu, X, Calendar, Map, Settings, Clock, BarChart2, FileText, AlertTriangle } from 'lucide-react';
 import Head from 'next/head';
 
-// AME Inc. brand colors - updated to match your logo
+// AME Inc. brand colors - updated to match your logo with more subtle tones
 const COLORS = {
   black: "#000000",
   white: "#FFFFFF",
   lightGrey: "#F2F2F2",
   mediumGrey: "#DDDDDD",
   darkGrey: "#777777",
-  red: "#FF1E1E",       // Accent color from logo
+  red: "#E83A3A",       // More subtle red accent color
   navy: "#1D0F5A",      // Navy blue from logo
+  blue: "#3A6EE8",      // Blue accent that complements the navy
+  lightBlue: "#6AAFE8", // Lighter blue for tertiary elements
   gray: "#666666"       // Gray for "INC." text
 };
 
@@ -535,85 +537,9 @@ const Footer = () => (
   </footer>
 );
 
-// Component for the school map with heatmap overlay
-const MapView = ({ selectedSchool, setSelectedSchool }) => {
-  return (
-    <div className="relative">
-      <SectionTitle>GEOGRAPHIC SERVICE DISTRIBUTION</SectionTitle>
-      <SectionSubtitle />
-
-      <div className="relative h-96 border border-gray-300 rounded-lg overflow-hidden">
-        {/* Replace with a publicly hosted satellite map image of Clifton, NJ */}
-        <img
-          src="https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonMap.png"
-          alt="Clifton Schools Map"
-          className="w-full h-full object-cover"
-        />
-
-        {/* School location markers with heat indicators */}
-        {schoolData.map(school => (
-          <div
-            key={school.id}
-            className={`absolute w-8 h-8 rounded-full flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ${selectedSchool === school.id ? 'scale-125 z-50' : 'scale-100 z-10'}`}
-            style={{
-              top: `${(school.lat - 40.85) * 500 + 20}px`,
-              left: `${(school.lng - -74.17) * 500 + 300}px`,
-              backgroundColor: `rgba(${255 - (school.hours * 10)}, 0, 0, ${0.3 + (school.hours / 30)})`
-            }}
-            onClick={() => setSelectedSchool(school.id)}
-          >
-            <span className="text-xs font-bold text-white">{school.id}</span>
-          </div>
-        ))}
-
-        {/* School info popup */}
-        {selectedSchool && (
-          <div className="absolute bottom-2 left-2 right-2 bg-white p-3 rounded-lg shadow-lg z-50 border border-red">
-            <div className="flex justify-between">
-              <h4 className="font-bold">{schoolData.find(s => s.id === selectedSchool)?.name}</h4>
-              <button
-                className="text-gray-500 hover:text-gray-700"
-                onClick={() => setSelectedSchool(null)}
-              >
-                <X size={16} />
-              </button>
-            </div>
-            <p className="text-sm">{schoolData.find(s => s.id === selectedSchool)?.address}</p>
-            <div className="flex justify-between mt-2 text-sm">
-              <span>Visits: <b>{schoolData.find(s => s.id === selectedSchool)?.visits}</b></span>
-              <span>Hours: <b>{schoolData.find(s => s.id === selectedSchool)?.hours}</b></span>
-            </div>
-            <div className="mt-1 text-xs text-gray-600">
-              Technicians: {schoolData.find(s => s.id === selectedSchool)?.technicians.join(", ")}
-            </div>
-          </div>
-        )}
-
-        {/* Map legend */}
-        <div className="absolute top-2 right-2 bg-white p-2 rounded shadow-md text-xs">
-          <div className="font-bold mb-1">Service Hours</div>
-          <div className="flex items-center mb-1">
-            <div className="w-4 h-4 rounded-full mr-1" style={{backgroundColor: 'rgba(255, 0, 0, 0.3)'}}></div>
-            <span>Low (1-7 hrs)</span>
-          </div>
-          <div className="flex items-center mb-1">
-            <div className="w-4 h-4 rounded-full mr-1" style={{backgroundColor: 'rgba(255, 0, 0, 0.5)'}}></div>
-            <span>Medium (8-15 hrs)</span>
-          </div>
-          <div className="flex items-center">
-            <div className="w-4 h-4 rounded-full mr-1" style={{backgroundColor: 'rgba(255, 0, 0, 0.7)'}}></div>
-            <span>High (16+ hrs)</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-4 text-sm text-gray-700">
-        <p>This map displays service intensity across the nine Clifton Public School locations that received HVAC maintenance visits from March-April 2025. The color intensity of each marker represents the total service hours at that location, with darker red indicating more service hours.</p>
-        <p className="mt-2"><b>Note:</b> Click on any school marker to view details about the service at that location.</p>
-      </div>
-    </div>
-  );
-};
+// Component for the school map using standard Google Maps markers with all 11 schools
+import StandardMapView from '../components/StandardMapView';
+const MapView = StandardMapView;
 
 // Component for service metrics
 const MetricsView = () => {
@@ -793,7 +719,7 @@ const TimelineView = () => {
       <SectionTitle>SERVICE VISIT TIMELINE</SectionTitle>
       <SectionSubtitle />
 
-      {/* Calendar heatmap visualization */}
+      {/* Service intensity calendar */}
       <div className="bg-white rounded-lg shadow p-4 mb-6 border border-gray-200">
         <Subheading>Service Intensity Calendar</Subheading>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -807,7 +733,7 @@ const TimelineView = () => {
                     <div className="flex-grow h-8 rounded-md relative"
                       style={{
                         backgroundColor: hours > 0
-                          ? `rgba(255, 0, 0, ${Math.min(0.2 + (hours / 40), 0.8)})`
+                          ? `rgba(232, 58, 58, ${Math.min(0.2 + (hours / 40), 0.8)})`
                           : COLORS.lightGrey
                       }}
                     >
@@ -840,7 +766,7 @@ const TimelineView = () => {
                     <div className="w-16 text-xs bg-gray-100 rounded-t p-1 font-semibold">
                       {new Date(visit.date).toLocaleString('default', { month: 'short' })}
                     </div>
-                    <div className="w-16 h-12 bg-red text-white flex items-center justify-center font-bold text-lg rounded-b">
+                    <div className="w-16 h-12 flex items-center justify-center font-bold text-lg rounded-b text-white" style={{ backgroundColor: COLORS.red }}>
                       {new Date(visit.date).getDate()}
                     </div>
                   </div>
@@ -906,7 +832,7 @@ const IssueAnalysisView = () => {
                   <h5 className="font-semibold text-black">{issue.name}</h5>
                   <span className={`text-xs px-2 py-1 rounded font-medium
                     ${issue.priority === 'High' ? 'bg-red-100 text-red-800' :
-                      issue.priority === 'Medium' ? 'bg-gray-200 text-gray-800' : 'bg-gray-100 text-gray-800'}`}
+                      issue.priority === 'Medium' ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-800'}`}
                   >
                     {issue.priority} Priority
                   </span>

@@ -1,10 +1,12 @@
 // Utility functions for the HVAC report
 
+// Utility functions for the HVAC report
+
 // Helper function to get color intensity based on hours
 export const getColorIntensity = (hours, max = 25) => {
   const normalized = Math.min(hours / max, 1);
   return {
-    backgroundColor: `rgba(255, 30, 30, ${0.3 + (normalized * 0.6)})`,
+    backgroundColor: `rgba(232, 58, 58, ${0.3 + (normalized * 0.6)})`, // Using the more subtle red E83A3A
     opacity: 0.8 + (normalized * 0.2)
   };
 };

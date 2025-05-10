@@ -5,7 +5,8 @@
 /* Custom CSS for AME HVAC report */
 :root {
   --color-navy: #1D0F5A;
-  --color-red: #FF1E1E;
+  --color-red: #E83A3A;  /* Updated to a more subtle shade of red */
+  --color-accent: #3A6EE8;  /* Added blue accent color that complements the navy */
   --color-gray: #666666;
   --color-light-gray: #F2F2F2;
   --color-medium-gray: #DDDDDD;
