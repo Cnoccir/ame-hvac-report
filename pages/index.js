@@ -28,7 +28,6 @@ const schoolData = [
     lat: 40.868,
     lng: -74.164,
     technicians: ["Rupert Chandool", "Richard Bhajan"],
-    // Replace with your publicly hosted image
     imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonHS.png"
   },
   {
@@ -118,12 +117,34 @@ const schoolData = [
     lng: -74.165,
     technicians: ["Rupert Chandool"],
     imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonPS14.png"
+  },
+  {
+    id: 10,
+    name: "Clifton School #17",
+    address: "361 Lexington Avenue, Clifton NJ 07011",
+    visits: 1,
+    hours: 3.5,
+    lat: 40.872,
+    lng: -74.159,
+    technicians: ["Rupert Chandool"],
+    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonPS17.png"
+  },
+  {
+    id: 11,
+    name: "Clifton Early Learner Academy",
+    address: "290 Brighton Road, Clifton NJ 07012",
+    visits: 2,
+    hours: 9,
+    lat: 40.855,
+    lng: -74.167,
+    technicians: ["Rupert Chandool"],
+    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonELA.png"
   }
 ];
 
 // Technician data
 const technicianData = [
-  { name: "Rupert Chandool", visits: 19, hours: 64 },
+  { name: "Rupert Chandool", visits: 22, hours: 76 },
   { name: "Richard Bhajan", visits: 1, hours: 5.5 },
   { name: "Henry Sanchez", visits: 3, hours: 8 },
   { name: "Threshan Ramsarran", visits: 4, hours: 12.5 }
@@ -141,9 +162,12 @@ const visitData = [
   { date: "03/21/2025", school: "Clifton Public School #4", tech: "Henry Sanchez", hours: 3 },
   { date: "03/21/2025", school: "Clifton Public School #5", tech: "Henry Sanchez, Threshan Ramsarran", hours: 5.5 },
   { date: "03/24/2025", school: "Clifton HS", tech: "Richard Bhajan", hours: 5.5 },
+  { date: "03/24/2025", school: "Clifton Early Learner Academy", tech: "Rupert Chandool", hours: 4.5 },
+  { date: "04/09/2025", school: "Clifton Early Learner Academy", tech: "Rupert Chandool", hours: 4.5 },
   { date: "04/10/2025", school: "Clifton Public School #11", tech: "Rupert Chandool", hours: 3 },
   { date: "04/10/2025", school: "Clifton Public School #14", tech: "Rupert Chandool", hours: 2 },
   { date: "04/11/2025", school: "Clifton Public School #4", tech: "Rupert Chandool", hours: 2 },
+  { date: "04/11/2025", school: "Clifton School #17", tech: "Rupert Chandool", hours: 3.5 },
   { date: "04/21/2025", school: "Clifton Public School #1", tech: "Rupert Chandool", hours: 4 },
   { date: "04/21/2025", school: "Clifton Public School #9", tech: "Rupert Chandool", hours: 4 },
   { date: "04/23/2025", school: "Clifton Stadium Weight Room", tech: "Rupert Chandool", hours: 2 },
@@ -479,13 +503,73 @@ const visitLogBySchool = {
         "Backed up JACE station after all adjustments."
       ]
     }
+  ],
+  "Clifton School #17": [
+    {
+      date: "April 11, 2025",
+      technician: "Rupert Chandool",
+      duration: "3.50 hours",
+      summary: [
+        "Logged into JACE successfully.",
+        "All devices were communicating properly, except for RTU-7.",
+        "Reviewed space temperature, discharge air temperature (DAT), and monitored for any abnormal readings.",
+        "Verified alarms and fault points – all clear, except for RTU-7.",
+        "Performed valve stroke tests (opened/closed) for all units.",
+        "Found RTU-7 showing offline status.",
+        "Attempted to reset the unit and ping the controller – no response.",
+        "Identified RTU-7 failure affecting 23 VAV boxes (no airflow to connected zones).",
+        "Recommended a mechanical contractor to troubleshoot RTU-7.",
+        "Station was saved and backed up."
+      ]
+    }
+  ],
+  "Clifton Early Learner Academy": [
+    {
+      date: "March 24, 2025",
+      technician: "Rupert Chandool",
+      duration: "4.50 hours",
+      summary: [
+        "Communication Check: Logged into Jace and confirmed all devices are communicating.",
+        "Checked space temperatures, DAT, and alarms/fault points.",
+        "Stroked valves open/close for all units.",
+        "AHU-3: Discovered Fail Alarm due to supply fan being off.",
+        "AHU-3: Heating valve not supplying hot water → Requires mechanical inspection.",
+        "AHU-4: Found Fail Alarm for return fan & filter.",
+        "VAV04: Damper at 0%, but still has flow.",
+        "VAV10: Damper at 100%, but no flow.",
+        "VAV12, 14: Dampers at 100%, but only small flow.",
+        "VAV16, 18, 20: Dampers at 100%, but no flow.",
+        "Girl's Locker Room: Reheat valve at 0%, but discharge temp at 114°F → Requires mechanical inspection.",
+        "Recommended replacement of CVL4022AS control valve and thermostat.",
+        "Saved and backed up station."
+      ]
+    },
+    {
+      date: "April 9, 2025",
+      technician: "Rupert Chandool",
+      duration: "4.50 hours",
+      summary: [
+        "Performed comprehensive system check of all AHUs and VAV boxes.",
+        "AHU-3: Return fan fail alarm and filter alarm – needs customer/mechanical attention.",
+        "AHU-3: Heating valve has a defective part – Honeywell ML7425A3013.",
+        "AHU-3: Supply fan bearing is noisy — requires mechanical service.",
+        "AHU-1: Disconnect switch not fully engaged.",
+        "AHU-4: Requesting cooling, but chillers were not running (ambient temp not at setpoint).",
+        "VAV-04, VAV-10, VAV-12, VAV-14, VAV-16, VAV-20: Dampers at 100%, but no box flow.",
+        "VAV-18: Setpoint: 72°F, Space temperature: Overheating, Discharge temp: 109°F.",
+        "Girl's Locker Room: Reheat valve at 0%, yet discharge temp = 94°F – inconsistent behavior.",
+        "Recommended replacement of controller (CVL4022AS) and thermostat for VAV-18.",
+        "Recommended replacement of all defective CVL4022AS controllers and associated thermostats.",
+        "Backed up and saved the JACE station."
+      ]
+    }
   ]
 };
 
 // Create monthly hours data for line chart
 const monthlyHours = [
-  { month: "March", hours: 62 },
-  { month: "April", hours: 27 }
+  { month: "March", hours: 66.5 },
+  { month: "April", hours: 35.5 }
 ];
 
 // Create month + week data for heat calendar
@@ -497,11 +581,11 @@ const calendarData = [
     "Week 1 (3/1-3/7)": 35,
     "Week 2 (3/8-3/14)": 0,
     "Week 3 (3/15-3/21)": 12.5,
-    "Week 4 (3/22-3/28)": 14.5
+    "Week 4 (3/22-3/28)": 19
   }},
   { month: "April", weeks: {
     "Week 1 (4/1-4/7)": 0,
-    "Week 2 (4/8-4/14)": 7,
+    "Week 2 (4/8-4/14)": 15.5,
     "Week 3 (4/15-4/21)": 8,
     "Week 4 (4/22-4/28)": 10,
     "Week 5 (4/29-4/30)": 5
@@ -551,15 +635,15 @@ const MetricsView = () => {
       {/* Summary statistics cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">9</div>
+          <div className="text-3xl font-bold text-black">11</div>
           <div className="text-sm font-medium text-gray-600">Schools Serviced</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">22</div>
+          <div className="text-3xl font-bold text-black">24</div>
           <div className="text-sm font-medium text-gray-600">Total Visits</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">89</div>
+          <div className="text-3xl font-bold text-black">97</div>
           <div className="text-sm font-medium text-gray-600">Labor Hours</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
@@ -641,7 +725,7 @@ const MetricsView = () => {
                     {tech.hours}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
-                    {Math.round((tech.hours / 89) * 100)}%
+                    {Math.round((tech.hours / 102) * 100)}%
                   </td>
                 </tr>
               ))}
@@ -792,68 +876,12 @@ const TimelineView = () => {
   );
 };
 
-// Component for issue analysis
+// Import the new IssueAnalysis component
+import IssueAnalysis from '../components/IssueAnalysis';
+
+// Component for issue analysis - now using our updated component
 const IssueAnalysisView = () => {
-  return (
-    <div>
-      <SectionTitle>ANALYSIS OF RECURRING ISSUES</SectionTitle>
-      <SectionSubtitle />
-
-      {/* Issue priority chart */}
-      <div className="bg-white rounded-lg shadow p-4 mb-6 border border-gray-200">
-        <Subheading>Issue Distribution by School</Subheading>
-        <div className="h-64">
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart
-              data={issueData}
-              margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-            >
-              <CartesianGrid strokeDasharray="3 3" stroke={COLORS.lightGrey} />
-              <XAxis dataKey="name" angle={-45} textAnchor="end" height={100} tick={{fontSize: 10}} />
-              <YAxis label={{ value: 'Schools Affected', angle: -90, position: 'insideLeft' }} />
-              <Tooltip formatter={(value) => [`${value} schools`, 'Affected']} />
-              <Bar dataKey="schools" fill={COLORS.red} name="Schools Affected" />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
-      </div>
-
-      {/* Priority issue cards */}
-      <div className="mb-6">
-        <Subheading>Critical Issues by Priority</Subheading>
-        <div className="space-y-4">
-          {issueData.map((issue, idx) => (
-            <div key={idx} className={`border-l-4 rounded-lg shadow bg-white overflow-hidden border border-gray
-              ${issue.priority === 'High' ? 'border-l-red' :
-                issue.priority === 'Medium' ? 'border-l-gray-500' : 'border-l-gray-400'}`}
-            >
-              <div className="p-4">
-                <div className="flex justify-between items-start">
-                  <h5 className="font-semibold text-black">{issue.name}</h5>
-                  <span className={`text-xs px-2 py-1 rounded font-medium
-                    ${issue.priority === 'High' ? 'bg-red-100 text-red-800' :
-                      issue.priority === 'Medium' ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-800'}`}
-                  >
-                    {issue.priority} Priority
-                  </span>
-                </div>
-                <div className="mt-2 text-sm">
-                  <p className="text-gray-600 mb-1"><span className="font-medium">Frequency:</span> {issue.frequency} of schools ({issue.schools} locations)</p>
-                  <p className="text-gray-700 mb-2">{issue.description}</p>
-                  <div className="mt-3 pt-3 border-t border-gray-200">
-                    <p className="text-gray-800 font-medium flex items-center">
-                      <Settings size={16} className="mr-1" /> Recommendation:
-                    </p>
-                    <p className="text-gray-700">{issue.recommendation}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
+  return <IssueAnalysis />;
 };
 
 // Component for detailed visit logs
@@ -936,15 +964,15 @@ const ExecutiveSummaryView = () => {
       {/* Summary statistics cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">9</div>
+          <div className="text-3xl font-bold text-black">11</div>
           <div className="text-sm font-medium text-gray-600">Schools</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">22</div>
+          <div className="text-3xl font-bold text-black">24</div>
           <div className="text-sm font-medium text-gray-600">Visits</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">89</div>
+          <div className="text-3xl font-bold text-black">97</div>
           <div className="text-sm font-medium text-gray-600">Hours</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
@@ -956,7 +984,7 @@ const ExecutiveSummaryView = () => {
       {/* Summary text */}
       <div className="bg-white p-6 rounded-lg shadow mb-8 border border-gray-200">
         <p className="mb-4 text-black">
-          Between March 3 and April 30, 2025, AME Inc. conducted <strong>22 maintenance visits</strong> across nine Clifton Public School facilities, totaling <strong>89 labor hours</strong>. This bi-weekly maintenance program has provided consistent monitoring, troubleshooting, and seasonal transition services for the district's HVAC systems.
+          Between March 3 and April 30, 2025, AME Inc. conducted <strong>24 maintenance visits</strong> across eleven Clifton Public School facilities, totaling <strong>97 labor hours</strong>. This bi-weekly maintenance program has provided consistent monitoring, troubleshooting, and seasonal transition services for the district's HVAC systems.
         </p>
 
         <div className="mb-4">
