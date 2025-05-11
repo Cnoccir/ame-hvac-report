@@ -289,7 +289,13 @@ const IssueAnalysis = () => {
                   <p className="text-sm text-gray-700 font-medium mb-3">
                     <strong>Recommendation:</strong> {issue.recommendation}
                   </p>
-                  <button className="w-full flex items-center justify-center bg-gray-50 text-blue-500 border border-gray-200 rounded py-2 px-4 text-sm font-medium hover:bg-gray-100">
+                  <button 
+                    onClick={(e) => {
+                      e.stopPropagation(); // Prevent the parent div's onClick from firing
+                      handleIssueSelect(issue);
+                    }}
+                    className="w-full flex items-center justify-center bg-gray-50 text-blue-500 border border-gray-200 rounded py-2 px-4 text-sm font-medium hover:bg-gray-100"
+                  >
                     View Details <PlusCircle size={16} className="ml-2" />
                   </button>
                 </div>
