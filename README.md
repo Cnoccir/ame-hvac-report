@@ -1,72 +1,101 @@
-# AME Inc. HVAC Service Report
+# AME Inc. HVAC Service Report Application
 
-A React-based dashboard for visualizing HVAC service data from Clifton Public Schools.
+## File Upload Requirements
 
-## Overview
+This application relies on external files that need to be uploaded to your S3 bucket or similar storage. Below is a comprehensive list of all required files and their organization.
 
-This dashboard provides a comprehensive view of HVAC maintenance services performed at Clifton Public Schools from March-April 2025. It includes:
+### Directory Structure
 
-- Executive Summary with key metrics and findings
-- Geographic Service Distribution Map
-- Service Metrics Overview (charts and tables)
-- Service Visit Timeline
-- Analysis of Recurring Issues
-- Detailed Visit Logs by School
+```
+ame-techassist-bucket/
+├── ame-report-images/
+│   ├── ame-logo.png
+│   ├── favicon.ico
+│   ├── CliftonHS.png
+│   ├── Clifton Stadium Weight Room.png
+│   ├── CliftonPS1.png
+│   ├── CliftonPS3.png
+│   ├── CliftonPS4.png
+│   ├── CliftonPS5.png
+│   ├── CliftonPS9.png
+│   ├── CliftonPS11.png
+│   ├── CliftonPS14.png
+│   ├── CliftonPS17.png
+│   └── CliftonELA.png
+│
+├── service-reports/
+│   ├── 211664-13788-PS17.pdf
+│   ├── 210965-12939-ELA.pdf
+│   ├── 210972-12946-ELA.pdf
+│   ├── 210966-12940-CHS.pdf
+│   ├── 210955-12929-CHS.pdf
+│   ├── 210973-12947-CHS.pdf
+│   ├── 210956-12930-CSWR.pdf
+│   ├── 210967-12941-CSWR.pdf
+│   ├── 210960-12934-PS1.pdf
+│   ├── 210978-12952-PS1.pdf
+│   ├── 210964-12938-PS3.pdf
+│   ├── 210993-12967-PS3.pdf
+│   ├── 210958-12932-PS4.pdf
+│   ├── 210976-12950-PS4.pdf
+│   ├── 210959-12933-PS5.pdf
+│   ├── 210977-12951-PS5.pdf
+│   ├── 210996-12970-PS5.pdf
+│   ├── 210961-12935-PS9.pdf
+│   ├── 210979-12953-PS9.pdf
+│   ├── 210957-12931-PS11.pdf
+│   ├── 210968-12942-PS11.pdf
+│   ├── 210975-12949-PS11.pdf
+│   ├── 210962-12936-PS14.pdf
+│   ├── 210969-12943-PS14.pdf
+│   └── 210991-12965-PS14.pdf
+│
+└── documentation/
+    ├── ame-system-manual.pdf
+    └── ame-maintenance-guide.pdf
+```
 
-## Technology Stack
+### File Details
 
-- Next.js - React framework
-- Recharts - For data visualization
-- Lucide React - For icons
-- Tailwind CSS - For styling
+#### School Images (PNG files)
+- School images should be 800x600 pixels
+- Use consistent lighting and angle for all school photos
+- Name format should match exactly as specified in the directory structure
 
-## Getting Started
+#### Service Reports (PDF files)
+- Original service ticket PDFs
+- Named with the format: `{JOB_NUMBER}-{SCHOOL_CODE}.pdf`
+- Each PDF contains the complete service report for one visit
 
-### Prerequisites
+#### Documentation
+- Company logo: AME logo in PNG format
+- Favicon: 16x16 and 32x32 pixel versions in ICO format
+- System Manual: Comprehensive guide to the HVAC systems
+- Maintenance Guide: Instructions for regular maintenance procedures
 
-- Node.js (v14 or higher)
-- npm or yarn
+### Link Configuration
 
-### Installation
+All file paths are configured in the `utils/linkConfig.js` file. If you change the directory structure or file names, update this configuration file accordingly.
 
-1. Clone the repository
-   ```
-   git clone https://github.com/YOUR-USERNAME/ame-hvac-report.git
-   ```
+## Implementation Notes
 
-2. Install dependencies
-   ```
-   cd ame-hvac-report
-   npm install
-   ```
+- All S3 bucket paths assume public read access to files
+- For production environments, consider using signed URLs for reports
+- Update the `BASE_URLS` object in `linkConfig.js` if your storage location changes
 
-3. Run the development server
-   ```
-   npm run dev
-   ```
+## Creating PDFs from Original Service Tickets
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+1. Scan original service tickets at 300 DPI
+2. Save as PDF with the job number in the filename
+3. Ensure all PDFs are searchable (OCR processing recommended)
+4. Upload to the service-reports directory
 
-## Deployment on Vercel
+## Serving Files
 
-The project is configured for easy deployment on Vercel:
+These files can be served from:
+1. Amazon S3 bucket (current configuration)
+2. Azure Blob Storage
+3. Google Cloud Storage
+4. Local server storage (for development)
 
-1. Push the repository to GitHub
-2. Go to [Vercel](https://vercel.com) and create a new project
-3. Import your GitHub repository
-4. Deploy
-
-## Project Structure
-
-- `/pages` - Next.js pages
-- `/styles` - CSS styles
-- `/public` - Static assets
-
-## Image Hosting
-
-All school images and map data are hosted on AWS S3 at:
-`s3://ame-techassist-bucket/ame-report-images/`
-
-## License
-
-© 2025 AME Inc. All Rights Reserved.
+To change the storage location, modify the `BASE_URLS` in the `linkConfig.js` file.

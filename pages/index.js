@@ -28,7 +28,7 @@ const schoolData = [
     lat: 40.868,
     lng: -74.164,
     technicians: ["Rupert Chandool", "Richard Bhajan"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonHS.png"
+    imageUrl: SCHOOL_IMAGES["Clifton High School"]
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ const schoolData = [
     lat: 40.875,
     lng: -74.163,
     technicians: ["Rupert Chandool", "Threshan Ramsarran"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/Clifton+Stadium+Weight+Room.png"
+    imageUrl: SCHOOL_IMAGES["Clifton Stadium Weight Room"]
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ const schoolData = [
     lat: 40.879,
     lng: -74.168,
     technicians: ["Rupert Chandool"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonPS1.png"
+    imageUrl: SCHOOL_IMAGES["Clifton Public School #1"]
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ const schoolData = [
     lat: 40.876,
     lng: -74.165,
     technicians: ["Rupert Chandool", "Henry Sanchez", "Threshan Ramsarran"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonPS3.png"
+    imageUrl: SCHOOL_IMAGES["Clifton Public School #3"]
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ const schoolData = [
     lat: 40.882,
     lng: -74.163,
     technicians: ["Rupert Chandool", "Henry Sanchez"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonPS4.png"
+    imageUrl: SCHOOL_IMAGES["Clifton Public School #4"]
   },
   {
     id: 6,
@@ -83,7 +83,7 @@ const schoolData = [
     lat: 40.888,
     lng: -74.167,
     technicians: ["Rupert Chandool", "Henry Sanchez", "Threshan Ramsarran"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonPS5.png"
+    imageUrl: SCHOOL_IMAGES["Clifton Public School #5"]
   },
   {
     id: 7,
@@ -94,7 +94,7 @@ const schoolData = [
     lat: 40.857,
     lng: -74.163,
     technicians: ["Rupert Chandool"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonPS9.png"
+    imageUrl: SCHOOL_IMAGES["Clifton Public School #9"]
   },
   {
     id: 8,
@@ -105,7 +105,7 @@ const schoolData = [
     lat: 40.885,
     lng: -74.153,
     technicians: ["Rupert Chandool", "Threshan Ramsarran"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonPS11.png"
+    imageUrl: SCHOOL_IMAGES["Clifton Public School #11"]
   },
   {
     id: 9,
@@ -116,7 +116,7 @@ const schoolData = [
     lat: 40.865,
     lng: -74.165,
     technicians: ["Rupert Chandool"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonPS14.png"
+    imageUrl: SCHOOL_IMAGES["Clifton Public School #14"]
   },
   {
     id: 10,
@@ -127,7 +127,7 @@ const schoolData = [
     lat: 40.872,
     lng: -74.159,
     technicians: ["Rupert Chandool"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonPS17.png"
+    imageUrl: SCHOOL_IMAGES["Clifton School #17"]
   },
   {
     id: 11,
@@ -138,7 +138,7 @@ const schoolData = [
     lat: 40.855,
     lng: -74.167,
     technicians: ["Rupert Chandool"],
-    imageUrl: "https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/CliftonELA.png"
+    imageUrl: SCHOOL_IMAGES["Clifton Early Learner Academy"]
   }
 ];
 
@@ -638,6 +638,7 @@ const Subheading = ({ children }) => (
 
 // Import AME Logo component
 import AmeLogo from '../components/AmeLogo';
+import { SCHOOL_IMAGES, DOCUMENTATION } from '../utils/linkConfig';
 
 // Footer Component
 const Footer = () => (
@@ -1205,7 +1206,7 @@ export default function HVACServiceReport() {
       <Head>
         <title>AME Inc. - Clifton Schools HVAC Report</title>
         <meta name="description" content="HVAC Service Report for Clifton Public Schools" />
-        <link rel="icon" href="https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/ame-report-images/favicon.ico" />
+        <link rel="icon" href={DOCUMENTATION.FAVICON} />
         <style jsx global>{`
           :root {
             --color-navy: #1D0F5A;

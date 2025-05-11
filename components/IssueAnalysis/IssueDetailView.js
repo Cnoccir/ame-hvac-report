@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, CheckCircle2, AlertCircle, FileText } from 'lucide-react';
+import { SERVICE_REPORTS } from '../../utils/linkConfig';
 
 // Visit log reference data for the selected issue
 const visitLogData = {
@@ -535,8 +536,8 @@ const IssueDetailView = ({ issue, onClose }) => {
                           onClick={() => {
                             // First show the alert
                             alert(`Opening full report for job #${visit.jobNo} in a new window.`);
-                            // Then actually open a new window with a mock URL
-                            window.open(`https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/service-reports/${visit.jobNo}.pdf`, '_blank');
+                            // Then open the report using the configured link
+                            window.open(SERVICE_REPORTS[visit.jobNo], '_blank');
                           }}
                           className="text-blue-600 text-sm font-medium flex items-center hover:underline"
                         >
