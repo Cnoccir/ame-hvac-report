@@ -533,9 +533,10 @@ const IssueDetailView = ({ issue, onClose }) => {
                       <div className="mt-4 pt-2 border-t border-gray-100 flex justify-end">
                         <button 
                           onClick={() => {
-                            alert(`Full report for job #${visit.jobNo} would open in a new window.`);
-                            // In a real implementation, this would open the full PDF report in a new window
-                            // window.open(`/reports/${visit.jobNo}.pdf`, '_blank');
+                            // First show the alert
+                            alert(`Opening full report for job #${visit.jobNo} in a new window.`);
+                            // Then actually open a new window with a mock URL
+                            window.open(`https://ame-techassist-bucket.s3.us-east-1.amazonaws.com/service-reports/${visit.jobNo}.pdf`, '_blank');
                           }}
                           className="text-blue-600 text-sm font-medium flex items-center hover:underline"
                         >
