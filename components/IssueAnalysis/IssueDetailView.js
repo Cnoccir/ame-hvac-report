@@ -86,6 +86,182 @@ const visitLogData = {
     finalActions: [
       'Backed up and saved the JACE station.'
     ]
+  },
+  '210966-12940': {
+    jobNo: '210966-12940',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton High School',
+    address: '333 Colfax Avenue, Clifton NJ 07013',
+    serviceDate: '03/24/2025',
+    technician: 'Richard Bhajan',
+    workCompleted: [
+      'Met with Bogdan.',
+      'Resolved issue with entire 6000 wing that was down.',
+      'Used bacnet router to discover the units and reset the Jace to bring all units back online.'
+    ],
+    issuesFound: [
+      'Customer has history of freeze stats issues where freeze stats trip at OAT up to 58 degrees.',
+      'Entire 6000 wing was down due to communication issues.'
+    ],
+    recommendations: [
+      'Follow up needed for freeze stats issues - pictures of affected units sent to Vinny.'
+    ],
+    finalActions: [
+      'Email sent to Vinny with issue list.'
+    ]
+  },
+  '210973-12947': {
+    jobNo: '210973-12947',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton High School',
+    address: '333 Colfax Avenue, Clifton NJ 07013',
+    serviceDate: '04/25/2025',
+    technician: 'Rupert Chandool',
+    workCompleted: [
+      'Met with Bogdan on-site.',
+      'Logged into JACE and confirmed successful communication between all devices.',
+      'Checked space temperatures, DAT (Discharge Air Temperature), and scanned for any unusual readings, alarms, or fault points.',
+      'Stroked valves open and closed for all units to verify operation.'
+    ],
+    issuesFound: [
+      'Heating system was turned off due to the school being unoccupied.',
+      'Several fans were found turned off because of asbestos construction in the area.',
+      'Multiple UV units had freeze alarms triggered: UVN_311, UVN_309b, UVN_218_Ftr, UVS313_EF, UVE205_EF, UVE207_EF, UVE209_EF, UVE211_EF, UVE305_EF.'
+    ],
+    recommendations: [
+      'D&B was notified to schedule an inspection of the Daikin units for freeze stat issues in the spring.'
+    ],
+    finalActions: [
+      'Noted that an air balancing team was on-site, causing all heating valve bodies to be fully open (100%) during inspection.'
+    ]
+  },
+  '210958-12932': {
+    jobNo: '210958-12932',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton Public School #4',
+    address: '194 West 2Nd Street, Clifton NJ 07011',
+    serviceDate: '03/21/2025',
+    technician: 'Henry Sanchez',
+    workCompleted: [
+      'Reviewed platform services, daemon output and system log no issues found. Cpu usage at 10%.',
+      'Saved station, took a back up. Review alarm panel.'
+    ],
+    issuesFound: [
+      'AC1 in freeze stat alarm.',
+      'Freeze stat was set too high at 45 degrees, causing it to trip in warmer conditions, preventing unit from running.'
+    ],
+    recommendations: [
+      'Adjust freeze stat settings to appropriate temperature.'
+    ],
+    finalActions: [
+      'Reset freeze stat and unit runs.'
+    ]
+  },
+  '210968-12942': {
+    jobNo: '210968-12942',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton Public School #11',
+    address: '147 Merselis Avenue, Clifton NJ 07011',
+    serviceDate: '04/23/2025',
+    technician: 'Rupert Chandool',
+    workCompleted: [
+      'Met with Mateo on-site and logged into JACE.',
+      'All devices were online and communicating successfully.',
+      'Verified space temperatures, discharge air temps (DAT), and scanned for alarms/fault points.',
+      'Stroked valves open/close for all units to confirm proper operation.'
+    ],
+    issuesFound: [
+      'UV_RM01_EF: Unit was off due to odors coming from nearby garbage outside the classroom.',
+      'UV_RM09_EF: Offline, requires a new motor.',
+      'UV_RM24_EF: Heating valve operational, but valve body is leaking — needs mechanical repair.',
+      'All VRVs: Currently offline, scheduled for use starting this summer.',
+      'JACE initial backup failed due to 100% CPU usage.'
+    ],
+    recommendations: [
+      'Mechanical repair needed for UV_RM24_EF valve body.',
+      'New motor required for UV_RM09_EF.'
+    ],
+    finalActions: [
+      'Made history adjustments, reducing CPU usage to ~23%.',
+      'Successfully backed up and saved the station.'
+    ]
+  },
+  '210964-12938': {
+    jobNo: '210964-12938',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton Public School #3',
+    address: '365 Washington Avenue, Clifton NJ 07011',
+    serviceDate: '03/21/2025',
+    technician: 'Henry Sanchez',
+    workCompleted: [
+      'Reviewed platform services, daemon output and system log no issues found. Cpu usage at 19%.',
+      'Saved station, took a back up. Reviewed alarm panel; no major issues found.'
+    ],
+    issuesFound: [
+      'Daikin VRV network is offline.',
+      'Ethernet cable that comes from Daikin panel was unplugged.',
+      'No one was able to validate why it was unplugged.',
+      'Network loss is not affecting units operation.'
+    ],
+    recommendations: [
+      'Reconnect ethernet cable and secure connection.'
+    ],
+    finalActions: [
+      'Network issues documented.'
+    ]
+  },
+  '210961-12935': {
+    jobNo: '210961-12935',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton Public School #9',
+    address: '25 Brighton Road, Clifton NJ 07012',
+    serviceDate: '03/06/2025',
+    technician: 'Rupert Chandool',
+    workCompleted: [
+      'Logged into Jace to verify communication between all devices – all devices are communicating properly.',
+      'Checked space temperatures, discharge air temperature (DAT), and any improper readings.',
+      'Reviewed alarms and fault points.',
+      'Stroked valves open/close for all units to confirm functionality.',
+      'Backed up Jace and saved station for future reference.'
+    ],
+    issuesFound: [
+      'Daikin VRV System – Not yet set up for BMS system integration.',
+      'Classroom 210 – Unit was turned off, now brought back online.',
+      'Media Room/Library – Overheating due to steam heating from radiant heat.',
+      'Room 104 & Room 204 – Low temperatures, especially on very cold days.'
+    ],
+    recommendations: [
+      'Mechanical team needs to inspect Room 104 & Room 204 units.',
+      'Complete Daikin VRV integration with BMS.'
+    ],
+    finalActions: [
+      'Brought Classroom 210 unit back online.'
+    ]
+  },
+  '210991-12965': {
+    jobNo: '210991-12965',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton Public School #14',
+    address: '99 Saint Andrews Blvd, Clifton NJ 07013',
+    serviceDate: '04/30/2025',
+    technician: 'Rupert Chandool',
+    workCompleted: [
+      'Logged into the JACE and verified communication across all devices — all were functioning correctly.',
+      'Reviewed space temperatures, discharge air temperatures (DAT), and checked for alarms or fault points.',
+      'Stroked valves open and closed for all units to verify operational status.'
+    ],
+    issuesFound: [
+      'Identified high temperatures (~80°F) in Rooms 120, 122, and 124.',
+      'VRF system settings needed adjustment for proper cooling.'
+    ],
+    recommendations: [
+      'Update Daikin thermostat settings to appropriate modes for optimal cooling.'
+    ],
+    finalActions: [
+      'Troubleshot the VRF system by reviewing and adjusting settings, ensuring all units were cooling properly.',
+      'Updated Daikin thermostat settings to appropriate modes for optimal cooling.',
+      'Backed up and saved the station after completing all checks and adjustments.'
+    ]
   }
 };
 
@@ -125,6 +301,27 @@ const rootCauseAnalysis = {
     'Configuration mismatches between devices',
     'Station backup and history capacity issues',
     'Security certificate or user permission conflicts'
+  ],
+  temperature: [
+    'Improper freeze stat calibration setting points too high',
+    'Sensor placement in areas susceptible to cold spots',
+    'Defective or aging temperature sensors',
+    'Incorrect freeze protection sequences',
+    'Environmental factors affecting outdoor air temperature readings'
+  ],
+  operational: [
+    'Insufficient staff training on HVAC system operation',
+    'Manual overrides to address immediate comfort concerns',
+    'Lack of clear operational protocols for staff interactions with equipment',
+    'Easy accessibility of control switches without security measures',
+    'Teachers/staff adjusting systems without understanding systemic impacts'
+  ],
+  integration: [
+    'Incomplete BMS integration of Daikin VRV/VRF systems',
+    'Communication protocol mismatches between systems',
+    'Disconnected network cables connecting Daikin controllers to BMS',
+    'Pending completion of cooling startup configurations',
+    'Manufacturer-specific communication limitations'
   ]
 };
 
@@ -159,6 +356,27 @@ const actionPlanData = {
     'Perform network infrastructure assessment',
     'Rebuild device connections and communication pathways',
     'Document updated network architecture for future reference'
+  ],
+  temperature: [
+    'Conduct comprehensive inspection of all freeze stats',
+    'Recalibrate freeze stats to appropriate trigger temperatures',
+    'Coordinate with D&B for inspection of Daikin units with freeze stat issues',
+    'Verify proper sequence operation after calibration',
+    'Document proper settings for future reference'
+  ],
+  operational: [
+    'Develop standardized staff training program on proper HVAC system interaction',
+    'Consider installation of lockouts on critical equipment controls',
+    'Create clear signage indicating which controls should not be adjusted',
+    'Implement a system notification process for when adjustments are needed',
+    'Document regular custodian procedures for seasonal transitions'
+  ],
+  integration: [
+    'Complete Daikin VRV/VRF integration with BMS before cooling season',
+    'Verify all network connections between Daikin systems and building controllers',
+    'Update or add missing gateway devices for proper communication',
+    'Configure all Daikin thermostats for optimal cooling operation',
+    'Test integrated operation of all connected systems'
   ]
 };
 
@@ -313,7 +531,14 @@ const IssueDetailView = ({ issue, onClose }) => {
                       )}
                       
                       <div className="mt-4 pt-2 border-t border-gray-100 flex justify-end">
-                        <button className="text-blue-600 text-sm font-medium flex items-center hover:underline">
+                        <button 
+                          onClick={() => {
+                            alert(`Full report for job #${visit.jobNo} would open in a new window.`);
+                            // In a real implementation, this would open the full PDF report in a new window
+                            // window.open(`/reports/${visit.jobNo}.pdf`, '_blank');
+                          }}
+                          className="text-blue-600 text-sm font-medium flex items-center hover:underline"
+                        >
                           <FileText size={14} className="mr-1" /> View Full Report
                         </button>
                       </div>

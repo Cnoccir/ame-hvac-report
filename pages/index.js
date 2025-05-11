@@ -179,51 +179,87 @@ const visitData = [
   { date: "04/30/2025", school: "Clifton Public School #14", tech: "Rupert Chandool", hours: 2 }
 ];
 
-// Issues data
+// Issues data - updated to match the IssueAnalysis component
 const issueData = [
   {
     id: 1,
-    name: "Freeze Stat Problems",
+    name: "RTU Communication Failures",
     priority: "High",
-    frequency: "56%",
-    schools: 5,
-    description: "Units tripping at abnormally warm temperatures (up to 58°F)",
-    recommendation: "Comprehensive inspection and calibration of all freeze stats"
+    frequency: "27%",
+    schools: 3,
+    description: "Multiple RTUs showing offline status, affecting ventilation and temperature control in connected zones",
+    recommendation: "Schedule immediate mechanical contractor inspection for all affected units"
   },
   {
     id: 2,
-    name: "JACE System Management",
-    priority: "Medium",
-    frequency: "44%",
+    name: "AHU Heating Valve Defects",
+    priority: "High",
+    frequency: "36%",
     schools: 4,
-    description: "System communication failures, high CPU usage (100% at PS #11)",
-    recommendation: "Standardized JACE optimization protocol across all schools"
+    description: "Heating valves not supplying hot water, causing temperature control issues in multiple zones",
+    recommendation: "Replace defective Honeywell ML7425A3013 parts and repair valve bodies"
   },
   {
     id: 3,
-    name: "Daikin VRV/VRF Integration",
-    priority: "High",
-    frequency: "67%",
-    schools: 6,
-    description: "Communication failures, pending integration with BMS",
-    recommendation: "Accelerated Daikin integration project before peak cooling season"
+    name: "VAV Damper Flow Issues",
+    priority: "Medium",
+    frequency: "18%",
+    schools: 2,
+    description: "Multiple VAV boxes showing dampers at 100% with minimal or no airflow to zones",
+    recommendation: "Replace all defective CVL4022AS controllers and associated thermostats"
   },
   {
     id: 4,
-    name: "Manual System Overrides",
-    priority: "Medium",
-    frequency: "78%",
-    schools: 7,
-    description: "Units completely deactivated or placed in inappropriate modes by staff",
-    recommendation: "Staff education program and consideration of control lockouts"
+    name: "AHU Fan Failures",
+    priority: "High",
+    frequency: "36%",
+    schools: 4,
+    description: "Supply and return fan failures detected across multiple units, causing insufficient air distribution",
+    recommendation: "Comprehensive mechanical service for bearing replacement and fan alignment"
   },
   {
     id: 5,
+    name: "JACE System Management",
+    priority: "Medium",
+    frequency: "27%",
+    schools: 3,
+    description: "JACE system showing communication gaps with certain devices and controllers. PS #11 experienced 100% CPU usage",
+    recommendation: "System-wide control network analysis and firmware updates"
+  },
+  {
+    id: 6,
+    name: "Freeze Stat Problems",
+    priority: "High",
+    frequency: "36%",
+    schools: 4,
+    description: "Units tripping at abnormally warm temperatures (up to 58°F), causing system shutdowns",
+    recommendation: "Comprehensive inspection and recalibration of all freeze stats"
+  },
+  {
+    id: 7,
+    name: "Manual System Overrides",
+    priority: "Medium",
+    frequency: "64%",
+    schools: 7,
+    description: "Units manually deactivated or placed in inappropriate modes by staff, affecting system performance",
+    recommendation: "Staff education program and consideration of control lockouts"
+  },
+  {
+    id: 8,
+    name: "Daikin VRV/VRF Integration",
+    priority: "High",
+    frequency: "45%",
+    schools: 5,
+    description: "Daikin VRV/VRF systems not properly integrated with BMS or showing offline status",
+    recommendation: "Accelerated Daikin integration project before peak cooling season"
+  },
+  {
+    id: 9,
     name: "Filter Maintenance",
     priority: "Low",
-    frequency: "44%",
+    frequency: "36%",
     schools: 4,
-    description: "Filter alarms on multiple units",
+    description: "Filter alarms on multiple units (RTUs, AHUs)",
     recommendation: "Proactive filter replacement schedule aligned with manufacturer specs"
   }
 ];
@@ -510,16 +546,11 @@ const visitLogBySchool = {
       technician: "Rupert Chandool",
       duration: "3.50 hours",
       summary: [
-        "Logged into JACE successfully.",
-        "All devices were communicating properly, except for RTU-7.",
-        "Reviewed space temperature, discharge air temperature (DAT), and monitored for any abnormal readings.",
-        "Verified alarms and fault points – all clear, except for RTU-7.",
-        "Performed valve stroke tests (opened/closed) for all units.",
-        "Found RTU-7 showing offline status.",
-        "Attempted to reset the unit and ping the controller – no response.",
-        "Identified RTU-7 failure affecting 23 VAV boxes (no airflow to connected zones).",
-        "Recommended a mechanical contractor to troubleshoot RTU-7.",
-        "Station was saved and backed up."
+        "JACE Access & Device Status: Logged into JACE successfully. All devices were communicating properly, except for RTU-7.",
+        "System Checks: Reviewed space temperature, discharge air temperature (DAT), and monitored for any abnormal readings. Verified alarms and fault points – all clear, except for RTU-7. Performed valve stroke tests (opened/closed) for all units.",
+        "Issues Found - RTU-7: Showing offline status. Attempted to reset the unit and ping the controller – no response. RTU-7 failure affects 23 VAV boxes (no airflow to connected zones).",
+        "Recommendation: A mechanical contractor is required to troubleshoot RTU-7.",
+        "Final Actions: Station was saved and backed up."
       ]
     }
   ],
@@ -566,10 +597,10 @@ const visitLogBySchool = {
   ]
 };
 
-// Create monthly hours data for line chart
+// Create monthly hours data for line chart - updated to be accurate
 const monthlyHours = [
-  { month: "March", hours: 66.5 },
-  { month: "April", hours: 35.5 }
+  { month: "March", hours: 59.5 },
+  { month: "April", hours: 42.5 }
 ];
 
 // Create month + week data for heat calendar
@@ -643,7 +674,7 @@ const MetricsView = () => {
           <div className="text-sm font-medium text-gray-600">Total Visits</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">97</div>
+          <div className="text-3xl font-bold text-black">102</div>
           <div className="text-sm font-medium text-gray-600">Labor Hours</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
@@ -972,7 +1003,7 @@ const ExecutiveSummaryView = () => {
           <div className="text-sm font-medium text-gray-600">Visits</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">97</div>
+          <div className="text-3xl font-bold text-black">102</div>
           <div className="text-sm font-medium text-gray-600">Hours</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
@@ -984,16 +1015,19 @@ const ExecutiveSummaryView = () => {
       {/* Summary text */}
       <div className="bg-white p-6 rounded-lg shadow mb-8 border border-gray-200">
         <p className="mb-4 text-black">
-          Between March 3 and April 30, 2025, AME Inc. conducted <strong>24 maintenance visits</strong> across eleven Clifton Public School facilities, totaling <strong>97 labor hours</strong>. This bi-weekly maintenance program has provided consistent monitoring, troubleshooting, and seasonal transition services for the district's HVAC systems.
+          Between March 3 and April 30, 2025, AME Inc. conducted <strong>24 maintenance visits</strong> across eleven Clifton Public School facilities, totaling <strong>102 labor hours</strong>. This bi-weekly maintenance program has provided consistent monitoring, troubleshooting, and seasonal transition services for the district's HVAC systems.
         </p>
 
         <div className="mb-4">
           <h4 className="font-bold mb-2 text-black">Key Findings</h4>
           <ul className="list-disc pl-5 space-y-1 text-black">
+            <li><strong>RTU Communication Failures</strong> affecting ventilation and temperature control at multiple schools, most notably PS #17 where RTU-7 failure impacts 23 VAV boxes</li>
             <li><strong>Recurring freeze stat issues</strong>, particularly at Clifton High School, with triggers at abnormally high temperatures (up to 58°F)</li>
-            <li><strong>Building Automation System (JACE) challenges</strong> requiring regular intervention and optimization</li>
-            <li><strong>Daikin VRV/VRF integration gaps</strong> at multiple schools</li>
-            <li><strong>Manual system overrides</strong> by staff affecting system performance</li>
+            <li><strong>Building Automation System (JACE) challenges</strong> requiring regular intervention and optimization (100% CPU usage at PS #11)</li>
+            <li><strong>AHU Heating Valve Defects</strong> causing temperature control issues, especially at Early Learner Academy</li>
+            <li><strong>Daikin VRV/VRF integration gaps</strong> at multiple schools preventing full BMS functionality</li>
+            <li><strong>Manual system overrides</strong> by staff affecting system performance at 7 schools (64% of facilities)</li>
+            <li><strong>VAV damper flow issues</strong> causing airflow problems despite dampers at 100% position</li>
             <li><strong>Seasonal heating-to-cooling transition difficulties</strong></li>
           </ul>
         </div>
@@ -1002,11 +1036,14 @@ const ExecutiveSummaryView = () => {
           <h4 className="font-bold mb-2 text-black">Recommendations</h4>
           <p className="mb-2 text-black">Based on these observations, we recommend:</p>
           <ul className="list-disc pl-5 space-y-1 text-black">
-            <li>Immediate attention to freeze stat calibration district-wide</li>
-            <li>Formal staff training to prevent improper manual overrides</li>
-            <li>Development of a comprehensive Daikin integration plan to ensure all VRV/VRF systems are properly connected to building management systems before the cooling season begins in earnest</li>
-            <li>JACE system optimization at all locations following the successful model implemented at PS #11</li>
-            <li>Creation of standardized seasonal transition protocols</li>
+            <li>Schedule immediate mechanical contractor inspection for RTU communication failures, particularly at PS #17</li>
+            <li>Comprehensive inspection and recalibration of all freeze stats district-wide, especially at Clifton High School</li>
+            <li>Replace defective Honeywell ML7425A3013 valve actuators and repair valve body leaks</li>
+            <li>Replace all defective CVL4022AS controllers and associated thermostats at affected schools</li>
+            <li>Implement staff education program and consider control lockouts to prevent unauthorized equipment shutdowns</li>
+            <li>Accelerate Daikin VRV/VRF integration with BMS before peak cooling season at PS #9, PS #11, PS #3, PS #1, and PS #14</li>
+            <li>Perform JACE system optimization at all locations, following the successful CPU usage reduction at PS #11</li>
+            <li>Create standardized seasonal transition protocols to prevent boiler shutdowns and cooling startup issues</li>
           </ul>
         </div>
       </div>
@@ -1059,26 +1096,86 @@ const ExecutiveSummaryView = () => {
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
-              {issueData.filter(issue => issue.priority !== 'Low').map((issue, i) => (
-                <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-black">
-                    {issue.name}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
-                    <span className={`text-xs px-2 py-1 rounded font-medium
-                      ${issue.priority === 'High' ? 'bg-red-100 text-red-800' : 'bg-gray-200 text-gray-800'}`}
-                    >
-                      {issue.priority}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
-                    {issue.schools} ({issue.frequency})
-                  </td>
-                  <td className="px-6 py-4 text-sm text-gray-800">
-                    {issue.recommendation}
-                  </td>
-                </tr>
-              ))}
+              <tr className="bg-white">
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-black">
+                  RTU Communication Failures
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  <span className="text-xs px-2 py-1 rounded font-medium bg-red-100 text-red-800">
+                    High
+                  </span>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  3 (27%)
+                </td>
+                <td className="px-6 py-4 text-sm text-gray-800">
+                  Schedule immediate mechanical contractor inspection for all affected units
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-black">
+                  Freeze Stat Problems
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  <span className="text-xs px-2 py-1 rounded font-medium bg-red-100 text-red-800">
+                    High
+                  </span>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  4 (36%)
+                </td>
+                <td className="px-6 py-4 text-sm text-gray-800">
+                  Comprehensive inspection and recalibration of all freeze stats
+                </td>
+              </tr>
+              <tr className="bg-white">
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-black">
+                  AHU Heating Valve Defects
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  <span className="text-xs px-2 py-1 rounded font-medium bg-red-100 text-red-800">
+                    High
+                  </span>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  4 (36%)
+                </td>
+                <td className="px-6 py-4 text-sm text-gray-800">
+                  Replace defective Honeywell ML7425A3013 parts and repair valve bodies
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-black">
+                  Daikin VRV/VRF Integration
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  <span className="text-xs px-2 py-1 rounded font-medium bg-red-100 text-red-800">
+                    High
+                  </span>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  5 (45%)
+                </td>
+                <td className="px-6 py-4 text-sm text-gray-800">
+                  Accelerated Daikin integration project before peak cooling season
+                </td>
+              </tr>
+              <tr className="bg-white">
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-black">
+                  Manual System Overrides
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  <span className="text-xs px-2 py-1 rounded font-medium bg-gray-200 text-gray-800">
+                    Medium
+                  </span>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  7 (64%)
+                </td>
+                <td className="px-6 py-4 text-sm text-gray-800">
+                  Staff education program and consideration of control lockouts
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
