@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { LineChart, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Line } from 'recharts';
 import { Menu, X, Calendar, Map, Settings, Clock, BarChart2, FileText, AlertTriangle } from 'lucide-react';
 import Head from 'next/head';
@@ -654,8 +654,8 @@ const Footer = () => (
 );
 
 // Component for the school map using standard Google Maps markers with all 11 schools
-import EnhancedMapView from '../components/EnhancedMapView';
-const MapView = EnhancedMapView;
+import ClientSideMapView from '../components/ClientSideMapView';
+const MapView = ClientSideMapView;
 
 // Component for service metrics
 const MetricsView = () => {
@@ -917,11 +917,15 @@ const IssueAnalysisView = () => {
 };
 
 // Component for detailed visit logs
-const VisitLogView = () => {
-  const [expandedSchool, setExpandedSchool] = useState(null);
-
-  // Making setExpandedSchool globally accessible for the map component
-  window.setExpandedSchool = setExpandedSchool;
+const VisitLogView = ({ expandedSchoolName }) => {
+  const [expandedSchool, setExpandedSchool] = useState(expandedSchoolName);
+  
+  // Update expandedSchool when expandedSchoolName prop changes
+  useEffect(() => {
+    if (expandedSchoolName) {
+      setExpandedSchool(expandedSchoolName);
+    }
+  }, [expandedSchoolName]);
 
   return (
     <div>
@@ -1193,10 +1197,12 @@ export default function HVACServiceReport() {
   const [selectedSchool, setSelectedSchool] = useState(null);
   const [activeTab, setActiveTab] = useState('executive');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [expandedSchoolName, setExpandedSchoolName] = useState(null);
 
-  // Make setActiveTab globally accessible for the map component
-  window.setActiveTab = (tab) => {
-    setActiveTab(tab);
+  // Safe version that doesn't use window object for SSR compatibility
+  const handleViewSchoolDetails = (schoolName) => {
+    setActiveTab('visits');
+    setExpandedSchoolName(schoolName);
   };
 
   // Tab configuration
@@ -1315,11 +1321,15 @@ export default function HVACServiceReport() {
           {/* Tab content */}
           <div className="bg-white rounded-lg shadow p-6 border border-gray-200">
             {activeTab === 'executive' && <ExecutiveSummaryView />}
-            {activeTab === 'map' && <MapView selectedSchool={selectedSchool} setSelectedSchool={setSelectedSchool} setActiveTab={setActiveTab} setExpandedSchool={setExpandedSchool} />}
+            {activeTab === 'map' && <MapView 
+              selectedSchool={selectedSchool} 
+              setSelectedSchool={setSelectedSchool} 
+              handleViewSchoolDetails={handleViewSchoolDetails} 
+            />}
             {activeTab === 'metrics' && <MetricsView />}
             {activeTab === 'timeline' && <TimelineView />}
             {activeTab === 'issues' && <IssueAnalysisView />}
-            {activeTab === 'visits' && <VisitLogView />}
+            {activeTab === 'visits' && <VisitLogView expandedSchoolName={expandedSchoolName} />}
           </div>
         </div>
 

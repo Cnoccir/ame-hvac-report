@@ -133,7 +133,7 @@ const options = {
   ]
 };
 
-const EnhancedMapView = ({ selectedSchool, setSelectedSchool, setActiveTab, setExpandedSchool }) => {
+const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDetails }) => {
   const mapRef = useRef(null);
   const [center, setCenter] = useState({ lat: 40.873, lng: -74.163 }); // Clifton, NJ centered
   const [mapLoaded, setMapLoaded] = useState(false);
@@ -297,6 +297,9 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, setActiveTab, setE
     }, 100);
   }, [fitBounds]);
 
+  // Check if running on client-side before accessing window
+  const isClient = typeof window !== 'undefined';
+
   // Handle marker click
   const handleMarkerClick = (schoolId) => {
     setSelectedSchool(schoolId);
@@ -309,10 +312,10 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, setActiveTab, setE
     // Close the info window
     setSelectedSchool(null);
     
-    // If parent component provides these functions, use them to navigate
-    if (setActiveTab && setExpandedSchool) {
-      setActiveTab('visits');
-      setExpandedSchool(schoolData.find(s => s.id === schoolId)?.name);
+    // If parent component provides the handler, use it to navigate
+    if (handleViewSchoolDetails) {
+      const school = schoolData.find(s => s.id === schoolId);
+      handleViewSchoolDetails(school?.name);
     }
   };
 
@@ -360,7 +363,7 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, setActiveTab, setE
                   fontSize: '12px',
                   fontWeight: 'bold',
                 }}
-                animation={isLoaded ? window.google.maps.Animation.DROP : null}
+                animation={isClient && isLoaded ? window.google.maps.Animation.DROP : null}
                 zIndex={selectedSchool === school.id ? 1000 : 100}
               />
             );
@@ -375,7 +378,7 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, setActiveTab, setE
               }}
               onCloseClick={() => setSelectedSchool(null)}
               options={{
-                pixelOffset: new window.google.maps.Size(0, -30),
+                pixelOffset: isClient ? new window.google.maps.Size(0, -30) : null,
                 maxWidth: 320
               }}
             >
