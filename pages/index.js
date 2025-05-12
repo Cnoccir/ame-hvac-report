@@ -192,7 +192,7 @@ const issueData = [
   },
   {
     id: 2,
-    name: "AHU Heating Valve Defects",
+    name: "Heating Valve Defects",
     priority: "High",
     frequency: "36%",
     schools: 4,
@@ -210,7 +210,7 @@ const issueData = [
   },
   {
     id: 4,
-    name: "AHU Fan Failures",
+    name: "Fan Failures",
     priority: "High",
     frequency: "36%",
     schools: 4,
@@ -919,7 +919,7 @@ const IssueAnalysisView = () => {
 // Component for detailed visit logs
 const VisitLogView = ({ expandedSchoolName }) => {
   const [expandedSchool, setExpandedSchool] = useState(expandedSchoolName);
-  
+
   // Update expandedSchool when expandedSchoolName prop changes
   useEffect(() => {
     if (expandedSchoolName) {
@@ -1032,7 +1032,7 @@ const ExecutiveSummaryView = () => {
             <li><strong>RTU Communication Failures</strong> affecting ventilation and temperature control at multiple schools, most notably PS #17 where RTU-7 failure impacts 23 VAV boxes</li>
             <li><strong>Recurring freeze stat issues</strong>, particularly at Clifton High School, with triggers at abnormally high temperatures (up to 58°F)</li>
             <li><strong>Building Automation System (JACE) challenges</strong> requiring regular intervention and optimization (100% CPU usage at PS #11)</li>
-            <li><strong>AHU Heating Valve Defects</strong> causing temperature control issues, especially at Early Learner Academy</li>
+            <li><strong>Heating Valve Defects</strong> causing temperature control issues, especially at Early Learner Academy</li>
             <li><strong>Daikin VRV/VRF integration gaps</strong> at multiple schools preventing full BMS functionality</li>
             <li><strong>Manual system overrides</strong> by staff affecting system performance at 7 schools (64% of facilities)</li>
             <li><strong>VAV damper flow issues</strong> causing airflow problems despite dampers at 100% position</li>
@@ -1138,7 +1138,7 @@ const ExecutiveSummaryView = () => {
               </tr>
               <tr className="bg-white">
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-black">
-                  AHU Heating Valve Defects
+                  Heating Valve Defects
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
                   <span className="text-xs px-2 py-1 rounded font-medium bg-red-100 text-red-800">
@@ -1321,10 +1321,10 @@ export default function HVACServiceReport() {
           {/* Tab content */}
           <div className="bg-white rounded-lg shadow p-6 border border-gray-200">
             {activeTab === 'executive' && <ExecutiveSummaryView />}
-            {activeTab === 'map' && <MapView 
-              selectedSchool={selectedSchool} 
-              setSelectedSchool={setSelectedSchool} 
-              handleViewSchoolDetails={handleViewSchoolDetails} 
+            {activeTab === 'map' && <MapView
+              selectedSchool={selectedSchool}
+              setSelectedSchool={setSelectedSchool}
+              handleViewSchoolDetails={handleViewSchoolDetails}
             />}
             {activeTab === 'metrics' && <MetricsView />}
             {activeTab === 'timeline' && <TimelineView />}

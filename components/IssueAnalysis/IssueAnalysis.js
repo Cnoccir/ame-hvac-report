@@ -57,7 +57,7 @@ const criticalIssues = [
   },
   {
     id: 2,
-    title: 'AHU Heating Valve Defects',
+    title: 'Heating Valve Defects',
     priority: 'High',
     frequency: '36%',
     schools: 4,
@@ -83,7 +83,7 @@ const criticalIssues = [
   },
   {
     id: 4,
-    title: 'AHU Fan Failures',
+    title: 'Fan Failures',
     priority: 'High',
     frequency: '36%',
     schools: 4,

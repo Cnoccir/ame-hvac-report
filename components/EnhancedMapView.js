@@ -5,17 +5,17 @@ import { SERVICE_REPORTS } from '../utils/linkConfig';
 
 // Common issue types found at schools
 const commonIssues = {
-  1: ["Freeze Stat Problems", "AHU Fan Failures"], // High School
+  1: ["Freeze Stat Problems", "Fan Failures"], // High School
   2: ["Filter Maintenance"], // Stadium Weight Room
   3: ["RTU Communication Failures", "Daikin VRV/VRF Integration"], // PS #1
   4: ["Daikin VRV/VRF Integration"], // PS #3
   5: ["Freeze Stat Problems", "Manual System Overrides"], // PS #4
   6: ["Manual System Overrides"], // PS #5
   7: ["Daikin VRV/VRF Integration", "Manual System Overrides"], // PS #9
-  8: ["AHU Heating Valve Defects", "JACE System Management", "Manual System Overrides"], // PS #11
-  9: ["AHU Heating Valve Defects", "Daikin VRV/VRF Integration"], // PS #14
+  8: ["Heating Valve Defects", "JACE System Management", "Manual System Overrides"], // PS #11
+  9: ["Heating Valve Defects", "Daikin VRV/VRF Integration"], // PS #14
   10: ["RTU Communication Failures"], // PS #17
-  11: ["AHU Heating Valve Defects", "VAV Damper Flow Issues", "AHU Fan Failures"] // ELA
+  11: ["Heating Valve Defects", "VAV Damper Flow Issues", "Fan Failures"] // ELA
 };
 
 // Recent visits data for each school (up to 2 most recent visits)
