@@ -654,8 +654,8 @@ const Footer = () => (
 );
 
 // Component for the school map using standard Google Maps markers with all 11 schools
-import StandardMapView from '../components/StandardMapView';
-const MapView = StandardMapView;
+import EnhancedMapView from '../components/EnhancedMapView';
+const MapView = EnhancedMapView;
 
 // Component for service metrics
 const MetricsView = () => {
@@ -919,6 +919,9 @@ const IssueAnalysisView = () => {
 // Component for detailed visit logs
 const VisitLogView = () => {
   const [expandedSchool, setExpandedSchool] = useState(null);
+
+  // Making setExpandedSchool globally accessible for the map component
+  window.setExpandedSchool = setExpandedSchool;
 
   return (
     <div>
@@ -1191,6 +1194,11 @@ export default function HVACServiceReport() {
   const [activeTab, setActiveTab] = useState('executive');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // Make setActiveTab globally accessible for the map component
+  window.setActiveTab = (tab) => {
+    setActiveTab(tab);
+  };
+
   // Tab configuration
   const tabs = [
     { id: 'executive', label: 'Executive Summary', icon: <FileText size={16} /> },
@@ -1307,7 +1315,7 @@ export default function HVACServiceReport() {
           {/* Tab content */}
           <div className="bg-white rounded-lg shadow p-6 border border-gray-200">
             {activeTab === 'executive' && <ExecutiveSummaryView />}
-            {activeTab === 'map' && <MapView selectedSchool={selectedSchool} setSelectedSchool={setSelectedSchool} />}
+            {activeTab === 'map' && <MapView selectedSchool={selectedSchool} setSelectedSchool={setSelectedSchool} setActiveTab={setActiveTab} setExpandedSchool={setExpandedSchool} />}
             {activeTab === 'metrics' && <MetricsView />}
             {activeTab === 'timeline' && <TimelineView />}
             {activeTab === 'issues' && <IssueAnalysisView />}
