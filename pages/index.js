@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { LineChart, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Line } from 'recharts';
 import { Menu, X, Calendar, Map, Settings, Clock, BarChart2, FileText, AlertTriangle } from 'lucide-react';
 import Head from 'next/head';
+import { trackTabChange } from '../utils/analytics';
 
 // AME Inc. brand colors - updated to match your logo with more subtle tones
 const COLORS = {
@@ -1214,6 +1215,12 @@ export default function HVACServiceReport() {
     { id: 'issues', label: 'Issue Analysis', icon: <AlertTriangle size={16} /> },
     { id: 'visits', label: 'Visit Logs', icon: <Clock size={16} /> }
   ];
+  
+  // Handle tab change with analytics tracking
+  const handleTabChange = (tabId) => {
+    setActiveTab(tabId);
+    trackTabChange(tabId);
+  };
 
   return (
     <>
@@ -1284,7 +1291,7 @@ export default function HVACServiceReport() {
                         : 'text-gray-700 hover:bg-gray-50'
                     }`}
                     onClick={() => {
-                      setActiveTab(tab.id);
+                      handleTabChange(tab.id);
                       setIsMobileMenuOpen(false);
                     }}
                   >
@@ -1308,7 +1315,7 @@ export default function HVACServiceReport() {
                         ? 'border-red text-red'
                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                     }`}
-                    onClick={() => setActiveTab(tab.id)}
+                    onClick={() => handleTabChange(tab.id)}
                   >
                     <span>{tab.icon}</span>
                     <span>{tab.label}</span>

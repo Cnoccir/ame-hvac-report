@@ -2,6 +2,7 @@ import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { GoogleMap, useLoadScript, InfoWindow, Marker } from '@react-google-maps/api';
 import { X, FileText, AlertTriangle, Users, Clock, Navigation } from 'lucide-react';
 import { SERVICE_REPORTS } from '../utils/linkConfig';
+import { trackSchoolSelection, trackReportView } from '../utils/analytics';
 
 // Common issue types found at schools
 const commonIssues = {
@@ -302,9 +303,15 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
 
   // Handle marker click
   const handleMarkerClick = (schoolId) => {
+    const school = schoolData.find(s => s.id === schoolId);
     setSelectedSchool(schoolId);
     // Reset active tab to overview when selecting a new school
     setActiveInfoTab('overview');
+    
+    // Track school selection in analytics
+    if (school) {
+      trackSchoolSelection(school.name, school.id);
+    }
   };
 
   // Navigate to school details in visit logs
@@ -322,6 +329,14 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
   // Open service report in new window
   const openServiceReport = (jobNo) => {
     if (SERVICE_REPORTS[jobNo]) {
+      // Track report view
+      const schoolId = selectedSchool;
+      const school = schoolData.find(s => s.id === schoolId);
+      if (school) {
+        trackReportView(jobNo, school.name);
+      }
+      
+      // Open the report
       window.open(SERVICE_REPORTS[jobNo], '_blank');
     } else {
       alert(`Service report for job #${jobNo} not found.`);
