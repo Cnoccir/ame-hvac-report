@@ -27,17 +27,17 @@ import Subheading from '../ui/Subheading';
 
 // Data for all 11 schools with accurate names
 const schoolIssueData = [
-  { name: 'PS #1', issues: 3 },
-  { name: 'PS #3', issues: 2 },
-  { name: 'PS #4', issues: 2 },
+  { name: 'PS #1', issues: 4 },
+  { name: 'PS #3', issues: 3 },
+  { name: 'PS #4', issues: 3 },
   { name: 'PS #5', issues: 3 },
   { name: 'PS #9', issues: 4 },
-  { name: 'PS #11', issues: 5 },
+  { name: 'PS #11', issues: 6 },
   { name: 'PS #14', issues: 3 },
-  { name: 'PS #17', issues: 2 },
-  { name: 'Early Learner Academy', issues: 7 },
-  { name: 'High School', issues: 9 },
-  { name: 'Stadium Weight Room', issues: 1 },
+  { name: 'PS #17', issues: 3 },
+  { name: 'Early Learner Academy', issues: 9 },
+  { name: 'High School', issues: 10 },
+  { name: 'Stadium Weight Room', issues: 2 },
 ];
 
 // Updated critical issues data with accurate school names and all identified issues
@@ -53,7 +53,7 @@ const criticalIssues = [
     affectedEquipment: ['RTU-7 at PS #17 (affects 23 VAV boxes)', 'RTU-2 at PS #3 (Auditorium)', 'RTU-1, RTU-2, RTU-3 fan status issues at PS #1'],
     recommendation: 'Schedule immediate mechanical contractor inspection for all affected units.',
     type: 'connectivity',
-    visitRefs: ['211664-13788']
+    visitRefs: ['211664-13788', '210993-12967']
   },
   {
     id: 2,
@@ -79,7 +79,7 @@ const criticalIssues = [
     affectedEquipment: ['VAV04, VAV10, VAV12, VAV14, VAV16, VAV18, VAV20 at Early Learner Academy'],
     recommendation: 'Replace all defective CVL4022AS controllers and associated thermostats.',
     type: 'airflow',
-    visitRefs: ['210965-12939', '210972-12946']
+    visitRefs: ['210965-12939', '210972-12946', '210837-12811', '205988-12762']
   },
   {
     id: 4,
@@ -92,20 +92,20 @@ const criticalIssues = [
     affectedEquipment: ['AHU-3 return and supply fans at Early Learner Academy', 'UV_RM09_EF at PS #11 (needs new motor)', 'UV fans at High School', 'AC-1 at PS #4'],
     recommendation: 'Comprehensive mechanical service for bearing replacement and fan alignment.',
     type: 'mechanical',
-    visitRefs: ['210972-12946']
+    visitRefs: ['210972-12946', '210957-12931', '210976-12950']
   },
   {
     id: 5,
     title: 'JACE System Management',
     priority: 'Medium',
-    frequency: '27%',
-    schools: 3,
+    frequency: '36%',
+    schools: 4,
     description: 'JACE system showing communication gaps with certain devices and controllers. PS #11 experienced 100% CPU usage.',
-    impact: 'Affects 3 schools (PS #17, PS #11, High School)',
+    impact: 'Affects 4 schools (PS #17, PS #11, High School, PS #3)',
     affectedEquipment: ['JACE controllers at affected schools'],
     recommendation: 'System-wide control network analysis and firmware updates.',
     type: 'system',
-    visitRefs: ['211664-13788', '210968-12942']
+    visitRefs: ['211664-13788', '210968-12942', '210966-12940', '210964-12938']
   },
   {
     id: 6,
@@ -118,7 +118,7 @@ const criticalIssues = [
     affectedEquipment: ['Multiple UV units at High School (UVN_311, UVN_309b, UVN_218_Ftr, UVS313_EF, UVE205_EF, UVE207_EF, UVE209_EF, UVE211_EF, UVE305_EF)', 'AC1 at PS #4'],
     recommendation: 'Comprehensive inspection and recalibration of all freeze stats. D&B to schedule Daikin unit inspection.',
     type: 'temperature',
-    visitRefs: ['210966-12940', '210973-12947', '210958-12932']
+    visitRefs: ['210966-12940', '210973-12947', '210958-12932', '210955-12929']
   },
   {
     id: 7,
@@ -145,6 +145,19 @@ const criticalIssues = [
     recommendation: 'Accelerated Daikin integration project before peak cooling season.',
     type: 'integration',
     visitRefs: ['210961-12935', '210957-12931', '210964-12938', '210978-12952', '210991-12965']
+  },
+  {
+    id: 9,
+    title: 'Chiller Faults',
+    priority: 'High',
+    frequency: '18%',
+    schools: 2,
+    description: 'Chiller units experiencing operational faults including pump overload and startup issues.',
+    impact: 'Affects Early Learner Academy and High School thermal comfort',
+    affectedEquipment: ['Chiller at Early Learner Academy (pump overload)', 'Chillers at AHU-4 (not running despite cooling request)'],
+    recommendation: 'Comprehensive mechanical inspection of chiller systems and pumps.',
+    type: 'mechanical',
+    visitRefs: ['210983-12957', '210972-12946']
   }
 ];
 

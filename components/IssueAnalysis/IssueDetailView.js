@@ -239,29 +239,134 @@ const visitLogData = {
       'Brought Classroom 210 unit back online.'
     ]
   },
-  '210991-12965': {
-    jobNo: '210991-12965',
+  '210983-12957': {
+    jobNo: '210983-12957',
     customerName: 'CLIFTON BOARD OF EDUCATION',
-    siteName: 'Clifton Public School #14',
-    address: '99 Saint Andrews Blvd, Clifton NJ 07013',
+    siteName: 'Clifton Early Learner Academy',
+    address: '290 Brighton Road, Clifton NJ 07012',
+    serviceDate: '05/07/2025',
+    technician: 'Richard Bhajan',
+    workCompleted: [
+      'Performed JACE backup and garbage collection.',
+      'Checked and cleared system alarms.',
+      'Conducted functional testing on all units.'
+    ],
+    issuesFound: [
+      'Chiller experiencing faults twice daily due to pump overload.',
+      'AHU systems maintaining setpoints but with ongoing issues identified in previous visits.'
+    ],
+    recommendations: [
+      'Mechanical contractor follow-up needed for chiller pump issues.',
+      'Continued monitoring of AHU systems with previously identified issues.'
+    ],
+    finalActions: [
+      'Completed system backup and documented issues for follow-up.'
+    ]
+  },
+  '210993-12967': {
+    jobNo: '210993-12967',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton Public School #3',
+    address: '365 Washington Avenue, Clifton NJ 07011',
     serviceDate: '04/30/2025',
     technician: 'Rupert Chandool',
     workCompleted: [
-      'Logged into the JACE and verified communication across all devices — all were functioning correctly.',
-      'Reviewed space temperatures, discharge air temperatures (DAT), and checked for alarms or fault points.',
-      'Stroked valves open and closed for all units to verify operational status.'
+      'JACE login and communication verification.',
+      'Space temperature and alarm review.',
+      'Valve actuation testing.'
     ],
     issuesFound: [
-      'Identified high temperatures (~80°F) in Rooms 120, 122, and 124.',
-      'VRF system settings needed adjustment for proper cooling.'
+      'RTU-2 (Auditorium) with airflow fault and filter alarms.',
+      'Filter alarms on RTU-1 (Gym) and RTU-3 (Auditorium).',
+      'Steam boiler off due to lack of demand.'
     ],
     recommendations: [
-      'Update Daikin thermostat settings to appropriate modes for optimal cooling.'
+      'Reset RTU-2 to address airflow fault.',
+      'Schedule filter replacement for RTU-1 and RTU-3.'
     ],
     finalActions: [
-      'Troubleshot the VRF system by reviewing and adjusting settings, ensuring all units were cooling properly.',
-      'Updated Daikin thermostat settings to appropriate modes for optimal cooling.',
-      'Backed up and saved the station after completing all checks and adjustments.'
+      'Reset RTU-2 to resolve immediate issues.',
+      'Verified steam boiler status as normal for season.'
+    ]
+  },
+  '210955-12929': {
+    jobNo: '210955-12929',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton High School',
+    address: '333 Colfax Avenue, Clifton NJ 07013',
+    serviceDate: '03/03/2025',
+    technician: 'Rupert Chandool',
+    workCompleted: [
+      'Complete JACE communication check.',
+      'Review of all space temperatures, DAT, and alarm points.',
+      'Stroke testing of all valves.'
+    ],
+    issuesFound: [
+      'Multiple offline equipment (ERU_A28, ERU_G5, ERU_G16C).',
+      'UV_G21_EF with no power.',
+      'Multiple units requiring freeze stat resets.',
+      'Hot water valve issue with UV_C313_EF (valve remains closed despite discharge temp over 100°F).'
+    ],
+    recommendations: [
+      'Construction team to investigate valve issue.',
+      'Restore power to UV_G21_EF.',
+      'Comprehensive freeze stat inspection to prevent frequent trips.'
+    ],
+    finalActions: [
+      'Reset units with freeze stat trips.',
+      'Notified construction team about valve issue.'
+    ]
+  },
+  '210837-12811': {
+    jobNo: '210837-12811',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton Early Learner Academy',
+    address: '290 Brighton Road, Clifton NJ 07012',
+    serviceDate: '02/19/2025',
+    technician: 'Rupert Chandool',
+    workCompleted: [
+      'Conducted full Jace system check.',
+      'Space temperature and alarm verification.',
+      'Valve operation testing.'
+    ],
+    issuesFound: [
+      'Issues with AHU-3 and AHU-4 (fail alarms).',
+      'Multiple VAV damper operation problems.',
+      'Reheat valve issue in Girl\'s Locker Room.'
+    ],
+    recommendations: [
+      'Create comprehensive VAV controller replacement plan.',
+      'Schedule mechanical inspection for AHU-3 and AHU-4.',
+      'Verify reheat valve operation in Girl\'s Locker Room.'
+    ],
+    finalActions: [
+      'Created comprehensive recommendations list.',
+      'Backed up Jace system.'
+    ]
+  },
+  '205988-12762': {
+    jobNo: '205988-12762',
+    customerName: 'CLIFTON BOARD OF EDUCATION',
+    siteName: 'Clifton Early Learner Academy',
+    address: '290 Brighton Road, Clifton NJ 07012',
+    serviceDate: '07/24/2024',
+    technician: 'Richard Bhajan',
+    workCompleted: [
+      'VAV controller assessment.',
+      'Space temperature verification.',
+      'System diagnostic checks.'
+    ],
+    issuesFound: [
+      'Controller issues with VAV boxes 10, 16, and 18.',
+      'VAV 15 showing incorrect room temperature (100°F).',
+      'Multiple VAV units with improper damper operation.'
+    ],
+    recommendations: [
+      'Replace all affected controllers with CVL4022AS models.',
+      'Document specific issues for scheduled follow-up.'
+    ],
+    finalActions: [
+      'Created detailed documentation of VAV issues for future service visits.'
     ]
   }
 };

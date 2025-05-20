@@ -4,15 +4,6 @@ import { Menu, X, Calendar, Map, Settings, Clock, BarChart2, FileText, AlertTria
 import Head from 'next/head';
 import { trackTabChange } from '../utils/analytics';
 
-// Import AME Logo component
-import AmeLogo from '../components/AmeLogo';
-import { SCHOOL_IMAGES, DOCUMENTATION } from '../utils/linkConfig';
-import ClientSideMapView from '../components/ClientSideMapView';
-
-// Import components
-import IssueAnalysis from '../components/IssueAnalysis';
-import InventorySummary from '../components/InventorySummary';
-
 // AME Inc. brand colors - updated to match your logo with more subtle tones
 const COLORS = {
   black: "#000000",
@@ -950,12 +941,16 @@ const SectionTitle = ({ children }) => (
 );
 
 const SectionSubtitle = ({ children }) => (
-  <p className="text-sm text-gray-600 mb-4">July 2024-May 2025 | Clifton Public Schools</p>
+  <p className="text-sm text-gray-600 mb-4">March-April 2025 | Clifton Public Schools</p>
 );
 
 const Subheading = ({ children }) => (
   <h4 className="font-bold text-base mb-2 text-black">{children}</h4>
 );
+
+// Import AME Logo component
+import AmeLogo from '../components/AmeLogo';
+import { SCHOOL_IMAGES, DOCUMENTATION } from '../utils/linkConfig';
 
 // Footer Component
 const Footer = () => (
@@ -971,6 +966,7 @@ const Footer = () => (
 );
 
 // Component for the school map using standard Google Maps markers with all 11 schools
+import ClientSideMapView from '../components/ClientSideMapView';
 const MapView = ClientSideMapView;
 
 // Component for service metrics
@@ -1019,7 +1015,7 @@ const MetricsView = () => {
         </div>
       </div>
 
-      {/* Monthly hours comparison */}
+      {/* March vs April hours comparison */}
       <div className="mb-8">
         <Subheading>Monthly Service Hours</Subheading>
         <div className="bg-white p-4 rounded-lg shadow h-64 border border-gray-200">
@@ -1073,7 +1069,7 @@ const MetricsView = () => {
                     {tech.hours}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
-                    {Math.round((tech.hours / 236.5) * 100)}%
+                    {Math.round((tech.hours / 102) * 100)}%
                   </td>
                 </tr>
               ))}
@@ -1154,10 +1150,10 @@ const TimelineView = () => {
       {/* Service intensity calendar */}
       <div className="bg-white rounded-lg shadow p-4 mb-6 border border-gray-200">
         <Subheading>Service Intensity Calendar</Subheading>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {calendarData.map((monthData, idx) => (
             <div key={idx} className="border rounded p-2">
-              <h5 className="font-medium text-center mb-2">{monthData.month}</h5>
+              <h5 className="font-medium text-center mb-2">{monthData.month} 2025</h5>
               <div className="grid grid-cols-1 gap-2">
                 {Object.entries(monthData.weeks).map(([week, hours], i) => (
                   <div key={i} className="flex items-center">
@@ -1211,7 +1207,7 @@ const TimelineView = () => {
                       </span>
                     </div>
                     <div className="text-sm text-gray-600 mt-1">
-                      Technician: {visit.tech} {visit.remote && <span className="text-blue-600">(Remote Support)</span>}
+                      Technician: {visit.tech}
                     </div>
                   </div>
                 </div>
@@ -1222,6 +1218,15 @@ const TimelineView = () => {
       </div>
     </div>
   );
+};
+
+// Import components
+import IssueAnalysis from '../components/IssueAnalysis';
+import InventorySummary from '../components/InventorySummary';
+
+// Component for issue analysis - now using our updated component
+const IssueAnalysisView = () => {
+  return <IssueAnalysis />;
 };
 
 // Component for detailed visit logs
@@ -1304,26 +1309,225 @@ const ExecutiveSummaryView = () => {
         </div>
         <div className="bg-gray-100 p-3 rounded border-l-4 border-red">
           <div className="text-xl font-bold text-black">HVAC SERVICE REPORT</div>
+          <div className="text-sm text-gray-600">July 2024 - May 2025</div>
           <div className="text-sm text-gray-600">Generated: May 8, 2025</div>
         </div>
       </div>
 
-      {/* Summary statistics cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-        <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">11</div>
-          <div className="text-sm font-medium text-gray-600">Schools</div>
+      {/* Executive summary text */}
+      <div className="bg-white p-5 rounded-lg shadow mb-6 border border-gray-200">
+        <p className="mb-4">
+          A.M.E. Inc. has been providing comprehensive HVAC building automation maintenance services to the Clifton Board of Education across multiple school facilities. This report summarizes the maintenance activities conducted from July 2024 through May 2025, encompassing both on-site visits and remote technical support services.
+        </p>
+        
+        <p className="mb-4">
+          Our maintenance program includes:
+        </p>
+        
+        <ul className="list-disc pl-5 mb-4 text-gray-800 space-y-1">
+          <li>Regular Bi-Weekly and Quarterly Maintenance Visits: Scheduled on-site technical support covering all aspects of the building automation systems.</li>
+          <li>Remote Advanced Technical Support (8 hours per site): Providing high-level technical assistance including system performance analysis, troubleshooting guidance for technicians, and remote system optimization.</li>
+          <li>Emergency Response Support: Addressing critical issues as they arise to minimize system downtime.</li>
+        </ul>
+        
+        <p className="mb-4">
+          The maintenance services have successfully maintained proper operation of the Niagara JACE controllers, BACnet/MSTP networks, and associated HVAC equipment across all facilities. Our technicians have resolved numerous issues including freeze stat alarms, communication failures, valve operation problems, and controller malfunctions.
+        </p>
+        
+        <div className="mt-5">
+          <div className="font-medium text-black mb-2">Key Service Metrics:</div>
+          <ul className="list-disc pl-5 text-gray-800 space-y-1">
+            <li>Total On-Site Hours: 148.5</li>
+            <li>Total Remote Support Hours: 88.0</li>
+            <li>Total Combined Service Hours: 236.5</li>
+            <li>Total Site Visits: 34</li>
+            <li>Remote Support Sessions: 11</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Service table */}
+      <div className="bg-white rounded-lg shadow overflow-hidden border border-gray-200 mb-6">
+        <div className="px-4 py-3 border-b border-gray-200 bg-gray-50">
+          <h3 className="text-base font-medium text-black">Service Metrics by Facility</h3>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="min-w-full divide-y divide-gray-200">
+            <thead className="bg-gray-100">
+              <tr>
+                <th scope="col" className="px-4 py-3 text-left text-xs font-bold text-black uppercase">School Facility</th>
+                <th scope="col" className="px-4 py-3 text-center text-xs font-bold text-black uppercase">Remote Support Hours</th>
+                <th scope="col" className="px-4 py-3 text-center text-xs font-bold text-black uppercase">On-Site Service Hours</th>
+                <th scope="col" className="px-4 py-3 text-center text-xs font-bold text-black uppercase">Total Hours</th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-gray-200">
+              <tr>
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton Early Learner Academy</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">26.5</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">34.5</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton HS</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">29.5</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">37.5</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton Public School #1</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">16</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton Public School #11</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">15.5</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">23.5</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton Public School #14</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">7</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">15</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton Public School #17</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">11</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">19</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton Public School #3</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8.5</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">16.5</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton Public School #4</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">12.5</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">20.5</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton Public School #5</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">9</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">17</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton Public School #9</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">16</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2 text-sm text-gray-900">Clifton Stadium Weight Room</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">8</td>
+                <td className="px-4 py-2 text-sm text-center text-gray-900">12.5</td>
+                <td className="px-4 py-2 text-sm text-center font-medium text-gray-900">20.5</td>
+              </tr>
+              <tr className="bg-gray-50 font-medium">
+                <td className="px-4 py-2 text-sm text-black">TOTAL HOURS</td>
+                <td className="px-4 py-2 text-sm text-center text-black">88</td>
+                <td className="px-4 py-2 text-sm text-center text-black">148.5</td>
+                <td className="px-4 py-2 text-sm text-center text-black">236.5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Remote support details */}
+      <div className="bg-white p-5 rounded-lg shadow mb-6 border border-gray-200">
+        <h3 className="font-medium text-black mb-3">Remote Support Services Detail</h3>
+        <p className="mb-3">
+          Each facility receives 8 hours of dedicated remote advanced technical support, which includes:
+        </p>
+        <ul className="list-disc pl-5 mb-3 text-gray-800 space-y-1">
+          <li>Advanced System Diagnostics: Utilizing Niagara's diagnostic tools (CPU usage monitoring, memory optimization, engine hog analysis, and application thread monitoring)</li>
+          <li>Technical Guidance for On-Site Technicians: Providing expertise on complex issues via remote consultation</li>
+          <li>System Performance Analysis: Monitoring and optimizing BACnet poll schedulers, tuning policies, and subscription models</li>
+          <li>Software Optimization: Implementing best practices for system configuration</li>
+          <li>Backup Management: Ensuring proper station backups are maintained</li>
+          <li>Schedule Import/Export Verification: Preventing communication errors between supervisory and subordinate stations</li>
+          <li>Watchdog Monitoring: Preventing system failures due to engine thread lockups</li>
+        </ul>
+        <p className="text-sm text-gray-600 italic">
+          This advanced remote support leverages Tridium best practices for optimizing and troubleshooting Niagara applications as outlined in industry standards.
+        </p>
+      </div>
+
+      {/* Common issues */}
+      <div className="bg-white p-5 rounded-lg shadow mb-6 border border-gray-200">
+        <h3 className="font-medium text-black mb-3">Common Issues Addressed</h3>
+        
+        <div className="mb-3">
+          <h4 className="text-sm font-medium text-black mb-1">System Communication Problems</h4>
+          <ul className="list-disc pl-5 text-sm text-gray-800 space-y-1">
+            <li>BACnet connectivity failures</li>
+            <li>JACE communication issues</li>
+            <li>Daikin D-BACS/VRV system integration problems</li>
+          </ul>
+        </div>
+        
+        <div className="mb-3">
+          <h4 className="text-sm font-medium text-black mb-1">Controller Malfunctions</h4>
+          <ul className="list-disc pl-5 text-sm text-gray-800 space-y-1">
+            <li>Freeze stat alarms and resets</li>
+            <li>Valve operation failures</li>
+            <li>Fan status monitoring issues</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 className="text-sm font-medium text-black mb-1">Performance Optimization</h4>
+          <ul className="list-disc pl-5 text-sm text-gray-800 space-y-1">
+            <li>CPU usage management</li>
+            <li>Memory optimization</li>
+            <li>Poll scheduler adjustments</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Recommendations */}
+      <div className="bg-white p-5 rounded-lg shadow border border-gray-200">
+        <h3 className="font-medium text-black mb-3">Recommendations for System Improvement</h3>
+        <p className="mb-3">Based on our maintenance findings, we recommend the following system improvements:</p>
+        
+        <ul className="list-disc pl-5 mb-4 text-gray-800 space-y-2">
+          <li className="font-medium">Controller Upgrades: <span className="font-normal">Replace aging Honeywell XL10 controllers at CELA with CVL4022AS models to resolve ongoing VAV issues.</span></li>
+          <li className="font-medium">Freeze Stat Calibration: <span className="font-normal">Comprehensive review and calibration of freeze stats at Clifton HS to prevent nuisance alarms.</span></li>
+          <li className="font-medium">JACE Optimization: <span className="font-normal">Implement CPU and memory optimization for JACEs showing high resource utilization.</span></li>
+          <li className="font-medium">Watchdog Monitoring: <span className="font-normal">Implement enhanced system monitoring using Niagara's watchdog capabilities to prevent system lockups.</span></li>
+          <li className="font-medium">Mechanical System Coordination: <span className="font-normal">Schedule coordination with mechanical contractors to address persistent issues with:
+            <ul className="list-disc pl-5 mt-1 ml-2 text-gray-800 space-y-1">
+              <li>AHU-3 at Clifton Early Learner Academy (heating valve and supply fan)</li>
+              <li>Chiller at Clifton Early Learner Academy (pump overload)</li>
+              <li>RTU-7 at School #17 (offline status)</li>
+            </ul>
+          </span></li>
+        </ul>
+        
+        <p className="text-sm text-gray-800">
+          By implementing these recommendations, we can ensure continued system reliability and optimal performance across all facilities.
+        </p>
+      </div>
+    </div>
+  );
+};
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">45</div>
+          <div className="text-3xl font-bold text-black">24</div>
           <div className="text-sm font-medium text-gray-600">Visits</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">236.5</div>
+          <div className="text-3xl font-bold text-black">102</div>
           <div className="text-sm font-medium text-gray-600">Hours</div>
         </div>
         <div className="bg-white p-4 rounded-lg shadow text-center border-t-4 border-red">
-          <div className="text-3xl font-bold text-black">5</div>
+          <div className="text-3xl font-bold text-black">4</div>
           <div className="text-sm font-medium text-gray-600">Technicians</div>
         </div>
       </div>
@@ -1331,7 +1535,7 @@ const ExecutiveSummaryView = () => {
       {/* Summary text */}
       <div className="bg-white p-6 rounded-lg shadow mb-8 border border-gray-200">
         <p className="mb-4 text-black">
-          Between July 2024 and May 2025, AME Inc. conducted <strong>45 maintenance visits</strong> across eleven Clifton Public School facilities, totaling <strong>236.5 labor hours</strong>. This included 34 on-site visits (148.5 hours) and 11 remote advanced technical support sessions (88 hours). This maintenance program has provided consistent monitoring, troubleshooting, and seasonal transition services for the district's HVAC systems.
+          Between March 3 and April 30, 2025, AME Inc. conducted <strong>24 maintenance visits</strong> across eleven Clifton Public School facilities, totaling <strong>102 labor hours</strong>. This bi-weekly maintenance program has provided consistent monitoring, troubleshooting, and seasonal transition services for the district's HVAC systems.
         </p>
 
         <div className="mb-4">
@@ -1345,12 +1549,12 @@ const ExecutiveSummaryView = () => {
             <li><strong>Manual system overrides</strong> by staff affecting system performance at 7 schools (64% of facilities)</li>
             <li><strong>VAV damper flow issues</strong> causing airflow problems despite dampers at 100% position</li>
             <li><strong>Seasonal heating-to-cooling transition difficulties</strong></li>
-            <li><strong>Chiller faults</strong> at Early Learner Academy with pump overload occurring twice daily</li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-bold mb-2 text-black">Recommendations</h4>
+          <p className="mb-2 text-black">Based on these observations, we recommend:</p>
           <ul className="list-disc pl-5 space-y-1 text-black">
             <li>Schedule immediate mechanical contractor inspection for RTU communication failures, particularly at PS #17</li>
             <li>Comprehensive inspection and recalibration of all freeze stats district-wide, especially at Clifton High School</li>
@@ -1360,7 +1564,6 @@ const ExecutiveSummaryView = () => {
             <li>Accelerate Daikin VRV/VRF integration with BMS before peak cooling season at PS #9, PS #11, PS #3, PS #1, and PS #14</li>
             <li>Perform JACE system optimization at all locations, following the successful CPU usage reduction at PS #11</li>
             <li>Create standardized seasonal transition protocols to prevent boiler shutdowns and cooling startup issues</li>
-            <li>Schedule mechanical inspection for chiller pump issues at Early Learner Academy</li>
           </ul>
         </div>
       </div>
@@ -1458,7 +1661,7 @@ const ExecutiveSummaryView = () => {
                   4 (36%)
                 </td>
                 <td className="px-6 py-4 text-sm text-gray-800">
-                  Replace defective Honeywell ML7425A3013 parts
+                  Replace defective Honeywell ML7425A3013 parts and repair valve bodies
                 </td>
               </tr>
               <tr className="bg-gray-50">
@@ -1474,7 +1677,7 @@ const ExecutiveSummaryView = () => {
                   5 (45%)
                 </td>
                 <td className="px-6 py-4 text-sm text-gray-800">
-                  Accelerate BMS integration project before peak cooling season
+                  Accelerated Daikin integration project before peak cooling season
                 </td>
               </tr>
               <tr className="bg-white">
@@ -1482,7 +1685,7 @@ const ExecutiveSummaryView = () => {
                   Manual System Overrides
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
-                  <span className="text-xs px-2 py-1 rounded font-medium bg-blue-100 text-blue-800">
+                  <span className="text-xs px-2 py-1 rounded font-medium bg-gray-200 text-gray-800">
                     Medium
                   </span>
                 </td>
@@ -1490,23 +1693,7 @@ const ExecutiveSummaryView = () => {
                   7 (64%)
                 </td>
                 <td className="px-6 py-4 text-sm text-gray-800">
-                  Staff education program and control lockouts
-                </td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-black">
-                  Chiller Faults
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
-                  <span className="text-xs px-2 py-1 rounded font-medium bg-red-100 text-red-800">
-                    High
-                  </span>
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
-                  1 (9%)
-                </td>
-                <td className="px-6 py-4 text-sm text-gray-800">
-                  Mechanical inspection of pump overload issues
+                  Staff education program and consideration of control lockouts
                 </td>
               </tr>
             </tbody>
@@ -1592,74 +1779,81 @@ export default function HVACServiceReport() {
               <AmeLogo size="small" />
               <h1 className="ml-4 text-xl font-bold uppercase">Clifton Public Schools HVAC Analysis</h1>
             </div>
-            <div className="text-sm">July 2024 - May 2025</div>
+            <div className="text-sm">March-April 2025</div>
             <button
               className="md:hidden p-2 rounded border border-white"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              <Menu size={20} />
+              <Menu size={20} color="white" />
             </button>
           </div>
         </header>
 
-        {/* Mobile menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-b shadow-sm">
-            <div className="max-w-7xl mx-auto py-2 px-4">
-              <div className="flex flex-col space-y-2">
-                {tabs.map((tab) => (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          {/* Mobile navigation menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden mb-4 bg-white rounded-lg shadow border border-gray-200">
+              <div className="p-2 space-y-1">
+                {tabs.map(tab => (
                   <button
                     key={tab.id}
-                    className={`flex items-center px-3 py-2 text-sm rounded ${
-                      activeTab === tab.id ? 'bg-gray-100 text-black font-medium' : 'text-gray-600'
+                    className={`w-full px-3 py-2 rounded-md text-left flex items-center space-x-2 ${
+                      activeTab === tab.id
+                        ? 'bg-red-50 text-red font-medium'
+                        : 'text-gray-700 hover:bg-gray-50'
                     }`}
                     onClick={() => {
                       handleTabChange(tab.id);
                       setIsMobileMenuOpen(false);
                     }}
                   >
-                    <span className="mr-2">{tab.icon}</span>
-                    {tab.label}
+                    <span>{tab.icon}</span>
+                    <span>{tab.label}</span>
                   </button>
                 ))}
               </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* Tab navigation */}
-        <div className="hidden md:block bg-white border-b">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex space-x-4">
-              {tabs.map((tab) => (
-                <button
-                  key={tab.id}
-                  className={`flex items-center px-3 py-4 text-sm border-b-2 ${
-                    activeTab === tab.id
-                      ? 'border-red text-black font-medium'
-                      : 'border-transparent text-gray-600 hover:text-black hover:border-gray-300'
-                  }`}
-                  onClick={() => handleTabChange(tab.id)}
-                >
-                  <span className="mr-2">{tab.icon}</span>
-                  {tab.label}
-                </button>
-              ))}
+          {/* Desktop tabs */}
+          <div className="hidden md:block mb-6">
+            <div className="border-b border-gray-200">
+              <nav className="flex -mb-px space-x-6">
+                {tabs.map(tab => (
+                  <button
+                    key={tab.id}
+                    className={`pb-3 px-1 border-b-2 font-medium text-sm flex items-center space-x-2 ${
+                      activeTab === tab.id
+                        ? 'border-red text-red'
+                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                    }`}
+                    onClick={() => handleTabChange(tab.id)}
+                  >
+                    <span>{tab.icon}</span>
+                    <span>{tab.label}</span>
+                  </button>
+                ))}
+              </nav>
             </div>
+          </div>
+
+          {/* Tab content */}
+          <div className="bg-white rounded-lg shadow p-6 border border-gray-200">
+            {activeTab === 'executive' && <ExecutiveSummaryView />}
+            {activeTab === 'map' && <MapView
+              selectedSchool={selectedSchool}
+              setSelectedSchool={setSelectedSchool}
+              handleViewSchoolDetails={handleViewSchoolDetails}
+            />}
+            {activeTab === 'metrics' && <MetricsView />}
+            {activeTab === 'timeline' && <TimelineView />}
+            {activeTab === 'issues' && <IssueAnalysisView />}
+            {activeTab === 'inventory' && <InventorySummary />}
+            {activeTab === 'visits' && <VisitLogView expandedSchoolName={expandedSchoolName} />}
           </div>
         </div>
 
-        {/* Main content */}
-        <main className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          {activeTab === 'executive' && <ExecutiveSummaryView />}
-          {activeTab === 'map' && <MapView schools={schoolData} onSchoolSelect={handleViewSchoolDetails} />}
-          {activeTab === 'metrics' && <MetricsView />}
-          {activeTab === 'timeline' && <TimelineView />}
-          {activeTab === 'issues' && <IssueAnalysis />}
-          {activeTab === 'inventory' && <InventorySummary />}
-          {activeTab === 'visits' && <VisitLogView expandedSchoolName={expandedSchoolName} />}
-        </main>
-
+        {/* Footer */}
         <Footer />
       </div>
     </>
