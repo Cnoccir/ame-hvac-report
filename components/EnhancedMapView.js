@@ -259,7 +259,9 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
   // Load Google Maps script
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: "AIzaSyDOumlpWCle5-E5gauUJAKjey9k0VYSdr4",
-    version: "weekly"
+    version: "weekly",
+    language: "en",
+    region: "US"
   });
 
   // Center map to fit all schools
@@ -315,33 +317,43 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
   };
 
   // Navigate to school details in visit logs
-  const viewSchoolDetails = (schoolId) => {
-    // Close the info window
-    setSelectedSchool(null);
-    
-    // If parent component provides the handler, use it to navigate
-    if (handleViewSchoolDetails) {
-      const school = schoolData.find(s => s.id === schoolId);
-      handleViewSchoolDetails(school?.name);
+  const viewSchoolDetails = useCallback((schoolId) => {
+    try {
+      // Close the info window
+      setSelectedSchool(null);
+      
+      // If parent component provides the handler, use it to navigate
+      if (typeof handleViewSchoolDetails === 'function') {
+        const school = schoolData.find(s => s.id === schoolId);
+        if (school) {
+          handleViewSchoolDetails(school.name);
+        }
+      }
+    } catch (err) {
+      console.error("Error viewing school details:", err);
     }
-  };
+  }, [handleViewSchoolDetails, schoolData, setSelectedSchool]);
 
   // Open service report in new window
-  const openServiceReport = (jobNo) => {
+  const openServiceReport = useCallback((jobNo) => {
     if (SERVICE_REPORTS[jobNo]) {
-      // Track report view
-      const schoolId = selectedSchool;
-      const school = schoolData.find(s => s.id === schoolId);
-      if (school) {
-        trackReportView(jobNo, school.name);
+      try {
+        // Track report view
+        const schoolId = selectedSchool;
+        const school = schoolData.find(s => s.id === schoolId);
+        if (school) {
+          trackReportView(jobNo, school.name);
+        }
+        
+        // Open the report
+        window.open(SERVICE_REPORTS[jobNo], '_blank');
+      } catch (err) {
+        console.error("Error opening service report:", err);
       }
-      
-      // Open the report
-      window.open(SERVICE_REPORTS[jobNo], '_blank');
     } else {
-      alert(`Service report for job #${jobNo} not found.`);
+      console.warn(`Service report for job #${jobNo} not found.`);
     }
-  };
+  }, [selectedSchool, schoolData]);
 
   // Handle rendering errors
   if (loadError) return <div className="p-4 text-red-500">Error loading Google Maps API. Please try again later.</div>;
@@ -388,12 +400,11 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
           {selectedSchool && (
             <InfoWindow
               position={{
-                lat: schoolData.find(s => s.id === selectedSchool)?.lat,
-                lng: schoolData.find(s => s.id === selectedSchool)?.lng
+                lat: schoolData.find(s => s.id === selectedSchool)?.lat || 0,
+                lng: schoolData.find(s => s.id === selectedSchool)?.lng || 0
               }}
               onCloseClick={() => setSelectedSchool(null)}
               options={{
-                pixelOffset: isClient ? new window.google.maps.Size(0, -30) : null,
                 maxWidth: 320
               }}
             >
@@ -508,13 +519,20 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
                         <div key={index} className="mb-2 text-sm border-b pb-2 last:border-b-0">
                           <div className="flex justify-between mb-1">
                             <span className="font-medium">{visit.date}</span>
-                            <button 
+                            <a
+                              href={SERVICE_REPORTS[visit.jobNo] || "#"}
+                              target="_blank" 
+                              rel="noopener noreferrer"
                               className="text-xs text-blue-600 hover:underline flex items-center"
-                              onClick={() => openServiceReport(visit.jobNo)}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                openServiceReport(visit.jobNo);
+                                return false;
+                              }}
                             >
                               <FileText size={10} className="mr-1" />
                               Report
-                            </button>
+                            </a>
                           </div>
                           <div className="text-xs text-gray-600">Tech: {visit.tech}</div>
                         </div>
