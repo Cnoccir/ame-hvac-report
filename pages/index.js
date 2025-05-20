@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { LineChart, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Line } from 'recharts';
-import { Menu, X, Calendar, Map, Settings, Clock, BarChart2, FileText, AlertTriangle } from 'lucide-react';
+import { Menu, X, Calendar, Map, Settings, Clock, BarChart2, FileText, AlertTriangle, HardDrive } from 'lucide-react';
 import Head from 'next/head';
 import { trackTabChange } from '../utils/analytics';
 
@@ -909,8 +909,9 @@ const TimelineView = () => {
   );
 };
 
-// Import the new IssueAnalysis component
+// Import components
 import IssueAnalysis from '../components/IssueAnalysis';
+import InventorySummary from '../components/InventorySummary';
 
 // Component for issue analysis - now using our updated component
 const IssueAnalysisView = () => {
@@ -1213,6 +1214,7 @@ export default function HVACServiceReport() {
     { id: 'metrics', label: 'Service Metrics', icon: <BarChart2 size={16} /> },
     { id: 'timeline', label: 'Timeline', icon: <Calendar size={16} /> },
     { id: 'issues', label: 'Issue Analysis', icon: <AlertTriangle size={16} /> },
+    { id: 'inventory', label: 'Inventory Summary', icon: <HardDrive size={16} /> },
     { id: 'visits', label: 'Visit Logs', icon: <Clock size={16} /> }
   ];
   
@@ -1336,6 +1338,7 @@ export default function HVACServiceReport() {
             {activeTab === 'metrics' && <MetricsView />}
             {activeTab === 'timeline' && <TimelineView />}
             {activeTab === 'issues' && <IssueAnalysisView />}
+            {activeTab === 'inventory' && <InventorySummary />}
             {activeTab === 'visits' && <VisitLogView expandedSchoolName={expandedSchoolName} />}
           </div>
         </div>
