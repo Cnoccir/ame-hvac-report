@@ -1652,7 +1652,12 @@ export default function HVACServiceReport() {
         {/* Main content */}
         <main className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           {activeTab === 'executive' && <ExecutiveSummaryView />}
-          {activeTab === 'map' && <MapView schools={schoolData} onSchoolSelect={handleViewSchoolDetails} />}
+          {activeTab === 'map' && <MapView 
+            schools={schoolData} 
+            onSchoolSelect={handleViewSchoolDetails} 
+            selectedSchool={selectedSchool}
+            setSelectedSchool={setSelectedSchool}
+          />}
           {activeTab === 'metrics' && <MetricsView />}
           {activeTab === 'timeline' && <TimelineView />}
           {activeTab === 'issues' && <IssueAnalysis />}

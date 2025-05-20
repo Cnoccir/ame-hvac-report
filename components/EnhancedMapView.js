@@ -134,7 +134,14 @@ const options = {
   ]
 };
 
-const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDetails }) => {
+const EnhancedMapView = (props) => {
+  // Destructure props with defaults
+  const { 
+    selectedSchool = null, 
+    setSelectedSchool = () => console.warn('setSelectedSchool not provided'), 
+    handleViewSchoolDetails = () => console.warn('handleViewSchoolDetails not provided'),
+    schools = []
+  } = props;
   const mapRef = useRef(null);
   const [center, setCenter] = useState({ lat: 40.873, lng: -74.163 }); // Clifton, NJ centered
   const [mapLoaded, setMapLoaded] = useState(false);
@@ -306,7 +313,14 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
   // Handle marker click
   const handleMarkerClick = (schoolId) => {
     const school = schoolData.find(s => s.id === schoolId);
-    setSelectedSchool(schoolId);
+    
+    // Check if setSelectedSchool is a function before calling it
+    if (typeof setSelectedSchool === 'function') {
+      setSelectedSchool(schoolId);
+    } else {
+      console.error('setSelectedSchool is not a function:', setSelectedSchool);
+    }
+    
     // Reset active tab to overview when selecting a new school
     setActiveInfoTab('overview');
     
@@ -319,10 +333,12 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
   // Navigate to school details in visit logs
   const viewSchoolDetails = (schoolId) => {
     // Close the info window
-    setSelectedSchool(null);
+    if (typeof setSelectedSchool === 'function') {
+      setSelectedSchool(null);
+    }
     
     // If parent component provides the handler, use it to navigate
-    if (handleViewSchoolDetails) {
+    if (typeof handleViewSchoolDetails === 'function') {
       const school = schoolData.find(s => s.id === schoolId);
       handleViewSchoolDetails(school?.name);
     }
@@ -393,7 +409,7 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
                 lat: schoolData.find(s => s.id === selectedSchool)?.lat,
                 lng: schoolData.find(s => s.id === selectedSchool)?.lng
               }}
-              onCloseClick={() => setSelectedSchool(null)}
+              onCloseClick={() => typeof setSelectedSchool === 'function' && setSelectedSchool(null)}
               options={{
                 pixelOffset: isClient ? new window.google.maps.Size(0, -30) : null,
                 maxWidth: 320
@@ -409,7 +425,7 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
                     )}
                   </h4>
                   <button 
-                    onClick={() => setSelectedSchool(null)}
+                    onClick={() => typeof setSelectedSchool === 'function' && setSelectedSchool(null)}
                     className="text-gray-500 hover:text-gray-800"
                     aria-label="Close"
                   >
