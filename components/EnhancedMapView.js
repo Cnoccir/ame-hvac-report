@@ -142,6 +142,17 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
   const [mapType, setMapType] = useState('roadmap');
   const [activeTab, setActiveInfoTab] = useState('overview');
 
+  // Tab switching function
+  const switchTab = useCallback((tabName) => {
+    try {
+      setActiveInfoTab(tabName);
+    } catch (error) {
+      console.error("Error switching tab:", error);
+      // Fall back to overview tab
+      setActiveInfoTab('overview');
+    }
+  }, []);
+
   // Updated School data with accurate coordinates
   const schoolData = [
     { 
@@ -304,17 +315,24 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
   const isClient = typeof window !== 'undefined';
 
   // Handle marker click
-  const handleMarkerClick = (schoolId) => {
-    const school = schoolData.find(s => s.id === schoolId);
-    setSelectedSchool(schoolId);
-    // Reset active tab to overview when selecting a new school
-    setActiveInfoTab('overview');
-    
-    // Track school selection in analytics
-    if (school) {
-      trackSchoolSelection(school.name, school.id);
+  const handleMarkerClick = useCallback((schoolId) => {
+    try {
+      const school = schoolData.find(s => s.id === schoolId);
+      
+      // First set the active tab to overview
+      setActiveInfoTab('overview');
+      
+      // Then set the selected school to trigger the InfoWindow
+      setSelectedSchool(schoolId);
+      
+      // Track school selection in analytics
+      if (school) {
+        trackSchoolSelection(school.name, school.id);
+      }
+    } catch (error) {
+      console.error("Error handling marker click:", error);
     }
-  };
+  }, [schoolData]);
 
   // Navigate to school details in visit logs
   const viewSchoolDetails = useCallback((schoolId) => {
@@ -383,7 +401,10 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
                 key={school.id}
                 position={{ lat: school.lat, lng: school.lng }}
                 icon={createMarkerIcon(getMarkerColor(school.hours), markerScale)}
-                onClick={() => handleMarkerClick(school.id)}
+                onClick={(e) => {
+                  e.stop(); // Stop propagation of the event
+                  handleMarkerClick(school.id);
+                }}
                 label={{
                   text: String(school.id),
                   color: '#FFFFFF',
@@ -438,7 +459,10 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
                     className={`px-3 py-1 text-sm ${activeTab === 'overview' 
                       ? 'border-b-2 border-blue-500 text-blue-600 font-medium' 
                       : 'text-gray-600 hover:text-gray-900'}`}
-                    onClick={() => setActiveInfoTab('overview')}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      switchTab('overview');
+                    }}
                   >
                     Overview
                   </button>
@@ -446,7 +470,10 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
                     className={`px-3 py-1 text-sm ${activeTab === 'issues' 
                       ? 'border-b-2 border-blue-500 text-blue-600 font-medium' 
                       : 'text-gray-600 hover:text-gray-900'}`}
-                    onClick={() => setActiveInfoTab('issues')}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      switchTab('issues');
+                    }}
                   >
                     Issues
                   </button>
@@ -454,7 +481,10 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
                     className={`px-3 py-1 text-sm ${activeTab === 'visits' 
                       ? 'border-b-2 border-blue-500 text-blue-600 font-medium' 
                       : 'text-gray-600 hover:text-gray-900'}`}
-                    onClick={() => setActiveInfoTab('visits')}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      switchTab('visits');
+                    }}
                   >
                     Recent Visits
                   </button>
@@ -543,7 +573,11 @@ const EnhancedMapView = ({ selectedSchool, setSelectedSchool, handleViewSchoolDe
                 
                 {/* View Details Button */}
                 <button
-                  onClick={() => viewSchoolDetails(selectedSchool)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    viewSchoolDetails(selectedSchool);
+                  }}
                   className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm flex items-center justify-center transition-colors"
                 >
                   <FileText size={14} className="mr-1" /> 
