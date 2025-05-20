@@ -1,0 +1,6434 @@
+{
+  "CliftonSchool_Jace1": {
+    "stationName": "CliftonSchool_Jace1",
+    "devices": 0,
+    "points": 0,
+    "trunks": []
+  },
+  "CliftonSchools_Pkg1_Jace2": {
+    "stationName": "CliftonSchools_Pkg1_Jace2",
+    "devices": 0,
+    "points": 0,
+    "trunks": []
+  },
+  "CliftonHS_Jace3": {
+    "stationName": "CliftonHS_Jace3",
+    "devices": 0,
+    "points": 0,
+    "trunks": []
+  },
+  "CliftonSchool_14": {
+    "stationName": "CliftonSchool_14",
+    "devices": 19,
+    "points": 1280,
+    "trunks": [
+      {
+        "name": "Default-Trunk",
+        "devices": 19,
+        "points": 1280,
+        "deviceDetails": [
+          {
+            "name": "UV_RM100_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM101_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM102_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM103_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM104_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM111_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM110_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM112_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM113_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM114_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM115_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM117_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM119_FTR",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM120_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM121_FTR_EF",
+            "points": 70,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 14
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 10
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM122_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM123_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM124_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM125_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "CliftonSchool_16": {
+    "stationName": "CliftonSchool_16",
+    "devices": 19,
+    "points": 1280,
+    "trunks": [
+      {
+        "name": "Default-Trunk",
+        "devices": 19,
+        "points": 1280,
+        "deviceDetails": [
+          {
+            "name": "UV_RM100_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM101_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM102_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM103_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM104_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM111_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM110_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM112_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM113_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM114_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM115_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM117_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM119_FTR",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM120_FTR_EF",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM121_FTR_EF",
+            "points": 70,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 14
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 10
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM122_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM123_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM124_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM125_FTR",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "CliftonSchool_1": {
+    "stationName": "CliftonSchool_1",
+    "devices": 15,
+    "points": 983,
+    "trunks": [
+      {
+        "name": "Default-Trunk",
+        "devices": 15,
+        "points": 983,
+        "deviceDetails": [
+          {
+            "name": "RTU1_Cafe",
+            "points": 76,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 27
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 16
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 13
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 10
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 8
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "RTU2_Gym",
+            "points": 76,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 27
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 16
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 13
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 10
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 8
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "RTU3_Gym",
+            "points": 76,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 27
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 16
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 13
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 10
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 8
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM101",
+            "points": 62,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM102",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM103",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM104",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM105",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM106",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM107",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM108",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM203",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM204",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM205",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM208",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 24
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              },
+              {
+                "type": "bacnet:BacnetNumericProxyExt",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "CliftonSchool_3": {
+    "stationName": "CliftonSchool_3",
+    "devices": 18,
+    "points": 1184,
+    "trunks": [
+      {
+        "name": "Default-Trunk",
+        "devices": 18,
+        "points": 1184,
+        "deviceDetails": [
+          {
+            "name": "UV_RM101",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM104",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM13",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM10",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM16",
+            "points": 65,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:Folder",
+                "count": 1
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM103",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM105_EF3",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM107",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM205",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM201",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM203_EF1",
+            "points": 68,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 27
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM204",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM206",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM200_EF2",
+            "points": 66,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 2
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM202",
+            "points": 63,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 25
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "RTU1_Gym",
+            "points": 72,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 25
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 16
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 9
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 13
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 8
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "RTU2_Auditorium",
+            "points": 72,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 25
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 16
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 9
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 13
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 8
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "RTU3_Auditorium",
+            "points": 72,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 25
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 16
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 13
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 9
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 8
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "CliftonSchool_4": {
+    "stationName": "CliftonSchool_4",
+    "devices": 1,
+    "points": 72,
+    "trunks": [
+      {
+        "name": "Default-Trunk",
+        "devices": 1,
+        "points": 72,
+        "deviceDetails": [
+          {
+            "name": "UV_RM12_FTR_EF5",
+            "points": 72,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 13
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 28
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 9
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "CliftonSchool_5": {
+    "stationName": "CliftonSchool_5",
+    "devices": 2,
+    "points": 161,
+    "trunks": [
+      {
+        "name": "Default-Trunk",
+        "devices": 2,
+        "points": 161,
+        "deviceDetails": [
+          {
+            "name": "RTU1",
+            "points": 80,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 28
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 17
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 14
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 10
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 9
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "RTU2",
+            "points": 81,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 28
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 17
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 14
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 10
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "CliftonSchool_9": {
+    "stationName": "CliftonSchool_9",
+    "devices": 25,
+    "points": 1524,
+    "trunks": [
+      {
+        "name": "Default-Trunk",
+        "devices": 25,
+        "points": 1524,
+        "deviceDetails": [
+          {
+            "name": "UV_RM100",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM101",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM102",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM103",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM104",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM105_MediaCenter",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM106_MediaCenter",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM107_Kindergarden",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM108",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM109",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM110",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM111_EF11",
+            "points": 62,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM200_EF3",
+            "points": 62,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM201_EF2",
+            "points": 62,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM202_EF4",
+            "points": 62,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM203_EF5",
+            "points": 62,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM204",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM205_EF13_14",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM206",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM207_EF6_9",
+            "points": 64,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 12
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 8
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM208_EF7",
+            "points": 62,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM209_EF8",
+            "points": 62,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM210_EF10",
+            "points": 62,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 11
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 7
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM211",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "name": "UV_RM212",
+            "points": 60,
+            "pointBreakdown": [
+              {
+                "type": "control:NumericPoint",
+                "count": 7
+              },
+              {
+                "type": "control:BooleanPoint",
+                "count": 10
+              },
+              {
+                "type": "kitControl:NumericSwitch",
+                "count": 2
+              },
+              {
+                "type": "kitControl:Add",
+                "count": 1
+              },
+              {
+                "type": "kitControl:Subtract",
+                "count": 1
+              },
+              {
+                "type": "control:NumericWritable",
+                "count": 22
+              },
+              {
+                "type": "kitControl:Not",
+                "count": 1
+              },
+              {
+                "type": "control:BooleanWritable",
+                "count": 6
+              },
+              {
+                "type": "kitControl:Or",
+                "count": 1
+              },
+              {
+                "type": "control:EnumWritable",
+                "count": 3
+              },
+              {
+                "type": "kitControl:OneShot",
+                "count": 2
+              },
+              {
+                "type": "baja:WsTextBlock",
+                "count": 1
+              },
+              {
+                "type": "kitControl:BqlExprComponent",
+                "count": 1
+              },
+              {
+                "type": "control:EnumPoint",
+                "count": 1
+              },
+              {
+                "type": "vykonPro:OptStartStop",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "CliftonStadium": {
+    "stationName": "CliftonStadium",
+    "devices": 0,
+    "points": 0,
+    "trunks": []
+  }
+}

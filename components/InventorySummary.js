@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { Building, Server, HardDrive, Database, ChevronDown, ChevronRight, Circle, Info, Wifi, Clock, Activity, ArrowRight } from 'lucide-react';
+import { loadSupervisors, loadAllDeviceData } from '../utils/dataLoader';
 
 // AME Inc. brand colors
 const COLORS = {
@@ -19,424 +20,6 @@ const COLORS = {
   orange: "#FF9800",
   // Additional colors for charts
   chartColors: ["#E83A3A", "#3A6EE8", "#1D0F5A", "#6AAFE8", "#97C2FC", "#B4E1FF", "#FF9800", "#FFA07A", "#4CAF50", "#87CEFA"]
-};
-
-// Supervisors data exactly as shown in the screenshot
-const supervisorsData = [
-  { 
-    name: "Clifton_BOE", 
-    address: "ip:10.10.29.79", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Connected",
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_1", 
-    address: "ip:10.10.14.65", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:38 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_2", 
-    address: "ip:10.10.16.66", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_3", 
-    address: "ip:10.10.17.67", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_4", 
-    address: "ip:10.10.18.68", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_5", 
-    address: "ip:10.10.19.69", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18.3", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:37 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_9", 
-    address: "ip:10.10.21.71", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_11", 
-    address: "ip:10.10.22.72", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:38 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_12", 
-    address: "ip:10.10.24.74", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:38 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_14", 
-    address: "ip:10.10.26.76", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_16", 
-    address: "ip:10.10.28.78", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18.3", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "Woodrow Wilson Field House", 
-    address: "ip:10.10.31.81", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18.3", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Not connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_Jace1", 
-    address: "ip:10.10.13.63", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18.3", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:35 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_5", 
-    address: "ip:10.10.19.69", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18.3", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:37 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchools_Pkg1_Jace2", 
-    address: "ip:10.10.13.64", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18.3", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonHighSchoolHWS", 
-    address: "ip:10.10.13.65", 
-    hostModel: "nxubc", 
-    version: "4.13.2.18", 
-    status: "(down)",
-    health: "OK [19-May-25 7:28 AM EDT] Mismatched station names: Clifton_School_1 != CliftonSchool_1",
-    clientConn: "Not connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonStadium", 
-    address: "ip:10.10.30.80", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:37 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "Clifton_School_1", 
-    address: "ip:10.10.14.65", 
-    hostModel: "nxubc", 
-    version: "4.13.2.18", 
-    status: "(down)",
-    health: "Fail [19-May-25 7:28 AM EDT] Mismatched station names: Clifton_School_1 != CliftonSchool_1",
-    clientConn: "Not connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonHS_Jace3", 
-    address: "ip:10.10.13.84", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18.3", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Not connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "Sch12_HWS", 
-    address: "ip:10.10.24.73", 
-    hostModel: "nxubc", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:36 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "Clifton_CCMS", 
-    address: "ip:10.10.32.82", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18.3", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:37 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "Clifton_WWMS", 
-    address: "ip:10.10.33.83", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18.3", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:37 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_13", 
-    address: "ip:10.10.25.75", 
-    hostModel: "TITAN", 
-    version: "4.13.2.18", 
-    status: "(unackedAlarm)",
-    health: "OK [19-May-25 7:37 AM EDT]",
-    clientConn: "Connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "Clifton_Supervisor", 
-    address: "DESKTOP-1V93ALP", 
-    hostModel: "", 
-    version: "", 
-    status: "(disabled,fault)",
-    health: "Fail [null]",
-    clientConn: "Not connected", 
-    serverConn: "Not connected" 
-  },
-  { 
-    name: "CliftonSchool_8", 
-    address: "", 
-    hostModel: "", 
-    version: "", 
-    status: "(disabled)",
-    health: "Fail [null]",
-    clientConn: "Not connected", 
-    serverConn: "Not connected" 
-  }
-];
-
-// Accurate device counts based on the Excel files
-const deviceData = {
-  'CliftonSchool_1': {
-    devices: 9,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 3, points: 143 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 6, points: 209 }
-    ],
-    points: 352
-  },
-  'CliftonSchool_2': {
-    devices: 8,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 3, points: 125 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 5, points: 175 }
-    ],
-    points: 300
-  },
-  'CliftonSchool_3': {
-    devices: 12,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 7, points: 325 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 5, points: 195 }
-    ],
-    points: 520
-  },
-  'CliftonSchool_4': {
-    devices: 10,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 4, points: 148 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 6, points: 230 }
-    ],
-    points: 378
-  },
-  'CliftonSchool_5': {
-    devices: 11,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 6, points: 280 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 5, points: 212 }
-    ],
-    points: 492
-  },
-  'CliftonSchool_9': {
-    devices: 7,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 4, points: 184 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 3, points: 100 }
-    ],
-    points: 284
-  },
-  'CliftonSchool_11': {
-    devices: 8,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 5, points: 215 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 3, points: 110 }
-    ],
-    points: 325
-  },
-  'CliftonSchool_12': {
-    devices: 6,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 4, points: 168 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 2, points: 80 }
-    ],
-    points: 248
-  },
-  'CliftonSchool_13': {
-    devices: 5,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 3, points: 120 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 2, points: 85 }
-    ],
-    points: 205
-  },
-  'CliftonSchool_14': {
-    devices: 8,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 4, points: 162 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 4, points: 150 }
-    ],
-    points: 312
-  },
-  'CliftonSchool_16': {
-    devices: 6,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 3, points: 118 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 3, points: 120 }
-    ],
-    points: 238
-  },
-  'Clifton_highschool_1': {
-    devices: 35,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 20, points: 723 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 15, points: 520 }
-    ],
-    points: 1243
-  },
-  'Clifton_highschool_2': {
-    devices: 28,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 16, points: 585 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 12, points: 400 }
-    ],
-    points: 985
-  },
-  'Clifton_highschool_3': {
-    devices: 31,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 18, points: 650 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 13, points: 470 }
-    ],
-    points: 1120
-  },
-  'CliftonStadium': {
-    devices: 5,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 3, points: 95 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 2, points: 50 }
-    ],
-    points: 145
-  },
-  'Woodrow Wilson Field House': {
-    devices: 4,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 2, points: 75 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 2, points: 85 }
-    ],
-    points: 160
-  },
-  'CliftonHighSchoolHWS': {
-    devices: 18,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 10, points: 425 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 8, points: 355 }
-    ],
-    points: 780
-  },
-  'Sch12_HWS': {
-    devices: 12,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 7, points: 280 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 5, points: 215 }
-    ],
-    points: 495
-  },
-  'Clifton_CCMS': {
-    devices: 14,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 8, points: 310 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 6, points: 265 }
-    ],
-    points: 575
-  },
-  'Clifton_WWMS': {
-    devices: 16,
-    trunks: [
-      { name: 'BacnetNetwork-MstpTrunk1', devices: 9, points: 385 },
-      { name: 'BacnetNetwork-MstpTrunk2', devices: 7, points: 295 }
-    ],
-    points: 680
-  }
 };
 
 // Section Title Component
@@ -507,6 +90,7 @@ const InventorySummary = () => {
   const [expandedDevices, setExpandedDevices] = useState({});
   const [schoolDeviceData, setSchoolDeviceData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [supervisorsData, setSupervisorsData] = useState([]);
   const [visibleColumns, setVisibleColumns] = useState({
     name: true,
     address: true,
@@ -515,62 +99,37 @@ const InventorySummary = () => {
     status: true,
     health: true,
     clientConn: true,
-    serverConn: true,
+    serverConn: false,
     actions: true
   });
   const [showColumnFilter, setShowColumnFilter] = useState(false);
   
   // Initialize with the first supervisor
   useEffect(() => {
-    if (supervisorsData.length > 0 && !selectedSupervisor) {
-      setSelectedSupervisor(supervisorsData[0]);
-    }
-  }, []);
-  
-  // Initialize the school device data with the actual data
-  useEffect(() => {
-    setIsLoading(true);
-    
-    const processedData = {};
-    
-    // Map JACE (supervisor) names to their corresponding data
-    supervisorsData.forEach(supervisor => {
-      const schoolName = supervisor.name;
-      let data = null;
+    const fetchData = async () => {
+      setIsLoading(true);
       
-      // Try to find matching data
-      if (deviceData[schoolName]) {
-        data = deviceData[schoolName];
-      } else if (schoolName === 'CliftonHighSchoolHWS') {
-        data = deviceData['CliftonHighSchoolHWS'];
-      } else if (schoolName === 'CliftonHS_Jace3') {
-        data = deviceData['Clifton_highschool_3'];
-      } else if (schoolName === 'CliftonSchool_Jace1') {
-        data = deviceData['Clifton_highschool_1'];
-      } else if (schoolName === 'CliftonSchools_Pkg1_Jace2') {
-        data = deviceData['Clifton_highschool_2'];
-      } else {
-        // Default data for entries without specific data
-        data = {
-          devices: 0,
-          trunks: [
-            { name: 'BacnetNetwork-MstpTrunk1', devices: 0, points: 0 },
-            { name: 'BacnetNetwork-MstpTrunk2', devices: 0, points: 0 }
-          ],
-          points: 0
-        };
+      try {
+        // Load supervisors from static JSON
+        const supervisors = await loadSupervisors();
+        setSupervisorsData(supervisors);
+        
+        // Load device data from static JSON
+        const deviceData = await loadAllDeviceData();
+        setSchoolDeviceData(deviceData);
+        
+        // Set the first supervisor as selected
+        if (supervisors.length > 0 && !selectedSupervisor) {
+          setSelectedSupervisor(supervisors[0]);
+        }
+      } catch (error) {
+        console.error("Error loading data:", error);
+      } finally {
+        setIsLoading(false);
       }
-      
-      processedData[schoolName] = {
-        stationName: schoolName,
-        devices: data.devices,
-        points: data.points,
-        trunks: data.trunks
-      };
-    });
+    };
     
-    setSchoolDeviceData(processedData);
-    setIsLoading(false);
+    fetchData();
   }, []);
   
   // Calculate district stats
@@ -1182,66 +741,49 @@ const InventorySummary = () => {
                           </div>
                           
                           {expandedTrunks[`${selectedSupervisor.name}-${trunk.name}`] && (
-                            <div className="p-3 border-t">
-                              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                {Array.from({ length: trunk.devices }).map((_, deviceIndex) => {
-                                  // Generate realistic device names based on trunk and location
-                                  let deviceName;
-                                  if (trunk.name.includes('MstpTrunk1')) {
-                                    if (selectedSupervisor.name.includes('School')) {
-                                      deviceName = `RTU${deviceIndex + 1}`;
-                                    } else if (selectedSupervisor.name.includes('Stadium')) {
-                                      deviceName = `AHU${deviceIndex + 1}`;
-                                    } else {
-                                      deviceName = `VAV${deviceIndex + 1}`;
-                                    }
-                                  } else {
-                                    if (selectedSupervisor.name.includes('School')) {
-                                      deviceName = `UV_RM${100 + deviceIndex}`;
-                                    } else if (selectedSupervisor.name.includes('Stadium')) {
-                                      deviceName = `FCU${deviceIndex + 1}`;
-                                    } else {
-                                      deviceName = `TERM${deviceIndex + 1}`;
-                                    }
-                                  }
-                                  
-                                  // Calculate points for this device (distribute evenly among devices)
-                                  const pointCount = Math.floor(trunk.points / trunk.devices);
-                                  
-                                  return (
-                                    <div key={deviceIndex} className="border rounded p-2">
-                                      <div 
-                                        className="flex justify-between items-center cursor-pointer"
-                                        onClick={() => toggleDeviceExpansion(`${selectedSupervisor.name}-${trunk.name}-${deviceName}`)}
-                                      >
-                                        <div className="flex items-center">
-                                          {expandedDevices[`${selectedSupervisor.name}-${trunk.name}-${deviceName}`] ? 
-                                            <ChevronDown className="h-3 w-3 mr-1" /> : 
-                                            <ChevronRight className="h-3 w-3 mr-1" />
-                                          }
-                                          <span className="font-medium text-sm">{deviceName}</span>
-                                        </div>
-                                        <span className="text-xs text-gray-600">{pointCount} Points</span>
-                                      </div>
-                                      
-                                      {expandedDevices[`${selectedSupervisor.name}-${trunk.name}-${deviceName}`] && (
-                                        <div className="mt-2 text-xs text-gray-600 pl-4">
-                                          <ul className="mt-1 list-disc pl-4">
-                                            <li>Communication points: {Math.floor(pointCount * 0.15)}</li>
-                                            <li>Temperature sensors: {Math.floor(pointCount * 0.25)}</li>
-                                            <li>Pressure sensors: {Math.floor(pointCount * 0.1)}</li>
-                                            <li>Valve actuators: {Math.floor(pointCount * 0.15)}</li>
-                                            <li>Damper controls: {Math.floor(pointCount * 0.2)}</li>
-                                            <li>Status/Alarm points: {Math.floor(pointCount * 0.15)}</li>
-                                          </ul>
-                                        </div>
-                                      )}
-                                    </div>
-                                  );
-                                })}
-                              </div>
-                            </div>
-                          )}
+  <div className="p-3 border-t">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {trunk.deviceDetails?.map((device, deviceIndex) => (
+        <div key={deviceIndex} className="border rounded p-2">
+          <div 
+            className="flex justify-between items-center cursor-pointer"
+            onClick={() => toggleDeviceExpansion(`${selectedSupervisor.name}-${trunk.name}-${device.name}`)}
+          >
+            <div className="flex items-center">
+              {expandedDevices[`${selectedSupervisor.name}-${trunk.name}-${device.name}`] ? 
+                <ChevronDown className="h-3 w-3 mr-1" /> : 
+                <ChevronRight className="h-3 w-3 mr-1" />
+              }
+              <span className="font-medium text-sm">{device.name}</span>
+            </div>
+            <span className="text-xs text-gray-600">{device.points} Points</span>
+          </div>
+          
+          {expandedDevices[`${selectedSupervisor.name}-${trunk.name}-${device.name}`] && (
+            <div className="mt-2 text-xs text-gray-600 pl-4">
+              <ul className="mt-1 list-disc pl-4">
+                {device.pointBreakdown && device.pointBreakdown.length > 0 ? (
+                  device.pointBreakdown.map((point, pointIndex) => (
+                    <li key={pointIndex}>{point.type}: {point.count}</li>
+                  ))
+                ) : (
+                  <>
+                    <li>Communication points: {Math.floor(device.points * 0.15)}</li>
+                    <li>Temperature sensors: {Math.floor(device.points * 0.25)}</li>
+                    <li>Pressure sensors: {Math.floor(device.points * 0.1)}</li>
+                    <li>Valve actuators: {Math.floor(device.points * 0.15)}</li>
+                    <li>Damper controls: {Math.floor(device.points * 0.2)}</li>
+                    <li>Status/Alarm points: {Math.floor(device.points * 0.15)}</li>
+                  </>
+                )}
+              </ul>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+)}
                         </div>
                       ))}
                     </div>
