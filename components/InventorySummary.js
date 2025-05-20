@@ -507,6 +507,18 @@ const InventorySummary = () => {
   const [expandedDevices, setExpandedDevices] = useState({});
   const [schoolDeviceData, setSchoolDeviceData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [visibleColumns, setVisibleColumns] = useState({
+    name: true,
+    address: true,
+    hostModel: true,
+    version: true,
+    status: true,
+    health: true,
+    clientConn: true,
+    serverConn: true,
+    actions: true
+  });
+  const [showColumnFilter, setShowColumnFilter] = useState(false);
   
   // Initialize with the first supervisor
   useEffect(() => {
@@ -906,51 +918,157 @@ const InventorySummary = () => {
           {activeTab === 'supervisors' && (
             <div className="bg-white rounded-lg shadow overflow-hidden border border-gray-200">
               <div className="p-4 border-b">
-                <Subheading>JACE Status</Subheading>
+                <div className="flex justify-between items-center mb-2">
+                  <Subheading>JACE Status</Subheading>
+                  <button 
+                    className="flex items-center px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm hover:bg-gray-200"
+                    onClick={() => setShowColumnFilter(!showColumnFilter)}
+                  >
+                    <span className="mr-1">Column Display</span>
+                    {showColumnFilter ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                  </button>
+                </div>
                 <p className="text-sm text-gray-600">Current status of all JACEs in the Clifton Public Schools Building Automation System</p>
+                
+                {/* Column Filter UI */}
+                {showColumnFilter && (
+                  <div className="mt-3 p-3 bg-gray-50 border rounded-md">
+                    <div className="text-sm font-medium mb-2">Show/Hide Columns:</div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                      <label className="flex items-center">
+                        <input 
+                          type="checkbox" 
+                          checked={visibleColumns.name} 
+                          onChange={() => setVisibleColumns({...visibleColumns, name: !visibleColumns.name})}
+                          className="mr-2"
+                        />
+                        <span className="text-sm">JACE Name</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input 
+                          type="checkbox" 
+                          checked={visibleColumns.address} 
+                          onChange={() => setVisibleColumns({...visibleColumns, address: !visibleColumns.address})}
+                          className="mr-2"
+                        />
+                        <span className="text-sm">IP Address</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input 
+                          type="checkbox" 
+                          checked={visibleColumns.hostModel} 
+                          onChange={() => setVisibleColumns({...visibleColumns, hostModel: !visibleColumns.hostModel})}
+                          className="mr-2"
+                        />
+                        <span className="text-sm">Host Model</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input 
+                          type="checkbox" 
+                          checked={visibleColumns.version} 
+                          onChange={() => setVisibleColumns({...visibleColumns, version: !visibleColumns.version})}
+                          className="mr-2"
+                        />
+                        <span className="text-sm">Version</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input 
+                          type="checkbox" 
+                          checked={visibleColumns.status} 
+                          onChange={() => setVisibleColumns({...visibleColumns, status: !visibleColumns.status})}
+                          className="mr-2"
+                        />
+                        <span className="text-sm">Status</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input 
+                          type="checkbox" 
+                          checked={visibleColumns.health} 
+                          onChange={() => setVisibleColumns({...visibleColumns, health: !visibleColumns.health})}
+                          className="mr-2"
+                        />
+                        <span className="text-sm">Health</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input 
+                          type="checkbox" 
+                          checked={visibleColumns.clientConn} 
+                          onChange={() => setVisibleColumns({...visibleColumns, clientConn: !visibleColumns.clientConn})}
+                          className="mr-2"
+                        />
+                        <span className="text-sm">Client Connection</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input 
+                          type="checkbox" 
+                          checked={visibleColumns.serverConn} 
+                          onChange={() => setVisibleColumns({...visibleColumns, serverConn: !visibleColumns.serverConn})}
+                          className="mr-2"
+                        />
+                        <span className="text-sm">Server Connection</span>
+                      </label>
+                    </div>
+                  </div>
+                )}
               </div>
               <div className="overflow-x-auto">
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead>
                     <tr className="bg-gray-100">
-                      <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">JACE</th>
-                      <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">IP ADDRESS</th>
-                      <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">HOST MODEL</th>
-                      <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">VERSION</th>
-                      <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">STATUS</th>
-                      <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">HEALTH</th>
-                      <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">CLIENT CONN</th>
-                      <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">SERVER CONN</th>
+                      {visibleColumns.name && <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">JACE</th>}
+                      {visibleColumns.address && <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">IP ADDRESS</th>}
+                      {visibleColumns.hostModel && <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">HOST MODEL</th>}
+                      {visibleColumns.version && <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">VERSION</th>}
+                      {visibleColumns.status && <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">STATUS</th>}
+                      {visibleColumns.health && <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">HEALTH</th>}
+                      {visibleColumns.clientConn && <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">CLIENT CONN</th>}
+                      {visibleColumns.serverConn && <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">SERVER CONN</th>}
                       <th className="px-4 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">ACTIONS</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     {supervisorsData.map((supervisor, index) => (
                       <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                        <td className="px-4 py-3 text-sm text-black">
-                          {supervisor.name}
-                        </td>
-                        <td className="px-4 py-3 text-sm font-mono text-black">
-                          {supervisor.address}
-                        </td>
-                        <td className="px-4 py-3 text-sm text-black">
-                          {supervisor.hostModel}
-                        </td>
-                        <td className="px-4 py-3 text-sm text-black">
-                          {supervisor.version}
-                        </td>
-                        <td className="px-4 py-3 text-sm">
-                          <StatusBadge status={supervisor.status} />
-                        </td>
-                        <td className="px-4 py-3 text-sm">
-                          <HealthStatus health={supervisor.health} />
-                        </td>
-                        <td className="px-4 py-3 text-sm">
-                          <ConnectionStatus connected={supervisor.clientConn} />
-                        </td>
-                        <td className="px-4 py-3 text-sm">
-                          <ConnectionStatus connected={supervisor.serverConn} />
-                        </td>
+                        {visibleColumns.name && (
+                          <td className="px-4 py-3 text-sm text-black">
+                            {supervisor.name}
+                          </td>
+                        )}
+                        {visibleColumns.address && (
+                          <td className="px-4 py-3 text-sm font-mono text-black">
+                            {supervisor.address}
+                          </td>
+                        )}
+                        {visibleColumns.hostModel && (
+                          <td className="px-4 py-3 text-sm text-black">
+                            {supervisor.hostModel}
+                          </td>
+                        )}
+                        {visibleColumns.version && (
+                          <td className="px-4 py-3 text-sm text-black">
+                            {supervisor.version}
+                          </td>
+                        )}
+                        {visibleColumns.status && (
+                          <td className="px-4 py-3 text-sm">
+                            <StatusBadge status={supervisor.status} />
+                          </td>
+                        )}
+                        {visibleColumns.health && (
+                          <td className="px-4 py-3 text-sm">
+                            <HealthStatus health={supervisor.health} />
+                          </td>
+                        )}
+                        {visibleColumns.clientConn && (
+                          <td className="px-4 py-3 text-sm">
+                            <ConnectionStatus connected={supervisor.clientConn} />
+                          </td>
+                        )}
+                        {visibleColumns.serverConn && (
+                          <td className="px-4 py-3 text-sm">
+                            <ConnectionStatus connected={supervisor.serverConn} />
+                          </td>
+                        )}
                         <td className="px-4 py-3 text-sm">
                           {schoolDeviceData[supervisor.name]?.devices > 0 ? (
                             <button 
@@ -979,7 +1097,33 @@ const InventorySummary = () => {
           {activeTab === 'devices' && selectedSupervisor && (
             <div className="bg-white rounded-lg shadow overflow-hidden border border-gray-200">
               <div className="p-4 border-b">
-                <Subheading>Device Tree for {selectedSupervisor.name}</Subheading>
+                <div className="flex justify-between items-center mb-3">
+                  <Subheading>Device Tree for {selectedSupervisor.name}</Subheading>
+                  
+                  {/* New JACE selection dropdown */}
+                  <div className="relative">
+                    <select 
+                      className="appearance-none block w-64 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"
+                      value={selectedSupervisor.name}
+                      onChange={(e) => {
+                        const selected = supervisorsData.find(sup => sup.name === e.target.value);
+                        if (selected) {
+                          setSelectedSupervisor(selected);
+                        }
+                      }}
+                    >
+                      {supervisorsData.map((sup, i) => (
+                        <option key={i} value={sup.name}>
+                          {sup.name} {schoolDeviceData[sup.name]?.devices > 0 ? `(${schoolDeviceData[sup.name]?.devices} devices)` : '(No devices)'}
+                        </option>
+                      ))}
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                      <ChevronDown className="h-4 w-4" />
+                    </div>
+                  </div>
+                </div>
+                
                 <div className="flex items-center text-sm text-gray-600 flex-wrap">
                   <div className="flex items-center mr-4 my-1">
                     <Server className="h-4 w-4 mr-1" />
