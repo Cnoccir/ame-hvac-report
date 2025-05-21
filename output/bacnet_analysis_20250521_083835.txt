@@ -1,0 +1,47 @@
+============================================================
+BACnet System Analysis Report
+============================================================
+Generated: 2025-05-21 08:38:35
+
+Jace: CliftonHighSchoolHWS
+Number of Trunks: 0
+Number of Devices: 3
+Total Points: 98
+
+Status Summary:
+  - ok: 23 points (23.5%)
+  - stale: 16 points (16.3%)
+  - down: 54 points (55.1%)
+  - other: 5 points (5.1%)
+
+Device Details:
+------------------------------------------------------------
+
+Device: Boiler
+Number of Points: 54
+Status Breakdown:
+  - down: 54 points (100.0%)
+Point Types:
+  - control:NumericPoint: 54
+
+Device: HWP-1
+Number of Points: 30
+Status Breakdown:
+  - ok: 16 points (53.3%)
+  - stale: 11 points (36.7%)
+  - other: 3 points (10.0%)
+Point Types:
+  - bacnet:BacnetBooleanProxyExt: 2
+  - bacnet:BacnetNumericProxyExt: 13
+  - exportTags:PointTag: 15
+
+Device: HWP-3
+Number of Points: 14
+Status Breakdown:
+  - ok: 7 points (50.0%)
+  - stale: 5 points (35.7%)
+  - other: 2 points (14.3%)
+Point Types:
+  - bacnet:BacnetBooleanProxyExt: 1
+  - bacnet:BacnetNumericProxyExt: 6
+  - exportTags:PointTag: 7

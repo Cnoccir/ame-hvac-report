@@ -1,0 +1,106 @@
+{
+  "stationName": "CliftonStadium",
+  "devices": 2,
+  "points": 85,
+  "trunks": [
+    {
+      "name": "Default-Trunk",
+      "devices": 2,
+      "points": 85,
+      "deviceDetails": [
+        {
+          "name": "EF1_BathRoom",
+          "points": 12,
+          "pointBreakdown": [
+            {
+              "type": "bacnet:BacnetBooleanProxyExt",
+              "count": 4
+            },
+            {
+              "type": "history:BooleanCovHistoryExt",
+              "count": 3
+            },
+            {
+              "type": "exportTags:PointTag",
+              "count": 4
+            },
+            {
+              "type": "alarm:AlarmSourceExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 11,
+              "percentage": 91.66666666666666
+            },
+            "other": {
+              "count": 1,
+              "percentage": 8.333333333333332
+            }
+          }
+        },
+        {
+          "name": "ERU1",
+          "points": 73,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 24
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 17
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 8
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 11
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 13
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 26,
+              "percentage": 35.61643835616438
+            },
+            "ok": {
+              "count": 47,
+              "percentage": 64.38356164383562
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "statusCounts": {
+    "ok": 58,
+    "stale": 0,
+    "down": 0,
+    "other": 27
+  },
+  "healthSummary": {
+    "ok": {
+      "count": 58,
+      "percentage": 68.23529411764706
+    },
+    "stale": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "down": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "other": {
+      "count": 27,
+      "percentage": 31.76470588235294
+    }
+  }
+}

@@ -1,0 +1,4890 @@
+{
+  "stationName": "Clifton_BOE_Schools17",
+  "devices": 82,
+  "points": 5202,
+  "trunks": [
+    {
+      "name": "Default-Trunk",
+      "devices": 82,
+      "points": 5202,
+      "deviceDetails": [
+        {
+          "name": "HWP_1_VFD",
+          "points": 23,
+          "pointBreakdown": [
+            {
+              "type": "bacnet:BacnetBooleanProxyExt",
+              "count": 4
+            },
+            {
+              "type": "history:BooleanCovHistoryExt",
+              "count": 4
+            },
+            {
+              "type": "bacnet:BacnetNumericProxyExt",
+              "count": 9
+            },
+            {
+              "type": "history:NumericIntervalHistoryExt",
+              "count": 6
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 20,
+              "percentage": 86.95652173913044
+            },
+            "down": {
+              "count": 3,
+              "percentage": 13.043478260869565
+            }
+          }
+        },
+        {
+          "name": "HWP_2_VFD",
+          "points": 23,
+          "pointBreakdown": [
+            {
+              "type": "bacnet:BacnetBooleanProxyExt",
+              "count": 4
+            },
+            {
+              "type": "history:BooleanCovHistoryExt",
+              "count": 4
+            },
+            {
+              "type": "bacnet:BacnetNumericProxyExt",
+              "count": 9
+            },
+            {
+              "type": "history:NumericIntervalHistoryExt",
+              "count": 6
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 20,
+              "percentage": 86.95652173913044
+            },
+            "down": {
+              "count": 3,
+              "percentage": 13.043478260869565
+            }
+          }
+        },
+        {
+          "name": "HWS",
+          "points": 81,
+          "pointBreakdown": [
+            {
+              "type": "control:BooleanPoint",
+              "count": 18
+            },
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 8
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 26
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 16
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 22,
+              "percentage": 27.160493827160494
+            },
+            "other": {
+              "count": 59,
+              "percentage": 72.8395061728395
+            }
+          }
+        },
+        {
+          "name": "MAU",
+          "points": 19,
+          "pointBreakdown": [
+            {
+              "type": "control:BooleanPoint",
+              "count": 3
+            },
+            {
+              "type": "control:NumericPoint",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 10
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 2
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 3,
+              "percentage": 15.789473684210526
+            },
+            "other": {
+              "count": 16,
+              "percentage": 84.21052631578947
+            }
+          }
+        },
+        {
+          "name": "RTU_1",
+          "points": 96,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 23
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 38
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 13
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "exportTags:PointTag",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 21,
+              "percentage": 21.875
+            },
+            "other": {
+              "count": 70,
+              "percentage": 72.91666666666666
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 5.208333333333334
+            }
+          }
+        },
+        {
+          "name": "RTU_2",
+          "points": 94,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 23
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 12
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "exportTags:PointTag",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 21,
+              "percentage": 22.340425531914892
+            },
+            "other": {
+              "count": 67,
+              "percentage": 71.27659574468085
+            },
+            "stale": {
+              "count": 6,
+              "percentage": 6.382978723404255
+            }
+          }
+        },
+        {
+          "name": "RTU_3",
+          "points": 68,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 28
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 16
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 6
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 15
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "stale": {
+              "count": 27,
+              "percentage": 39.705882352941174
+            },
+            "ok": {
+              "count": 11,
+              "percentage": 16.176470588235293
+            },
+            "other": {
+              "count": 30,
+              "percentage": 44.11764705882353
+            }
+          }
+        },
+        {
+          "name": "RTU_4",
+          "points": 97,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 12
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 29
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 13
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 35
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "exportTags:PointTag",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 28,
+              "percentage": 28.865979381443296
+            },
+            "other": {
+              "count": 60,
+              "percentage": 61.855670103092784
+            },
+            "stale": {
+              "count": 9,
+              "percentage": 9.278350515463918
+            }
+          }
+        },
+        {
+          "name": "RTU_5",
+          "points": 92,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 25
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 38
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 2
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "axCommunity:AvgMinMax_v1",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "exportTags:PointTag",
+              "count": 1
+            },
+            {
+              "type": "bacnet:BacnetNumericProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 23,
+              "percentage": 25.0
+            },
+            "other": {
+              "count": 62,
+              "percentage": 67.3913043478261
+            },
+            "stale": {
+              "count": 7,
+              "percentage": 7.608695652173914
+            }
+          }
+        },
+        {
+          "name": "RTU_6",
+          "points": 63,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 17
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 15
+            },
+            {
+              "type": "kitControl:Minimum",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 15
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 6
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "axCommunity:AvgMinMax_v1",
+              "count": 1
+            },
+            {
+              "type": "axCommunity:TstatB",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "stale": {
+              "count": 17,
+              "percentage": 26.984126984126984
+            },
+            "ok": {
+              "count": 17,
+              "percentage": 26.984126984126984
+            },
+            "other": {
+              "count": 29,
+              "percentage": 46.03174603174603
+            }
+          }
+        },
+        {
+          "name": "RTU_7",
+          "points": 68,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 21
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 15
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 6
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 17
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "axCommunity:AvgMinMax_v1",
+              "count": 1
+            },
+            {
+              "type": "axCommunity:TstatB",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "down": {
+              "count": 58,
+              "percentage": 85.29411764705883
+            },
+            "other": {
+              "count": 5,
+              "percentage": 7.352941176470589
+            },
+            "ok": {
+              "count": 5,
+              "percentage": 7.352941176470589
+            }
+          }
+        },
+        {
+          "name": "RTU_8",
+          "points": 60,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 16
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 15
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 6
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 14
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "axCommunity:AvgMinMax_v1",
+              "count": 1
+            },
+            {
+              "type": "axCommunity:TstatB",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 17,
+              "percentage": 28.333333333333332
+            },
+            "stale": {
+              "count": 14,
+              "percentage": 23.333333333333332
+            },
+            "other": {
+              "count": 29,
+              "percentage": 48.333333333333336
+            }
+          }
+        },
+        {
+          "name": "TF1",
+          "points": 23,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 3
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 2
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 13
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 4,
+              "percentage": 17.391304347826086
+            },
+            "other": {
+              "count": 19,
+              "percentage": 82.6086956521739
+            }
+          }
+        },
+        {
+          "name": "VAV_103_MainOffice",
+          "points": 66,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 38
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 72.72727272727273
+            },
+            "ok": {
+              "count": 14,
+              "percentage": 21.21212121212121
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.0606060606060606
+            }
+          }
+        },
+        {
+          "name": "VAV_104_Conf",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 46,
+              "percentage": 71.875
+            },
+            "ok": {
+              "count": 14,
+              "percentage": 21.875
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.25
+            }
+          }
+        },
+        {
+          "name": "VAV_105_Prncpl_Off",
+          "points": 78,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericWritable",
+              "count": 45
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericPoint",
+              "count": 8
+            },
+            {
+              "type": "honeywellBacnetSpyder:BacnetSpyderPointFolder",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 8
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 6
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 63,
+              "percentage": 80.76923076923077
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 16.666666666666664
+            },
+            "stale": {
+              "count": 2,
+              "percentage": 2.564102564102564
+            }
+          }
+        },
+        {
+          "name": "VAV_107_Wrk_rm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 38
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 72.3076923076923
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.6923076923076925
+            }
+          }
+        },
+        {
+          "name": "VAV_117_Exam_113",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 72.3076923076923
+            },
+            "ok": {
+              "count": 14,
+              "percentage": 21.53846153846154
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_118_Kindie_rm",
+          "points": 66,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 49,
+              "percentage": 74.24242424242425
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 19.696969696969695
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.0606060606060606
+            }
+          }
+        },
+        {
+          "name": "VAV_121_Kindie_rm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_125_SpclEd_rm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_127_Kindie_rm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_129_Corridor_124",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 72.41379310344827
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.689655172413794
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.896551724137931
+            }
+          }
+        },
+        {
+          "name": "VAV_131_SpclEd_rm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_133_Corridor_133",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 72.41379310344827
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.689655172413794
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.896551724137931
+            }
+          }
+        },
+        {
+          "name": "VAV_134_SpclEd_134",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_137_SGI",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_141_ClassRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_143_ClassRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_145_Corridor_145",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 72.41379310344827
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.689655172413794
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.896551724137931
+            }
+          }
+        },
+        {
+          "name": "VAV_146_ClassRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_148_ClassRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.0
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_152_T55",
+          "points": 68,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericWritable",
+              "count": 36
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericPoint",
+              "count": 8
+            },
+            {
+              "type": "honeywellBacnetSpyder:BacnetSpyderPointFolder",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 7
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 6
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 53,
+              "percentage": 77.94117647058823
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 17.647058823529413
+            },
+            "stale": {
+              "count": 3,
+              "percentage": 4.411764705882353
+            }
+          }
+        },
+        {
+          "name": "VAV_155_Commons",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 72.41379310344827
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.689655172413794
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.896551724137931
+            }
+          }
+        },
+        {
+          "name": "VAV_159_Storage_158",
+          "points": 63,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 46,
+              "percentage": 73.01587301587301
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 19.047619047619047
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.936507936507936
+            }
+          }
+        },
+        {
+          "name": "VAV_15_ClassRm_201",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 11
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 72.3076923076923
+            },
+            "stale": {
+              "count": 6,
+              "percentage": 9.230769230769232
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            }
+          }
+        },
+        {
+          "name": "VAV_165_Commons_155",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 72.41379310344827
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.689655172413794
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.896551724137931
+            }
+          }
+        },
+        {
+          "name": "VAV_167_169St",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 72.41379310344827
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.689655172413794
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.896551724137931
+            }
+          }
+        },
+        {
+          "name": "VAV_171_Faculty",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            }
+          }
+        },
+        {
+          "name": "VAV_178_CST",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 72.3076923076923
+            },
+            "ok": {
+              "count": 14,
+              "percentage": 21.53846153846154
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_179_CST",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 72.3076923076923
+            },
+            "ok": {
+              "count": 14,
+              "percentage": 21.53846153846154
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.153846153846154
+            }
+          }
+        },
+        {
+          "name": "VAV_182_Guid",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 46,
+              "percentage": 71.875
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 20.3125
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_185_BookRm",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 41,
+              "percentage": 70.6896551724138
+            },
+            "ok": {
+              "count": 13,
+              "percentage": 22.413793103448278
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.896551724137931
+            }
+          }
+        },
+        {
+          "name": "VAV_204_Esl",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 46,
+              "percentage": 71.875
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 6,
+              "percentage": 9.375
+            }
+          }
+        },
+        {
+          "name": "VAV_205_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_207_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_209_ClassRm",
+          "points": 67,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 6
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 2
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 71.64179104477611
+            },
+            "ok": {
+              "count": 14,
+              "percentage": 20.8955223880597
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.462686567164178
+            }
+          }
+        },
+        {
+          "name": "VAV_212_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_216_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_218_ClassRm",
+          "points": 68,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 6
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 2
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 49,
+              "percentage": 72.05882352941177
+            },
+            "ok": {
+              "count": 14,
+              "percentage": 20.588235294117645
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.352941176470589
+            }
+          }
+        },
+        {
+          "name": "VAV_222_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_224_Corridor_224",
+          "points": 63,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 74.60317460317461
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 19.047619047619047
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.349206349206349
+            }
+          }
+        },
+        {
+          "name": "VAV_225_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_229_ClassRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.6923076923076925
+            }
+          }
+        },
+        {
+          "name": "VAV_231_Corridor",
+          "points": 59,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 43,
+              "percentage": 72.88135593220339
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.33898305084746
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.779661016949152
+            }
+          }
+        },
+        {
+          "name": "VAV_232_ClassRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.6923076923076925
+            }
+          }
+        },
+        {
+          "name": "VAV_236_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_237_Corridor",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 72.41379310344827
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.689655172413794
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.896551724137931
+            }
+          }
+        },
+        {
+          "name": "VAV_238_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_241_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_242_Girls_Toliet",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 72.41379310344827
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.689655172413794
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.896551724137931
+            }
+          }
+        },
+        {
+          "name": "VAV_245_Commons",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 41,
+              "percentage": 70.6896551724138
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.689655172413794
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 8.620689655172415
+            }
+          }
+        },
+        {
+          "name": "VAV_248_Art_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_301_Art_ClassRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 46,
+              "percentage": 71.875
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 6,
+              "percentage": 9.375
+            }
+          }
+        },
+        {
+          "name": "VAV_302_Storage",
+          "points": 58,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 72.41379310344827
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.689655172413794
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.896551724137931
+            }
+          }
+        },
+        {
+          "name": "VAV_303_Special_ED",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.6923076923076925
+            }
+          }
+        },
+        {
+          "name": "VAV_304_ClassRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.6923076923076925
+            }
+          }
+        },
+        {
+          "name": "VAV_305_Prac_Rm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_308_Music",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_309_Prac_Rm",
+          "points": 59,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 43,
+              "percentage": 72.88135593220339
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.33898305084746
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.779661016949152
+            }
+          }
+        },
+        {
+          "name": "VAV_312_SGI",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.6923076923076925
+            }
+          }
+        },
+        {
+          "name": "VAV_314_SGI",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_318_ClassRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 11
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 36
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 72.3076923076923
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            },
+            "stale": {
+              "count": 6,
+              "percentage": 9.230769230769232
+            }
+          }
+        },
+        {
+          "name": "VAV_319_Corridor",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 75.0
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.25
+            }
+          }
+        },
+        {
+          "name": "VAV_321_ClassRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.6923076923076925
+            }
+          }
+        },
+        {
+          "name": "VAV_323_ClassRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.6923076923076925
+            }
+          }
+        },
+        {
+          "name": "VAV_324_Commons_327",
+          "points": 72,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericWritable",
+              "count": 43
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericPoint",
+              "count": 8
+            },
+            {
+              "type": "honeywellBacnetSpyder:BacnetSpyderPointFolder",
+              "count": 2
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 6
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 58,
+              "percentage": 80.55555555555556
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 16.666666666666664
+            },
+            "stale": {
+              "count": 2,
+              "percentage": 2.7777777777777777
+            }
+          }
+        },
+        {
+          "name": "VAV_327_Corridor_319",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 75.0
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.25
+            }
+          }
+        },
+        {
+          "name": "VAV_329_Commons_327",
+          "points": 59,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 9
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 33
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 43,
+              "percentage": 72.88135593220339
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 20.33898305084746
+            },
+            "stale": {
+              "count": 4,
+              "percentage": 6.779661016949152
+            }
+          }
+        },
+        {
+          "name": "VAV_331_ResourceRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.6923076923076925
+            }
+          }
+        },
+        {
+          "name": "VAV_332_ResourceRm",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 73.4375
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.75
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.8125
+            }
+          }
+        },
+        {
+          "name": "VAV_333_ResourceRm",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 37
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 4
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 2
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 4
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 1
+            },
+            {
+              "type": "control:NullProxyExt",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 48,
+              "percentage": 73.84615384615385
+            },
+            "ok": {
+              "count": 12,
+              "percentage": 18.461538461538463
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 7.6923076923076925
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "statusCounts": {
+    "ok": 1029,
+    "stale": 394,
+    "down": 64,
+    "other": 3715
+  },
+  "healthSummary": {
+    "ok": {
+      "count": 1029,
+      "percentage": 19.780853517877738
+    },
+    "stale": {
+      "count": 394,
+      "percentage": 7.574009996155325
+    },
+    "down": {
+      "count": 64,
+      "percentage": 1.2302960399846214
+    },
+    "other": {
+      "count": 3715,
+      "percentage": 71.41484044598232
+    }
+  }
+}

@@ -1,0 +1,12 @@
+============================================================
+BACnet System Analysis Report - CliftonHighSchoolHWS
+Generated: 2025-05-21 08:22:28
+============================================================
+Total Trunks: 0
+Total Devices: 0
+Total Points: 0
+
+System-wide Status Summary:
+
+Detailed Network Analysis:
+------------------------------------------------------------

@@ -1,0 +1,1149 @@
+{
+  "stationName": "CliftonSchool_4",
+  "devices": 16,
+  "points": 931,
+  "trunks": [
+    {
+      "name": "MstpTrunk1",
+      "devices": 1,
+      "points": 61,
+      "deviceDetails": [
+        {
+          "name": "DAIKIN",
+          "points": 61,
+          "pointBreakdown": [
+            {
+              "type": "control:BooleanPoint",
+              "count": 40
+            },
+            {
+              "type": "control:NumericPoint",
+              "count": 10
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 10
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "down": {
+              "count": 61,
+              "percentage": 100.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MstpTrunk2",
+      "devices": 15,
+      "points": 870,
+      "deviceDetails": [
+        {
+          "name": "AC1_MainOffice",
+          "points": 55,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 7
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 24
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 6
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 37,
+              "percentage": 67.27272727272727
+            },
+            "ok": {
+              "count": 16,
+              "percentage": 29.09090909090909
+            },
+            "stale": {
+              "count": 2,
+              "percentage": 3.6363636363636362
+            }
+          }
+        },
+        {
+          "name": "CH1_2_EF4_2nd_Floor",
+          "points": 29,
+          "pointBreakdown": [
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 7
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "control:NumericPoint",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 7
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Average",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 2
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 10,
+              "percentage": 34.48275862068966
+            },
+            "other": {
+              "count": 19,
+              "percentage": 65.51724137931035
+            }
+          }
+        },
+        {
+          "name": "CUH1_2_Basement",
+          "points": 32,
+          "pointBreakdown": [
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 8
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "control:NumericPoint",
+              "count": 3
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 7
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Average",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 3
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 13,
+              "percentage": 40.625
+            },
+            "other": {
+              "count": 19,
+              "percentage": 59.375
+            }
+          }
+        },
+        {
+          "name": "Steam_Boilers",
+          "points": 25,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 5
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 11
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 5
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 2
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 17,
+              "percentage": 68.0
+            },
+            "stale": {
+              "count": 1,
+              "percentage": 4.0
+            },
+            "other": {
+              "count": 7,
+              "percentage": 28.000000000000004
+            }
+          }
+        },
+        {
+          "name": "UV10_RM10_FTR",
+          "points": 70,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 12
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 28
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 8
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 45,
+              "percentage": 64.28571428571429
+            },
+            "ok": {
+              "count": 25,
+              "percentage": 35.714285714285715
+            }
+          }
+        },
+        {
+          "name": "UV14_Media_EF14",
+          "points": 68,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 11
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 28
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 7
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "down": {
+              "count": 19,
+              "percentage": 27.941176470588236
+            },
+            "other": {
+              "count": 42,
+              "percentage": 61.76470588235294
+            },
+            "ok": {
+              "count": 7,
+              "percentage": 10.294117647058822
+            }
+          }
+        },
+        {
+          "name": "UV15_ReadingRec_EF15",
+          "points": 68,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 11
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 28
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 7
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 44,
+              "percentage": 64.70588235294117
+            },
+            "down": {
+              "count": 17,
+              "percentage": 25.0
+            },
+            "ok": {
+              "count": 7,
+              "percentage": 10.294117647058822
+            }
+          }
+        },
+        {
+          "name": "UV2_RM02",
+          "points": 64,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 10
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 26
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 6
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 65.625
+            },
+            "ok": {
+              "count": 22,
+              "percentage": 34.375
+            }
+          }
+        },
+        {
+          "name": "UV3_RM03",
+          "points": 62,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 10
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 25
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 6
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 40,
+              "percentage": 64.51612903225806
+            },
+            "ok": {
+              "count": 22,
+              "percentage": 35.483870967741936
+            }
+          }
+        },
+        {
+          "name": "UV4_RM04",
+          "points": 63,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 10
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 26
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 6
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 41,
+              "percentage": 65.07936507936508
+            },
+            "ok": {
+              "count": 22,
+              "percentage": 34.92063492063492
+            }
+          }
+        },
+        {
+          "name": "UV5_RM05_EF9",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 11
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 26
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 7
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 43,
+              "percentage": 66.15384615384615
+            },
+            "ok": {
+              "count": 22,
+              "percentage": 33.84615384615385
+            }
+          }
+        },
+        {
+          "name": "UV6_RM06_EF8",
+          "points": 66,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 11
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 26
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 7
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 44,
+              "percentage": 66.66666666666666
+            },
+            "ok": {
+              "count": 22,
+              "percentage": 33.33333333333333
+            }
+          }
+        },
+        {
+          "name": "UV7_RM07_EF7",
+          "points": 65,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 11
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 26
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 7
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 42,
+              "percentage": 64.61538461538461
+            },
+            "ok": {
+              "count": 23,
+              "percentage": 35.38461538461539
+            }
+          }
+        },
+        {
+          "name": "UV8_RM08_EF6",
+          "points": 66,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 11
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 26
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 7
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 43,
+              "percentage": 65.15151515151516
+            },
+            "ok": {
+              "count": 23,
+              "percentage": 34.84848484848485
+            }
+          }
+        },
+        {
+          "name": "UV_RM12_FTR_EF5",
+          "points": 72,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 7
+            },
+            {
+              "type": "control:BooleanPoint",
+              "count": 13
+            },
+            {
+              "type": "kitControl:NumericSwitch",
+              "count": 2
+            },
+            {
+              "type": "kitControl:Add",
+              "count": 1
+            },
+            {
+              "type": "kitControl:Subtract",
+              "count": 1
+            },
+            {
+              "type": "control:NumericWritable",
+              "count": 28
+            },
+            {
+              "type": "kitControl:Not",
+              "count": 1
+            },
+            {
+              "type": "control:BooleanWritable",
+              "count": 9
+            },
+            {
+              "type": "kitControl:Or",
+              "count": 1
+            },
+            {
+              "type": "control:EnumWritable",
+              "count": 3
+            },
+            {
+              "type": "kitControl:OneShot",
+              "count": 2
+            },
+            {
+              "type": "baja:WsTextBlock",
+              "count": 1
+            },
+            {
+              "type": "kitControl:BqlExprComponent",
+              "count": 1
+            },
+            {
+              "type": "control:EnumPoint",
+              "count": 1
+            },
+            {
+              "type": "vykonPro:OptStartStop",
+              "count": 1
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 47,
+              "percentage": 65.27777777777779
+            },
+            "ok": {
+              "count": 25,
+              "percentage": 34.72222222222222
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "statusCounts": {
+    "ok": 276,
+    "stale": 3,
+    "down": 97,
+    "other": 555
+  },
+  "healthSummary": {
+    "ok": {
+      "count": 276,
+      "percentage": 29.64554242749731
+    },
+    "stale": {
+      "count": 3,
+      "percentage": 0.322234156820623
+    },
+    "down": {
+      "count": 97,
+      "percentage": 10.41890440386681
+    },
+    "other": {
+      "count": 555,
+      "percentage": 59.61331901181526
+    }
+  }
+}

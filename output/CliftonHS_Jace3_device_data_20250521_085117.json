@@ -1,0 +1,54 @@
+{
+  "stationName": "CliftonHS_Jace3",
+  "devices": 1,
+  "points": 132,
+  "trunks": [
+    {
+      "name": "Default-Trunk",
+      "devices": 1,
+      "points": 132,
+      "deviceDetails": [
+        {
+          "name": "DAIKIN DBAC",
+          "points": 132,
+          "pointBreakdown": [
+            {
+              "type": "bacnet:BacnetPointFolder",
+              "count": 132
+            }
+          ],
+          "statusHealth": {
+            "other": {
+              "count": 132,
+              "percentage": 100.0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "statusCounts": {
+    "ok": 0,
+    "stale": 0,
+    "down": 0,
+    "other": 132
+  },
+  "healthSummary": {
+    "ok": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "stale": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "down": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "other": {
+      "count": 132,
+      "percentage": 100.0
+    }
+  }
+}

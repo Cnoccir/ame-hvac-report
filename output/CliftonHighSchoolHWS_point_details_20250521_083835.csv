@@ -1,0 +1,99 @@
+Device,Point Folder,Point Name,Point Type,Value,Status
+Boiler,Boiler1,BST Outdoor Temp:,control:NumericPoint,0.00 {down,down
+Boiler,Boiler1,Header Temp,control:NumericPoint,0.00 {down,down
+Boiler,Boiler1,unit Status,control:NumericPoint,0.00 {down,down
+Boiler,Boiler1,Fault Code,control:NumericPoint,0.00 {down,down
+Boiler,Boiler1,Outlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler1,Inlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler1,Exhaust Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler1,Inlet Air Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler1,Flame Strength,control:NumericPoint,0.00 {down,down
+Boiler,Boiler1,Fire Rate Out,control:NumericPoint,0.00 {down,down
+Boiler,Boiler2,Fault Code,control:NumericPoint,0.00 {down,down
+Boiler,Boiler2,Outlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler2,FFWD Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler2,Inlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler2,Exhaust Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler2,Inlet Air Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler2,Flame Strength,control:NumericPoint,0.00 {down,down
+Boiler,Boiler2,Fire Rate In,control:NumericPoint,0.00 {down,down
+Boiler,Boiler2,Fire Rate Out,control:NumericPoint,0.00 {down,down
+Boiler,Boiler3,unit Status,control:NumericPoint,0.00 {down,down
+Boiler,Boiler3,Outlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler3,FFWD Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler3,Inlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler3,Exhaust Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler3,Inlet Air Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler3,Flame Strength,control:NumericPoint,0.00 {down,down
+Boiler,Boiler3,Fire Rate In,control:NumericPoint,0.00 {down,down
+Boiler,Boiler3,Fire Rate Out,control:NumericPoint,0.00 {down,down
+Boiler,Boiler4,unit Status,control:NumericPoint,0.00 {down,down
+Boiler,Boiler4,Fault Code,control:NumericPoint,0.00 {down,down
+Boiler,Boiler4,FFWD Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler4,Inlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler4,Exhaust Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler4,Inlet Air Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler4,Flame Strength,control:NumericPoint,0.00 {down,down
+Boiler,Boiler4,Fire Rate In,control:NumericPoint,0.00 {down,down
+Boiler,Boiler4,Fire Rate Out,control:NumericPoint,0.00 {down,down
+Boiler,Boiler5,unit Status,control:NumericPoint,0.00 {down,down
+Boiler,Boiler5,Fault Code,control:NumericPoint,0.00 {down,down
+Boiler,Boiler5,Outlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler5,Inlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler5,Exhaust Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler5,Inlet Air Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler5,Flame Strength,control:NumericPoint,0.00 {down,down
+Boiler,Boiler5,Fire Rate In,control:NumericPoint,0.00 {down,down
+Boiler,Boiler5,Fire Rate Out,control:NumericPoint,0.00 {down,down
+Boiler,Boiler6,unit Status,control:NumericPoint,0.00 {down,down
+Boiler,Boiler6,Fault Code,control:NumericPoint,0.00 {down,down
+Boiler,Boiler6,Outlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler6,Inlet Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler6,Inlet Air Temperature,control:NumericPoint,0.00 {down,down
+Boiler,Boiler6,Flame Strength,control:NumericPoint,0.00 {down,down
+Boiler,Boiler6,Fire Rate In,control:NumericPoint,0.00 {down,down
+Boiler,Boiler6,Fire Rate Out,control:NumericPoint,0.00 {down,down
+HWP-1,Run Status,Proxy Ext,bacnet:BacnetBooleanProxyExt,false,ok
+HWP-1,Run Status,PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Actual Speed (%),Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Actual Speed (%),PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Sensorless Flow,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,other
+HWP-1,Sensorless Head,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Sensorless Head,PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Motor Input Current,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Motor Input Current,PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Motor Power,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Motor Power,PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Actual Speed (RPM),Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Actual Speed (RPM),PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Motor Input Voltage,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Motor Input Voltage,PointTag,exportTags:PointTag,N/A,other
+HWP-1,Run Status,Proxy Ext,bacnet:BacnetBooleanProxyExt,false,ok
+HWP-1,Run Status,PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Actual Speed (%),Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Actual Speed (%),PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Sensorless Flow,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,ok
+HWP-1,Sensorless Flow,PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Sensorless Head,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Sensorless Head,PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Motor Input Current,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Motor Input Current,PointTag,exportTags:PointTag,N/A,other
+HWP-1,Motor Power,PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Actual Speed (RPM),Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Actual Speed (RPM),PointTag,exportTags:PointTag,N/A,ok
+HWP-1,Motor Input Voltage,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-1,Motor Input Voltage,PointTag,exportTags:PointTag,N/A,ok
+HWP-3,Run Status,Proxy Ext,bacnet:BacnetBooleanProxyExt,false,ok
+HWP-3,Run Status,PointTag,exportTags:PointTag,N/A,ok
+HWP-3,Actual Speed (%),Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-3,Actual Speed (%),PointTag,exportTags:PointTag,N/A,other
+HWP-3,Sensorless Flow,PointTag,exportTags:PointTag,N/A,ok
+HWP-3,Sensorless Head,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-3,Sensorless Head,PointTag,exportTags:PointTag,N/A,ok
+HWP-3,Motor Input Current,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-3,Motor Input Current,PointTag,exportTags:PointTag,N/A,ok
+HWP-3,Motor Power,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-3,Motor Power,PointTag,exportTags:PointTag,N/A,ok
+HWP-3,Actual Speed (RPM),Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,stale
+HWP-3,Actual Speed (RPM),PointTag,exportTags:PointTag,N/A,ok
+HWP-3,Motor Input Voltage,Proxy Ext,bacnet:BacnetNumericProxyExt,0.00,other

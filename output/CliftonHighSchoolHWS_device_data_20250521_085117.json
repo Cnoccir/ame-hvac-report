@@ -1,0 +1,118 @@
+{
+  "stationName": "CliftonHighSchoolHWS",
+  "devices": 3,
+  "points": 98,
+  "trunks": [
+    {
+      "name": "Default-Trunk",
+      "devices": 3,
+      "points": 98,
+      "deviceDetails": [
+        {
+          "name": "Boiler",
+          "points": 54,
+          "pointBreakdown": [
+            {
+              "type": "control:NumericPoint",
+              "count": 54
+            }
+          ],
+          "statusHealth": {
+            "down": {
+              "count": 54,
+              "percentage": 100.0
+            }
+          }
+        },
+        {
+          "name": "HWP-1",
+          "points": 30,
+          "pointBreakdown": [
+            {
+              "type": "bacnet:BacnetBooleanProxyExt",
+              "count": 2
+            },
+            {
+              "type": "exportTags:PointTag",
+              "count": 15
+            },
+            {
+              "type": "bacnet:BacnetNumericProxyExt",
+              "count": 13
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 16,
+              "percentage": 53.333333333333336
+            },
+            "stale": {
+              "count": 11,
+              "percentage": 36.666666666666664
+            },
+            "other": {
+              "count": 3,
+              "percentage": 10.0
+            }
+          }
+        },
+        {
+          "name": "HWP-3",
+          "points": 14,
+          "pointBreakdown": [
+            {
+              "type": "bacnet:BacnetBooleanProxyExt",
+              "count": 1
+            },
+            {
+              "type": "exportTags:PointTag",
+              "count": 7
+            },
+            {
+              "type": "bacnet:BacnetNumericProxyExt",
+              "count": 6
+            }
+          ],
+          "statusHealth": {
+            "ok": {
+              "count": 7,
+              "percentage": 50.0
+            },
+            "stale": {
+              "count": 5,
+              "percentage": 35.714285714285715
+            },
+            "other": {
+              "count": 2,
+              "percentage": 14.285714285714285
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "statusCounts": {
+    "ok": 23,
+    "stale": 16,
+    "down": 54,
+    "other": 5
+  },
+  "healthSummary": {
+    "ok": {
+      "count": 23,
+      "percentage": 23.46938775510204
+    },
+    "stale": {
+      "count": 16,
+      "percentage": 16.3265306122449
+    },
+    "down": {
+      "count": 54,
+      "percentage": 55.10204081632652
+    },
+    "other": {
+      "count": 5,
+      "percentage": 5.1020408163265305
+    }
+  }
+}

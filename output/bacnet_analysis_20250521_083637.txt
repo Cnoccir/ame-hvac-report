@@ -1,0 +1,18 @@
+============================================================
+BACnet System Analysis Report
+============================================================
+Generated: 2025-05-21 08:36:37
+
+Jace: CliftonHighSchoolHWS
+Number of Trunks: 0
+Number of Devices: 0
+Total Points: 0
+
+Status Summary:
+  - ok: 0 points (0.0%)
+  - stale: 0 points (0.0%)
+  - down: 0 points (0.0%)
+  - other: 0 points (0.0%)
+
+Device Details:
+------------------------------------------------------------

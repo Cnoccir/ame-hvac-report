@@ -298,5 +298,29 @@
     "serverConn": "Not connected",
     "virtualsEnabled": false,
     "notes": "Possibly unconfigured or removed"
+  },
+  {
+    "name": "Clifton_BOE_Schools17",
+    "address": "10.10.10.XX",
+    "hostModel": "TITAN",
+    "version": "4.13.2.18",
+    "status": "{unackedAlarm}",
+    "health": "Ok [21-May-25 09:02 AM EDT]",
+    "clientConn": "Connected",
+    "serverConn": "Not connected",
+    "virtualsEnabled": false,
+    "notes": "Auto-added from BACnet data"
+  },
+  {
+    "name": "Unknown",
+    "address": "10.10.10.XX",
+    "hostModel": "TITAN",
+    "version": "4.13.2.18",
+    "status": "{unackedAlarm}",
+    "health": "Ok [21-May-25 09:02 AM EDT]",
+    "clientConn": "Connected",
+    "serverConn": "Not connected",
+    "virtualsEnabled": false,
+    "notes": "Auto-added from BACnet data"
   }
 ]

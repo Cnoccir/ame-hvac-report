@@ -1,0 +1,30 @@
+{
+  "stationName": "Unknown",
+  "devices": 0,
+  "points": 0,
+  "trunks": [],
+  "statusCounts": {
+    "ok": 0,
+    "stale": 0,
+    "down": 0,
+    "other": 0
+  },
+  "healthSummary": {
+    "ok": {
+      "count": 0,
+      "percentage": 0
+    },
+    "stale": {
+      "count": 0,
+      "percentage": 0
+    },
+    "down": {
+      "count": 0,
+      "percentage": 0
+    },
+    "other": {
+      "count": 0,
+      "percentage": 0
+    }
+  }
+}
