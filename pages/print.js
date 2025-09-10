@@ -4,6 +4,7 @@ import { getReportData } from '../utils/getReportData';
 import styles from '../styles/print.module.css';
 import { getStaticMapUrl } from '../utils/staticMap';
 import { ChartFigure } from '../components/print/ChartFigure';
+import AmeLogo from '../components/AmeLogo';
 
 // Small utility to chunk arrays for pagination
 function chunk(arr, size) {
@@ -20,6 +21,19 @@ export default function PrintPage({ data }) {
       <Head>
         <title>AME HVAC Report — {meta.periodLabel}</title>
       </Head>
+
+      <header className={styles.printHeader}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <AmeLogo size="small" />
+          <strong>CLIFTON PUBLIC SCHOOLS HVAC ANALYSIS</strong>
+        </div>
+        <div>{meta.periodLabel}</div>
+      </header>
+
+      <footer className={styles.printFooter}>
+        <div>AME Inc. • HVAC Service Report</div>
+        <div>Generated {new Date(meta.generatedAt).toLocaleDateString()}</div>
+      </footer>
 
       {/* Section 1: Executive Summary */}
       <section className="section">
