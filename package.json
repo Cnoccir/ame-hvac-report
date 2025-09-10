@@ -18,7 +18,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "recharts": "^2.10.3",
-    "xlsx": "^0.18.5"
+    "xlsx": "^0.18.5",
+"@sparticuz/chromium": "^138.0.2",
+"puppeteer-core": "^24.20.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",
@@ -27,6 +29,7 @@
     "eslint": "^8.53.0",
     "eslint-config-next": "^14.0.0",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+"puppeteer": "^24.20.0"
   }
 }

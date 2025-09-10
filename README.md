@@ -99,3 +99,32 @@ These files can be served from:
 4. Local server storage (for development)
 
 To change the storage location, modify the `BASE_URLS` in the `linkConfig.js` file.
+
+---
+
+## Print/PDF Export (Branded, Vercel-ready)
+
+This project includes a print-optimized route and a PDF export API that renders the entire multi-section report as a branded PDF suitable for bids and executive review.
+
+Features:
+- `/print?id=...` flattens all sections into a single page sequence with page breaks.
+- Static Google Map image via Static Maps API.
+- Print-safe inline charts (SVG) for metrics.
+- Serverless Chromium on Vercel to generate PDFs.
+
+Environment variables:
+- `NEXT_PUBLIC_BASE_URL` – Your deployed base URL (e.g. `https://ame-hvac-report.vercel.app`). Used by the PDF API to render the print page.
+- `GOOGLE_MAPS_API_KEY` – Google Static Maps key for the map image.
+- `NEXT_PUBLIC_PDF_EXPORT` – Optional. Set to `true` to show the "Download PDF" button in the UI.
+
+Local test steps:
+1. Install deps: `npm i`
+2. Run dev: `npm run dev`
+3. Visit: `http://localhost:3000/print?id=demo`
+4. Test PDF: `http://localhost:3000/api/export/pdf?id=demo`
+   - If `NEXT_PUBLIC_BASE_URL` is not set, the API will fall back to the current host.
+
+Deployment notes (Vercel):
+- Add `NEXT_PUBLIC_BASE_URL` and `GOOGLE_MAPS_API_KEY` in your Vercel Project > Settings > Environment Variables.
+- The API route uses `@sparticuz/chromium` + `puppeteer-core` in serverless.
+- For local development, a dev dependency on `puppeteer` is used automatically.

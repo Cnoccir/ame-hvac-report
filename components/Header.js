@@ -15,8 +15,15 @@ const Header = ({ activeTab, setActiveTab, reportDate = "March-May 2025", client
     { id: 'school-map', name: 'School Map', icon: 'map' },
   ];
 
+  const enablePdf = process.env.NEXT_PUBLIC_PDF_EXPORT === 'true';
+
   const handlePrint = () => {
     window.print();
+  };
+
+  const handleDownloadPdf = () => {
+    const id = 'clifton-2025';
+    window.open(`/api/export/pdf?id=${encodeURIComponent(id)}`, '_blank');
   };
 
   const toggleMobileMenu = () => {
@@ -60,6 +67,15 @@ const Header = ({ activeTab, setActiveTab, reportDate = "March-May 2025", client
               <Printer size={16} className="mr-2" />
               Print Report
             </button>
+            {enablePdf && (
+              <button
+                onClick={handleDownloadPdf}
+                className="ml-2 px-4 py-2 bg-navy text-white text-sm font-medium rounded-md"
+                title="Download branded PDF"
+              >
+                Download PDF
+              </button>
+            )}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -104,6 +120,15 @@ const Header = ({ activeTab, setActiveTab, reportDate = "March-May 2025", client
               <Printer size={16} className="mr-2" />
               Print Report
             </button>
+            {enablePdf && (
+              <button
+                onClick={handleDownloadPdf}
+                className="mt-2 px-4 py-2 bg-navy text-white text-sm font-medium rounded-md w-full"
+                title="Download branded PDF"
+              >
+                Download PDF
+              </button>
+            )}
           </nav>
         </div>
       )}
