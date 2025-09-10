@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { getReportData } from '../utils/getReportData';
 import styles from '../styles/print.module.css';
@@ -15,9 +15,25 @@ function chunk(arr, size) {
 
 export default function PrintPage({ data, pdfMode = false }) {
   const { meta, kpis, map, metrics, issues, inventory, timeline, visitLogs } = data;
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    // Wait for images and fonts before signaling ready (for Puppeteer)
+    const waitImages = Array.from(document.images).map(img =>
+      img.complete ? Promise.resolve() : new Promise(res => {
+        img.addEventListener('load', res, { once: true });
+        img.addEventListener('error', res, { once: true });
+      })
+    );
+    const waitFonts = document.fonts ? document.fonts.ready : Promise.resolve();
+    Promise.all([...waitImages, waitFonts]).then(() => {
+      // allow a tick for layout
+      requestAnimationFrame(() => setIsReady(true));
+    });
+  }, []);
 
   return (
-    <main id="report-root" data-ready="true" className={styles.printRoot}>
+    <main id="report-root" data-ready={isReady ? 'true' : 'false'} className={styles.printRoot}>
       <Head>
         <title>AME HVAC Report — {meta.periodLabel}</title>
       </Head>
