@@ -13,7 +13,7 @@ function chunk(arr, size) {
   return out;
 }
 
-export default function PrintPage({ data }) {
+export default function PrintPage({ data, pdfMode = false }) {
   const { meta, kpis, map, metrics, issues, inventory, timeline, visitLogs } = data;
 
   return (
@@ -22,6 +22,7 @@ export default function PrintPage({ data }) {
         <title>AME HVAC Report — {meta.periodLabel}</title>
       </Head>
 
+      { !pdfMode && (
       <header className={styles.printHeader}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <AmeLogo size="small" />
@@ -29,11 +30,14 @@ export default function PrintPage({ data }) {
         </div>
         <div>{meta.periodLabel}</div>
       </header>
+      ) }
 
+      { !pdfMode && (
       <footer className={styles.printFooter}>
         <div>AME Inc. • HVAC Service Report</div>
         <div>Generated {new Date(meta.generatedAt).toLocaleDateString()}</div>
       </footer>
+      ) }
 
       {/* Section 1: Executive Summary */}
       <section className={styles.section}>
@@ -333,11 +337,12 @@ export default function PrintPage({ data }) {
 export async function getServerSideProps({ query }) {
   const id = (query?.id && String(query.id)) || 'default';
   const data = await getReportData(id);
+  const pdfMode = String(query?.pdf || '').toLowerCase() === '1' || String(query?.pdf || '').toLowerCase() === 'true';
   try {
     const url = getStaticMapUrl(data.map.center, data.map.markers);
     data.map.mapUrl = url;
   } catch (e) {
     // ignore
   }
-  return { props: { data } };
+  return { props: { data, pdfMode } };
 }

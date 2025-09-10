@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   try {
     const id = (req.query.id && String(req.query.id)) || 'default';
     const base = process.env.NEXT_PUBLIC_BASE_URL || `http://${req.headers.host || 'localhost:3000'}`;
-    const target = `${base}/print?id=${encodeURIComponent(id)}`;
+    const target = `${base}/print?id=${encodeURIComponent(id)}&pdf=1`;
 
     let browser;
     let page;
@@ -56,9 +56,9 @@ export default async function handler(req, res) {
       </div>`;
 
     const pdf = await page.pdf({
-      format: 'A4',
+      format: 'Letter',
       printBackground: true,
-      margin: { top: '22mm', bottom: '16mm', left: '14mm', right: '14mm' },
+      margin: { top: '0.6in', bottom: '0.5in', left: '0.5in', right: '0.5in' },
       displayHeaderFooter: true,
       headerTemplate: headerHTML,
       footerTemplate: footerHTML,

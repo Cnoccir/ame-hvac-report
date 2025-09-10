@@ -2,6 +2,7 @@ import React from 'react';
 
 // Minimal inline SVG chart for print-safe rendering
 export function ChartFigure({ title, series, kind }) {
+  // Logical canvas dimensions; actual render scales to container width via viewBox
   const width = 940;
   const height = 260;
   const pad = 30;
@@ -14,7 +15,14 @@ export function ChartFigure({ title, series, kind }) {
   return (
     <figure className="figure" style={{ marginBottom: 12 }}>
       <figcaption><strong>{title}</strong></figcaption>
-      <svg width={width} height={height} role="img" aria-label={title}>
+      <svg
+        viewBox={`0 0 ${width} ${height}`}
+        width="100%"
+        role="img"
+        aria-label={title}
+        preserveAspectRatio="xMidYMid meet"
+        style={{ height: 'auto' }}
+      >
         {/* axes */}
         <line x1={pad} y1={height - pad} x2={width - pad} y2={height - pad} stroke="#999" strokeWidth="1" />
         <line x1={pad} y1={pad} x2={pad} y2={height - pad} stroke="#999" strokeWidth="1" />
