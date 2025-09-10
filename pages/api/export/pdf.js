@@ -34,11 +34,34 @@ export default async function handler(req, res) {
     await page.goto(target, { waitUntil: 'networkidle0', timeout: 60000 });
     await page.waitForSelector("#report-root[data-ready='true']", { timeout: 30000 });
 
+    const today = new Date().toLocaleDateString();
+    const headerHTML = `
+      <style>
+        .pdf-header { font-size:10px; color:#555; width:100%; padding:0 10mm; }
+        .pdf-header .right { text-align:right; }
+      </style>
+      <div class="pdf-header">
+        <div class="right">AME HVAC Report — ${id}</div>
+      </div>`;
+
+    const footerHTML = `
+      <style>
+        .pdf-footer{ font-size:10px; color:#555; width:100%; padding:0 10mm; display:flex; justify-content:space-between; }
+        .pdf-footer .center{ text-align:center; flex:1; }
+      </style>
+      <div class="pdf-footer">
+        <div>AME Inc.</div>
+        <div class="center">Page <span class="pageNumber"></span> of <span class="totalPages"></span></div>
+        <div>${today}</div>
+      </div>`;
+
     const pdf = await page.pdf({
       format: 'A4',
       printBackground: true,
-      margin: { top: '16mm', bottom: '16mm', left: '14mm', right: '14mm' },
-      displayHeaderFooter: false,
+      margin: { top: '22mm', bottom: '16mm', left: '14mm', right: '14mm' },
+      displayHeaderFooter: true,
+      headerTemplate: headerHTML,
+      footerTemplate: footerHTML,
     });
 
     await browser.close();
