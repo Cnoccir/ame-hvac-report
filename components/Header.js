@@ -22,7 +22,7 @@ const Header = ({ activeTab, setActiveTab, reportDate = "March-May 2025", client
   };
 
   const handleDownloadPdf = () => {
-    const id = 'clifton-2025';
+    const id = process.env.NEXT_PUBLIC_REPORT_ID || 'clifton-2025';
     window.open(`/api/export/pdf?id=${encodeURIComponent(id)}`, '_blank');
   };
 
