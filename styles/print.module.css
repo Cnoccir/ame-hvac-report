@@ -1,0 +1,40 @@
+.printRoot {
+  color: #111;
+  font: 12pt/1.45 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  padding: 16px;
+}
+
+.section {
+  margin: 0 0 16px 0;
+}
+
+.card {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 8px 0;
+  background: #fff;
+}
+
+.figure {
+  break-inside: avoid;
+}
+
+.page-break {
+  break-after: page;
+}
+
+.printRoot :global(table) {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 16px 0;
+}
+
+.printRoot :global(table th), .printRoot :global(table td) {
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.section, .card { break-inside: avoid; }
