@@ -1088,6 +1088,35 @@ export async function getReportData(id = 'default') {
     };
   });
 
+  // Executive summary additions
+  const summary = {
+    keyFindings: [
+      'RTU communication failures impacting ventilation and temperature control (notably PS #17; RTU-7 affects 23 VAV boxes)',
+      'Recurring freeze-stat trips (up to 58°F) particularly at Clifton High School',
+      'Heating valve defects causing temperature control issues (e.g., ELA Honeywell ML7425A3013)',
+      'Building Automation (JACE) performance issues requiring optimization (PS #11 100% CPU pre-optimization)',
+      'Manual system overrides by staff affecting performance across 7 schools (64% of facilities)',
+      'VRV/VRF integration gaps preventing full BMS functionality (PS #9, #11, #3, #1, #14)',
+      'VAV damper flow issues despite dampers at 100%',
+      'Seasonal heating-to-cooling transition difficulties',
+      'Chiller faults at ELA with pump overload occurring twice daily'
+    ],
+    recommendations: [
+      { issue: 'RTU Communication Failures', priority: 'High', action: 'Schedule immediate mechanical contractor inspection for all affected units' },
+      { issue: 'Freeze Stat Problems', priority: 'High', action: 'Comprehensive inspection and recalibration across district' },
+      { issue: 'Heating Valve Defects', priority: 'High', action: 'Replace defective Honeywell ML7425A3013 actuators and repair valve body leaks' },
+      { issue: 'VRV/VRF Integration', priority: 'High', action: 'Accelerate BMS integration prior to peak cooling season' },
+      { issue: 'Manual System Overrides', priority: 'Medium', action: 'Staff education + control lockouts to prevent shutdowns' },
+      { issue: 'JACE Optimization', priority: 'Medium', action: 'Apply optimization playbook (as done at PS #11) across district' },
+      { issue: 'Seasonal Transitions', priority: 'Medium', action: 'Create standardized seasonal transition protocols' },
+      { issue: 'Chiller Faults', priority: 'High', action: 'Mechanical inspection of pump overload and controls' }
+    ],
+    mostServiced: schoolData
+      .map(s => ({ school: s.name, address: s.address, visits: s.visits, hours: s.hours }))
+      .sort((a,b) => b.hours - a.hours)
+      .slice(0, 3)
+  };
+
   return {
     meta,
     kpis,
@@ -1097,5 +1126,6 @@ export async function getReportData(id = 'default') {
     inventory,
     timeline,
     visitLogs,
+    summary,
   };
 }
