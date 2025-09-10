@@ -36,7 +36,7 @@ export default function PrintPage({ data }) {
       </footer>
 
       {/* Section 1: Executive Summary */}
-      <section className="section">
+      <section className={styles.section}>
         <h1>Executive Summary</h1>
         <p><strong>Customer:</strong> {meta.customer}</p>
         <p><strong>Period:</strong> {meta.periodLabel}</p>
@@ -48,12 +48,12 @@ export default function PrintPage({ data }) {
           <li>Technicians: {kpis.technicians}</li>
         </ul>
       </section>
-      <div className="page-break" />
+      <div className={styles.pageBreak} />
 
       {/* Section 2: Service Map (static image) */}
-      <section className="section">
+      <section className={styles.section}>
         <h2>Service Map</h2>
-        <figure className="figure">
+        <figure className={styles.figure}>
           {map.mapUrl ? (
             <img src={map.mapUrl} alt="Service Map (static)" style={{ width: '100%', height: 'auto' }} />
           ) : (
@@ -62,10 +62,10 @@ export default function PrintPage({ data }) {
           <figcaption>Marker color denotes service hours (blue → purple → red).</figcaption>
         </figure>
       </section>
-      <div className="page-break" />
+      <div className={styles.pageBreak} />
 
       {/* Section 3: Service Metrics */}
-      <section className="section">
+      <section className={styles.section}>
         <h2>Service Metrics</h2>
 
         {/* Print-safe charts */}
@@ -152,13 +152,13 @@ export default function PrintPage({ data }) {
           </tbody>
         </table>
       </section>
-      <div className="page-break" />
+      <div className={styles.pageBreak} />
 
       {/* Section 4: Service Visit Timeline */}
-      <section className="section">
+      <section className={styles.section}>
         <h2>Service Visit Timeline</h2>
         {chunk(timeline.visits, 25).map((group, i) => (
-          <div key={i} className="card">
+          <div key={i} className={styles.card}>
             <table>
               <thead>
                 <tr>
@@ -179,14 +179,14 @@ export default function PrintPage({ data }) {
                 ))}
               </tbody>
             </table>
-            {i < Math.ceil(timeline.visits.length / 25) - 1 && <div className="page-break" />}
+            {i < Math.ceil(timeline.visits.length / 25) - 1 && <div className={styles.pageBreak} />}
           </div>
         ))}
       </section>
-      <div className="page-break" />
+      <div className={styles.pageBreak} />
 
       {/* Section 5: Issue Analysis */}
-      <section className="section">
+      <section className={styles.section}>
         <h2>Issue Analysis</h2>
         <h3>Totals</h3>
         <ul>
@@ -216,7 +216,7 @@ export default function PrintPage({ data }) {
         <h3>Critical Categories</h3>
         <ul>
           {issues.cards.map((c, idx) => (
-            <li key={idx} className="card">
+            <li key={idx} className={styles.card}>
               <strong>{c.priority}:</strong> {c.title} — {c.impact}
               <br />
               <em>Recommendation:</em> {c.recommendation}
@@ -224,10 +224,10 @@ export default function PrintPage({ data }) {
           ))}
         </ul>
       </section>
-      <div className="page-break" />
+      <div className={styles.pageBreak} />
 
       {/* Section 6: Inventory Summary */}
-      <section className="section">
+      <section className={styles.section}>
         <h2>Inventory Summary</h2>
         <ul>
           <li>Supervisors (JACE): {inventory.summary.jaces}</li>
@@ -238,7 +238,7 @@ export default function PrintPage({ data }) {
 
         <h3>Supervisors</h3>
         {chunk(inventory.jaceStatusTable, 20).map((group, gi) => (
-          <div key={gi} className="card">
+          <div key={gi} className={styles.card}>
             <table>
               <thead>
                 <tr>
@@ -263,7 +263,7 @@ export default function PrintPage({ data }) {
                 ))}
               </tbody>
             </table>
-            {gi < Math.ceil(inventory.jaceStatusTable.length / 20) - 1 && <div className="page-break" />}
+            {gi < Math.ceil(inventory.jaceStatusTable.length / 20) - 1 && <div className={styles.pageBreak} />}
           </div>
         ))}
 
@@ -287,13 +287,13 @@ export default function PrintPage({ data }) {
           </tbody>
         </table>
       </section>
-      <div className="page-break" />
+      <div className={styles.pageBreak} />
 
       {/* Section 7: Visit Logs */}
-      <section className="section">
+      <section className={styles.section}>
         <h2>Visit Logs</h2>
         {visitLogs.map((log, i) => (
-          <div key={log.school} className="card">
+          <div key={log.school} className={styles.card}>
             <h3>{i + 1}. {log.school}</h3>
             <p>Total Visits: {log.totalVisits} · Total Hours: {log.totalHours}</p>
             <table>
@@ -322,7 +322,7 @@ export default function PrintPage({ data }) {
                 ))}
               </tbody>
             </table>
-            <div className="page-break" />
+            <div className={styles.pageBreak} />
           </div>
         ))}
       </section>
